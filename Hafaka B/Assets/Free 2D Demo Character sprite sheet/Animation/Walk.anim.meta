@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f246d814aadccf646b7e688870264ec1
+timeCreated: 1547400438
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137085
+  packageName: 2D Demo Character sprite sheet
+  packageVersion: 1.0
+  assetPath: Assets/Free 2D Demo Character sprite sheet/Animation/Walk.anim
+  uploadId: 287713

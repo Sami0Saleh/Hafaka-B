@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 690df10759c4a094ea3e841a011298c3
+timeCreated: 1547400024
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 137085
+  packageName: 2D Demo Character sprite sheet
+  packageVersion: 1.0
+  assetPath: Assets/Free 2D Demo Character sprite sheet/Animation/Idle.anim
+  uploadId: 287713
