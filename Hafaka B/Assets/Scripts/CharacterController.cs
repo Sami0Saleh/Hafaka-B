@@ -25,7 +25,11 @@ public class CharacterController : MonoBehaviour
     private string _lastName;
     private string _department;
     private string _jobTitle;
-    
+
+    private Vector2 MovePos;
+
+    public bool IsAlien { get => _isAlien; }
+
     void Start()
     {
         _speed = characterSO.MoveSpeed;
@@ -45,7 +49,7 @@ public class CharacterController : MonoBehaviour
         if (!_isStopped)
         {
             float Direction = Mathf.Sign(Goal.position.x - transform.position.x);
-            Vector2 MovePos = new Vector2(
+            MovePos = new Vector2(
                 transform.position.x + Direction * _speed * Time.deltaTime, //MoveTowards on 1 axis
                 transform.position.y
             );
