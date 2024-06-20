@@ -1,16 +1,19 @@
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    //[SerializeField] CharacterSO characterSO;
-    
+    [SerializeField] CharacterScriptableObject characterSO;
+    [SerializeField] Transform Goal;
+
     // variables
-    private float _speed;
+    private bool _isStopped = false;
+    [SerializeField] private float _speed;
     private bool _isAlien;
 
     // visual 
-    private Sprite _characterSprite;
+    private List<GameObject> _characterSprites;
     private Sprite _bloodPool;
     private Animator _animator;
 
@@ -25,12 +28,32 @@ public class CharacterController : MonoBehaviour
     
     void Start()
     {
-        //
-        //_speed = characterSO.speed;
+        _speed = characterSO.MoveSpeed;
+        _isAlien = characterSO.IsAlien;
+        _characterSprites = characterSO.CharacterSprites;
+        _bloodPool = characterSO.BloodPool;
+
+        _firstName = characterSO.FirstName;
+        _lastName = characterSO.LastName;
+        _department = characterSO.Department;
+        _jobTitle = characterSO.JobTitle;
+        
     }
 
     void Update()
     {
-        
+        if (!_isStopped)
+        {
+            float Direction = Mathf.Sign(Goal.position.x - transform.position.x);
+            Vector2 MovePos = new Vector2(
+                transform.position.x + Direction * _speed * Time.deltaTime, //MoveTowards on 1 axis
+                transform.position.y
+            );
+            transform.position = MovePos;
+        }
+        else
+        {
+
+        }
     }
 }

@@ -9,7 +9,7 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] bool _isAlien;
 
     [Header("Visuals")]
-    [SerializeField] List<Sprite> _characterSprites;
+    [SerializeField] List<GameObject> _characterSprites;
     [SerializeField] Animator _animator;
     [SerializeField] Sprite _bloodPool;
 
@@ -23,7 +23,7 @@ public class CharacterScriptableObject : ScriptableObject
 
     public float MoveSpeed { get => _moveSpeed; }
     public bool IsAlien { get => _isAlien; }
-    public List<Sprite> CharacterSprites { get => _characterSprites; }
+    public List<GameObject> CharacterSprites { get => _characterSprites; }
     public Animator Animator { get => _animator; }
     public Sprite BloodPool { get => _bloodPool; }
     public string FirstName { get => _firstName; }
