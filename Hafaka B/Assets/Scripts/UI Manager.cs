@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenWorkersList()
     {
-        _viewScreen.SetActive(false);
+       // _viewScreen.SetActive(false);
         _workersListScreen.SetActive(true);
     }
     public void CloseWorkersList()
@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
     }
     public void OpenScanner()
     {
-        _viewScreen.SetActive(false);
+        //_viewScreen.SetActive(false);
         _scannerScreen.SetActive(true);
     }
     public void CloseScanner()
@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour
     }
     public void OpenGuard()
     {
-        _viewScreen.SetActive(false);
+       // _viewScreen.SetActive(false);
         _guardScreen.SetActive(true);
     }
     public void CloseGuard()
@@ -40,7 +40,7 @@ public class UIManager : MonoBehaviour
     }
     public void OpenSniper()
     {
-        _viewScreen.SetActive(false);
+       // _viewScreen.SetActive(false);
         _sniperScreen.SetActive(true);
     }
     public void CloseSniper()
