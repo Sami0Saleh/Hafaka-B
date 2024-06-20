@@ -4,6 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CharacterScriptableObject", menuName = "Scriptable Objects/CharacterScriptableObject")]
 public class CharacterScriptableObject : ScriptableObject
 {
+    [SerializeField] int databaseID;
     [Header("Attributes")]
     [SerializeField] float _moveSpeed;
     [SerializeField] bool _isAlien;
@@ -32,4 +33,5 @@ public class CharacterScriptableObject : ScriptableObject
     public string DateOfBirth { get => _dateOfBirth; }
     public string Department { get => _department; }
     public string JobTitle { get => _jobTitle; }
+    public int DatabaseID { get => databaseID; set => databaseID = value; }
 }
