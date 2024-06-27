@@ -17,6 +17,7 @@ MonoBehaviour:
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
+  _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
   _firstName: Steve
   _lastName: Carrel
   _gender: Male

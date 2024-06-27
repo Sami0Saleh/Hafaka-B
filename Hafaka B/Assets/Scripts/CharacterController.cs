@@ -20,6 +20,7 @@ public class CharacterController : MonoBehaviour
 
     // ID info
     [Header("ID info")]
+    private Sprite _idImage;
     private string _gender;
     private string _firstName;
     private string _lastName;
@@ -29,6 +30,12 @@ public class CharacterController : MonoBehaviour
     private Vector2 MovePos;
 
     public bool IsAlien { get => _isAlien; }
+    public Sprite IdImage { get => _idImage; private set => _idImage = value; }
+    public string Gender { get => _gender; private set => _gender = value; }
+    public string FirstName { get => _firstName; private set => _firstName = value; }
+    public string LastName { get => _lastName; private set => _lastName = value; }
+    public string Department { get => _department; private set => _department = value; }
+    public string JobTitle { get => _jobTitle; private set => _jobTitle = value; }
 
     void Start()
     {
@@ -37,10 +44,11 @@ public class CharacterController : MonoBehaviour
         _characterSprites = characterSO.CharacterSprites;
         _bloodPool = characterSO.BloodPool;
 
-        _firstName = characterSO.FirstName;
-        _lastName = characterSO.LastName;
-        _department = characterSO.Department;
-        _jobTitle = characterSO.JobTitle;
+        IdImage = characterSO.IdImage;
+        FirstName = characterSO.FirstName;
+        LastName = characterSO.LastName;
+        Department = characterSO.Department;
+        JobTitle = characterSO.JobTitle;
         
     }
 

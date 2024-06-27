@@ -20,6 +20,8 @@ public class GoalRecorder : MonoBehaviour
             Debug.Log("Number of humans: " + NumberOfHumans);
             Debug.Log("Number of aliens: " + NumberOfAliens);
         }
+        if (_cc == GameManager.Instance.LastSelectedCharacter)
+            GameManager.Instance.UnassignSelectedCharacter();
         Destroy(collision.gameObject);
     }
 }

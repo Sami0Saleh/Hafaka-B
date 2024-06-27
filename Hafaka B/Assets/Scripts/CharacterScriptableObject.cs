@@ -14,6 +14,7 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] Sprite _bloodPool;
 
     [Header("ID")]
+    [SerializeField] Sprite _idImage;
     [SerializeField] string _firstName;
     [SerializeField] string _lastName;
     [SerializeField] string _gender;
@@ -32,4 +33,5 @@ public class CharacterScriptableObject : ScriptableObject
     public string DateOfBirth { get => _dateOfBirth; }
     public string Department { get => _department; }
     public string JobTitle { get => _jobTitle; }
+    public Sprite IdImage { get => _idImage; }
 }

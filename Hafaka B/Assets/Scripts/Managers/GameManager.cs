@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -6,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
     public CharacterController LastSelectedCharacter { get => _lastSelectedCharacter; private set => _lastSelectedCharacter = value; }
+
+    public event Action OnCharacterUnassignment;
 
     private void Awake()
     {
@@ -23,5 +26,11 @@ public class GameManager : MonoBehaviour
         if (chr == null)
             return;
         LastSelectedCharacter = chr;
+    }
+
+    public void UnassignSelectedCharacter()
+    {
+        LastSelectedCharacter = null;
+        OnCharacterUnassignment?.Invoke();
     }
 }
