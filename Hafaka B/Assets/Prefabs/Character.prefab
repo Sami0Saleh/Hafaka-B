@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5259062678656521032}
   - component: {fileID: 654098098490990572}
   - component: {fileID: 6859529252735415678}
+  - component: {fileID: 8280904466618559533}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -104,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSO: {fileID: 11400000, guid: b07bd913970f49c4b958f4d71375ad16, type: 2}
   Goal: {fileID: 0}
-  _speed: 0
+  _speed: 5
 --- !u!70 &654098098490990572
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -169,3 +170,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8280904466618559533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4442078837467771100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a3436fd8d6a2a04f9b2a4f3306e14b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
