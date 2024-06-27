@@ -12,7 +12,6 @@ public class ScanID : MonoBehaviour
     //[SerializeField] TMP_Text _dateOfBirth;
 
     private CharacterController _character;
-    public event Action DisableIDScanner;
 
     private void OnEnable()
     {
