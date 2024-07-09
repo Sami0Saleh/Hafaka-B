@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public CharacterController LastSelectedCharacter { get => _lastSelectedCharacter; private set => _lastSelectedCharacter = value; }
 
     public event Action OnCharacterUnassignment;
+    public event Action OnCharacterClicked;
 
     private void Awake()
     {
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
         if (chr == null)
             return;
         LastSelectedCharacter = chr;
+        OnCharacterClicked?.Invoke();
     }
 
     public void UnassignSelectedCharacter()

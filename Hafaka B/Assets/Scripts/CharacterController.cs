@@ -68,4 +68,9 @@ public class CharacterController : MonoBehaviour
 
         }
     }
+
+    public void Die()
+    {
+        Debug.Log("Character " + FirstName + " " + LastName + " has died!");
+    }
 }
