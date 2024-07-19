@@ -15,7 +15,8 @@ public class ScanID : MonoBehaviour
 
     private void OnEnable()
     {
-        GameManager.Instance.OnCharacterUnassignment += HideScanner;
+        if (GameManager.Instance != null)
+            GameManager.Instance.OnCharacterUnassignment += HideScanner;
         // don't display ID if there is no selected character
         if (GameManager.Instance.LastSelectedCharacter == null)
         {
@@ -28,7 +29,8 @@ public class ScanID : MonoBehaviour
 
     private void OnDisable()
     {
-        GameManager.Instance.OnCharacterUnassignment -= HideScanner;
+        if (GameManager.Instance != null)
+            GameManager.Instance.OnCharacterUnassignment -= HideScanner;
     }
 
     public void DisplayCharacterData()

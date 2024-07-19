@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class Sniper : MonoBehaviour
 {
     [SerializeField] private Image _img;
+    [SerializeField] private GameObject _scopeCamera;
 
     private RectTransform _canvasRectTransform;
 
@@ -30,6 +31,7 @@ public class Sniper : MonoBehaviour
         Vector2 localPoint;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(_canvasRectTransform, Input.mousePosition, Camera.main, out localPoint);
         _img.rectTransform.localPosition = localPoint;
+        //_scopeCamera.transform.position = _img.rectTransform.localPosition;
     }
 
     public void Shoot()
