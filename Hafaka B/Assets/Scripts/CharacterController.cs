@@ -39,6 +39,7 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
+
         _speed = characterSO.MoveSpeed;
         _isAlien = characterSO.IsAlien;
         _characterSprites = characterSO.CharacterSprites;
@@ -67,10 +68,5 @@ public class CharacterController : MonoBehaviour
         {
 
         }
-    }
-
-    public void Die()
-    {
-        Debug.Log("Character " + FirstName + " " + LastName + " has died!");
     }
 }
