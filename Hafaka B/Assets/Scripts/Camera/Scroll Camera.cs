@@ -44,6 +44,6 @@ public class ScrollCamera : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(transform.position, GetComponent<Collider2D>().bounds.size);
+        Gizmos.DrawWireCube(GetComponent<Collider2D>().bounds.center, GetComponent<Collider2D>().bounds.size);
     }
 }
