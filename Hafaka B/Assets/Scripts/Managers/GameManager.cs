@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    CharacterController _lastSelectedCharacter;
+    [SerializeField] CharacterController _lastSelectedCharacter;
 
     public static GameManager Instance { get; private set; }
     public CharacterController LastSelectedCharacter { get => _lastSelectedCharacter; private set => _lastSelectedCharacter = value; }

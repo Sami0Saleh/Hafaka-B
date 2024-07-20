@@ -1,0 +1,1190 @@
+fileFormatVersion: 2
+guid: 529e1ee833c46d347a85eaf08a8436cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4039785648324804260
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_0
+  - first:
+      213: -5041838735466696951
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_1
+  - first:
+      213: -6908019515742516079
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_2
+  - first:
+      213: 727117614331540705
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_3
+  - first:
+      213: -8067249159278719279
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_4
+  - first:
+      213: 9210260898391524081
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_5
+  - first:
+      213: 8634594924235622940
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_6
+  - first:
+      213: 1440465313535095769
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_7
+  - first:
+      213: -4604253425406982281
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_8
+  - first:
+      213: 2038237166236797281
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_9
+  - first:
+      213: 5895907551334233939
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_10
+  - first:
+      213: -1103216630211448736
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_11
+  - first:
+      213: 8594613015167232937
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_12
+  - first:
+      213: 1202652612458272157
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_13
+  - first:
+      213: -986644743248832060
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_14
+  - first:
+      213: 4203361663770238943
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_15
+  - first:
+      213: -5206786422670640427
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_16
+  - first:
+      213: 4744446612663131573
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_17
+  - first:
+      213: -6707523976813728806
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_18
+  - first:
+      213: 71419055151950589
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_19
+  - first:
+      213: 338754908231357833
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_20
+  - first:
+      213: -2773210901560353829
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_21
+  - first:
+      213: 1996121989084548230
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_22
+  - first:
+      213: 3328486945297531905
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_23
+  - first:
+      213: -4559606071324365052
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_24
+  - first:
+      213: 434379732177409152
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_25
+  - first:
+      213: -4057506274987379329
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_26
+  - first:
+      213: 5557040717867008964
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_27
+  - first:
+      213: 5210533387688400649
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_28
+  - first:
+      213: -159056587208644333
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_29
+  - first:
+      213: -2651264207208085925
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_30
+  - first:
+      213: 2715958524241198958
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_31
+  - first:
+      213: -1385607285248744261
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_32
+  - first:
+      213: 5865666495621547232
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_33
+  - first:
+      213: 69182820598025148
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_34
+  - first:
+      213: -8613756320008559732
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_35
+  - first:
+      213: 5919402833383339687
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_36
+  - first:
+      213: -949866799707447161
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_37
+  - first:
+      213: -1925066999237132869
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_38
+  - first:
+      213: -5399658026415349887
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_39
+  - first:
+      213: -7197890344313944268
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_40
+  - first:
+      213: -7941055066706856779
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_41
+  - first:
+      213: -964428610646105815
+    second: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 946
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5101e64b5ccfe7c0800000000000000
+      internalID: -4039785648324804260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1065
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fe3b5026ac70ab0800000000000000
+      internalID: -5041838735466696951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1090
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c83b6c9d8c120a0800000000000000
+      internalID: -6908019515742516079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 946
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e439282e9d371a00800000000000000
+      internalID: 727117614331540705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_4
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1065
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de8f9ab1af5b0090800000000000000
+      internalID: -8067249159278719279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_5
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1090
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f20c413d7b61df70800000000000000
+      internalID: 9210260898391524081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1008
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1a8476e55e34d770800000000000000
+      internalID: 8634594924235622940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_7
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1045
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3f78c129f8df310800000000000000
+      internalID: 1440465313535095769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_8
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1008
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777cdba67e76a10c0800000000000000
+      internalID: -4604253425406982281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_9
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1045
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1690b8557e5494c10800000000000000
+      internalID: 2038237166236797281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_10
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 219
+        width: 762
+        height: 762
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357f1d91ea872d150800000000000000
+      internalID: 5895907551334233939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_11
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 947
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06071f5e15690b0f0800000000000000
+      internalID: -1103216630211448736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_12
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 978
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abedf64003364770800000000000000
+      internalID: 8594613015167232937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_13
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 947
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9555c9dd2ea0b010800000000000000
+      internalID: 1202652612458272157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_14
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 978
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9952f55dbbe42f0800000000000000
+      internalID: -986644743248832060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_15
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 786
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf158fa927555a30800000000000000
+      internalID: 4203361663770238943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_16
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 811
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dab367d557cdb7b0800000000000000
+      internalID: -5206786422670640427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_17
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 614
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd579b9e09a7d140800000000000000
+      internalID: 4744446612663131573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_18
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 728
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb2a972b761ae2a0800000000000000
+      internalID: -6707523976813728806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_19
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 766
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfaa684904bbdf000800000000000000
+      internalID: 71419055151950589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 668
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985dc035bcf73b400800000000000000
+      internalID: 338754908231357833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 699
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb114dc0639389d0800000000000000
+      internalID: -2773210901560353829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_22
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 345
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c0bb78f56a3bb10800000000000000
+      internalID: 1996121989084548230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_23
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 464
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1040cfddd39213e20800000000000000
+      internalID: 3328486945297531905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_24
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 489
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f2ffa9f6609b0c0800000000000000
+      internalID: -4559606071324365052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_25
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 407
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0845012a01a370600800000000000000
+      internalID: 434379732177409152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_26
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 444
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75757d5a87d0b7c0800000000000000
+      internalID: -4057506274987379329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_27
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 346
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c348d627139e1d40800000000000000
+      internalID: 5557040717867008964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_28
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 377
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907da7f62888f4840800000000000000
+      internalID: 5210533387688400649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_29
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 185
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3192e3c60eaeacdf0800000000000000
+      internalID: -159056587208644333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_30
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5687a32041d43bd0800000000000000
+      internalID: -2651264207208085925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_31
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 13
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f371653e501b520800000000000000
+      internalID: 2715958524241198958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_32
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 185
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb42e8ce38555cce0800000000000000
+      internalID: -1385607285248744261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_33
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 210
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4ce62a998076150800000000000000
+      internalID: 5865666495621547232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_34
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 13
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb0e46a869c5f000800000000000000
+      internalID: 69182820598025148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_35
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 127
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c832d1cb34ac57880800000000000000
+      internalID: -8613756320008559732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_36
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 165
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a6314eb381f52250800000000000000
+      internalID: 5919402833383339687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_37
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 127
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7802083ad2561d2f0800000000000000
+      internalID: -949866799707447161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_38
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 165
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdb4ad73c9c845e0800000000000000
+      internalID: -1925066999237132869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_39
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 67
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f1de232af8015b0800000000000000
+      internalID: -5399658026415349887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_40
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 98
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43704fe2ed4fb1c90800000000000000
+      internalID: -7197890344313944268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_41
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 67
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b43f178d74bbc190800000000000000
+      internalID: -7941055066706856779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_42
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 98
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9212733d949ad92f0800000000000000
+      internalID: -964428610646105815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
