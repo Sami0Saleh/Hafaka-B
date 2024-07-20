@@ -40,4 +40,10 @@ public class ScrollCamera : MonoBehaviour
         else
             return transform.position.x <= _boundary.transform.position.x;
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(transform.position, GetComponent<Collider2D>().bounds.size);
+    }
 }
