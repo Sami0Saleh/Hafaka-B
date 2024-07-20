@@ -38,6 +38,6 @@ public class Sniper : MonoBehaviour
         Debug.Log("SHOOT");
         if (GameManager.Instance.LastSelectedCharacter == null)
             return;
-       // GameManager.Instance.LastSelectedCharacter.Die();
+        GameManager.Instance.LastSelectedCharacter.Die();
     }
 }

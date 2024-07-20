@@ -36,10 +36,10 @@ public class CharacterController : MonoBehaviour
     public string LastName { get => _lastName; private set => _lastName = value; }
     public string Department { get => _department; private set => _department = value; }
     public string JobTitle { get => _jobTitle; private set => _jobTitle = value; }
+    public string FullName { get => $"{FirstName} {LastName}"; }
 
     void Start()
     {
-
         _speed = characterSO.MoveSpeed;
         _isAlien = characterSO.IsAlien;
         _characterSprites = characterSO.CharacterSprites;
@@ -68,5 +68,13 @@ public class CharacterController : MonoBehaviour
         {
 
         }
+    }
+
+    public void Die()
+    {
+        Debug.Log("Character " + FullName + " has died!");
+        GoalRecorder.Instance.AddCharacterToListOfDead(this);
+        Debug.Log(GoalRecorder.Instance.GetDeadCharacters()[0].FullName);
+        Destroy(gameObject);
     }
 }

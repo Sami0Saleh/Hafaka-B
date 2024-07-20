@@ -6,9 +6,22 @@ public class GoalRecorder : MonoBehaviour
 {
     private CharacterController _cc;
     private List<CharacterController> _charactersWhoReachedGoal = new List<CharacterController>();
+    private List<CharacterController> _deadCharacters = new List<CharacterController>();
 
     public int NumberOfHumans { get => _charactersWhoReachedGoal.Where(human => human.IsAlien == false).Count(); }
     public int NumberOfAliens { get => _charactersWhoReachedGoal.Where(human => human.IsAlien == true).Count(); }
+    public static GoalRecorder Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+
+        Instance = this;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,5 +36,16 @@ public class GoalRecorder : MonoBehaviour
         if (_cc == GameManager.Instance.LastSelectedCharacter)
             GameManager.Instance.UnassignSelectedCharacter();
         Destroy(collision.gameObject);
+    }
+
+    public void AddCharacterToListOfDead(CharacterController cc)
+    {
+        CharacterController temp = cc;
+        _deadCharacters.Add(temp);
+    }
+
+    public List<CharacterController> GetDeadCharacters()
+    {
+        return _deadCharacters;
     }
 }
