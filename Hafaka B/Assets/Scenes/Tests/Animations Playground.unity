@@ -303,57 +303,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3032335540361436663, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 2.718463
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032335540361436663, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -4.1002984
-      objectReference: {fileID: 0}
-    - target: {fileID: 3032335540361436663, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3463607316909248312, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0.6791635
-      objectReference: {fileID: 0}
-    - target: {fileID: 3463607316909248312, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -7.980229
-      objectReference: {fileID: 0}
-    - target: {fileID: 3463607316909248312, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3759030964637342695, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: -1.9408362
-      objectReference: {fileID: 0}
-    - target: {fileID: 3759030964637342695, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -7.7702284
-      objectReference: {fileID: 0}
-    - target: {fileID: 3759030964637342695, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6550850988543019808, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
       propertyPath: m_Name
       value: Character Template
-      objectReference: {fileID: 0}
-    - target: {fileID: 8608635199788460214, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: -3.9625874
-      objectReference: {fileID: 0}
-    - target: {fileID: 8608635199788460214, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -3.8221526
-      objectReference: {fileID: 0}
-    - target: {fileID: 8608635199788460214, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-      propertyPath: m_ConnectedRigidBody
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
