@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1ef7b4ece2cf36e4c8f91b0e4abaf172
+guid: b7897aa92629c7b46ad4db078f152397
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5095405624667749561
-    second: Scope Overlay_0
+      213: 5856208724121021330
+    second: Mouth Talk 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scope Overlay_0
+      name: Mouth Talk 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 45
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 743c62bb49b7949b0800000000000000
-      internalID: -5095405624667749561
+      spriteID: 29be6cb9ece654150800000000000000
+      internalID: 5856208724121021330
       vertices: []
       indices: 
       edges: []
@@ -146,7 +146,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Scope Overlay_0: -5095405624667749561
+      Mouth Talk 1_0: 5856208724121021330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
