@@ -9,6 +9,19 @@ public class CloseMenu : MonoBehaviour
 
     public UnityEvent ActivateViewScreen;
 
+    private void OnEnable()
+    {
+        ActivateRelatedObjects();
+    }
+
+    private void ActivateRelatedObjects()
+    {
+        for (int i = 0; i < _objectsToDeactivate.Count; i++)
+        {
+            _objectsToDeactivate[i].SetActive(true);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
