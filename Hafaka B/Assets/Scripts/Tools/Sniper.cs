@@ -20,19 +20,6 @@ public class Sniper : MonoBehaviour
             GameManager.Instance.OnCharacterClicked -= Shoot;
     }
 
-    void Start()
-    {
-        //_canvasRectTransform = _img.canvas.GetComponent<RectTransform>();
-    }
-
-    void Update()
-    {
-        //Vector2 localPoint;
-        //RectTransformUtility.ScreenPointToLocalPointInRectangle(_canvasRectTransform, Input.mousePosition, Camera.main, out localPoint);
-        //_img.rectTransform.localPosition = localPoint;
-        //_scopeCamera.transform.position = _img.rectTransform.localPosition;
-    }
-
     public void Shoot()
     {
         Debug.Log("SHOOT");
