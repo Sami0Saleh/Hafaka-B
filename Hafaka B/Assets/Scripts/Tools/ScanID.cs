@@ -9,6 +9,7 @@ public class ScanID : MonoBehaviour
     [SerializeField] TMP_Text _name;
     [SerializeField] TMP_Text _department;
     [SerializeField] TMP_Text _position;
+    [SerializeField] GameObject _viewPort;
     //[SerializeField] TMP_Text _dateOfBirth;
 
     private CharacterController _character;
@@ -47,5 +48,6 @@ public class ScanID : MonoBehaviour
     public void HideScanner()
     {
         gameObject.SetActive(false);
+        _viewPort.SetActive(true);
     }
 }
