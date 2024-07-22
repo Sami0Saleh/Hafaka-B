@@ -597,6 +597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3017037604210444081}
   - component: {fileID: 445186514350077620}
+  - component: {fileID: 541913685716365847}
   m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
@@ -646,6 +647,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &541913685716365847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001489262295533056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22929b9b82cccf74e897e0ca0201c82c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Head: {fileID: 9081217936233553366}
+  Eyes: {fileID: 2092609425272605681}
+  Nose: {fileID: 4492733999026565384}
+  Hair: {fileID: 8286802719932014968}
+  MouthClosed: {fileID: 3051137488236639164}
+  MouthOpenSmall: {fileID: 5937172856300599160}
+  MouthOpenBig: {fileID: 4960649867412100191}
+  FrontEar: {fileID: 866914228991419294}
+  BackEar: {fileID: 1347300967924673065}
+  Neck: {fileID: 7259254375695066560}
+  Body: {fileID: 3660681530676235398}
+  SholderFront: {fileID: 175376663753137637}
+  SholderBack: {fileID: 6755567195217930513}
+  ForearmFront: {fileID: 6917035916783062321}
+  ForearmBack: {fileID: 4577353039273382473}
+  KneeRight: {fileID: 5387569689194270367}
+  KneeLeft: {fileID: 8635264128500242882}
+  AnkleRight: {fileID: 769293400831155387}
+  AnkleLeft: {fileID: 4394511161510390708}
+  FootRight: {fileID: 1495477450600107264}
+  FootLeft: {fileID: 4197462472042375261}
 --- !u!1 &2113060455254020743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,7 +1669,7 @@ Transform:
   m_GameObject: {fileID: 5869687614481713905}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.7, y: -0.07, z: 0}
+  m_LocalPosition: {x: -0.7, y: -0.07, z: 1.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
