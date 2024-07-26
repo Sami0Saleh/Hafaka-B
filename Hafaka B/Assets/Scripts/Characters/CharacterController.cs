@@ -81,6 +81,11 @@ public class CharacterController : MonoBehaviour
         _isStopped = true;
     }
 
+    public void ContinueToGoal()
+    {
+        _isStopped = false;
+    }
+
     public void DisplayText()
     {
         _textBubble.gameObject.SetActive(true);

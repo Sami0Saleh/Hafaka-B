@@ -9,10 +9,12 @@ public class BobCharacterController : MonoBehaviour
     [SerializeField] Transform _startingSpot;
     [SerializeField] TextBubble _textBubble;
 
-    private bool _isDeployed = false;
+    private static bool _isDeployed = false;
     private bool _hasReachedTarget = false;
     private Vector3 _targetPosition;
     private string _textFile;
+
+    public static bool IsDeployed { get => _isDeployed; set => _isDeployed = value; }
 
     private void OnValidate()
     {
@@ -25,8 +27,8 @@ public class BobCharacterController : MonoBehaviour
     private void Update()
     {
         if (GameManager.Instance.LastSelectedCharacter == null)
-            _isDeployed = false;
-        if (_isDeployed)
+            IsDeployed = false;
+        if (IsDeployed)
             MoveToCharacter();
         else
             ReturnToStartingSpot();
@@ -35,8 +37,15 @@ public class BobCharacterController : MonoBehaviour
     private void ReturnToStartingSpot()
     {
         transform.position = Vector2.MoveTowards(transform.position, _startingSpot.position, _moveSpeed * Time.deltaTime);
-        _isDeployed = false;
+        IsDeployed = false;
         _hasReachedTarget = false;
+        HaveCharacterResumeWalking();
+    }
+
+    private static void HaveCharacterResumeWalking()
+    {
+        if (GameManager.Instance.LastSelectedCharacter == null) return;
+        GameManager.Instance.LastSelectedCharacter.ContinueToGoal();
     }
 
     private void StopSelectedCharacter()
@@ -68,7 +77,7 @@ public class BobCharacterController : MonoBehaviour
 
     public void DeployBob(TextFileHolder textFile) //call from unity events on question buttons
     {
-        _isDeployed = true;
+        IsDeployed = true;
         _textFile = textFile.TextFile.text;
         if (GameManager.Instance.LastSelectedCharacter != null)
             StopSelectedCharacter();
