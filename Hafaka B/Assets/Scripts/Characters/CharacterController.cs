@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -88,7 +89,30 @@ public class CharacterController : MonoBehaviour
 
     public void DisplayText()
     {
+        if (!_isAlien)
+            _textBubble.TextToDisplay = ProvideGoodAnswer();
+        else
+            _textBubble.TextToDisplay = ProvideBadAnswer();
         _textBubble.gameObject.SetActive(true);
+    }
+
+    private string ProvideBadAnswer()
+    {
+        if (UnityEngine.Random.Range(0, 1) > 0.5f)
+        {
+            return AmbiguousAnswer();
+        }
+        return "Bad Answer";
+    }
+
+    private string AmbiguousAnswer()
+    {
+        return "Ambiguous Answer";
+    }
+
+    private string ProvideGoodAnswer()
+    {
+        return "Good Answer";
     }
 
     public void Die()
