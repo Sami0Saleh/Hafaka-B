@@ -6,6 +6,7 @@ public class CharacterController : MonoBehaviour
 {
     [SerializeField] CharacterScriptableObject characterSO;
     [SerializeField] Transform Goal;
+    [SerializeField] TextBubble _textBubble;
 
     // variables
     private bool _isStopped = false;
@@ -37,6 +38,11 @@ public class CharacterController : MonoBehaviour
     public string Department { get => _department; private set => _department = value; }
     public string JobTitle { get => _jobTitle; private set => _jobTitle = value; }
     public string FullName { get => $"{FirstName} {LastName}"; }
+
+    private void OnValidate()
+    {
+        _textBubble = GetComponentInChildren<TextBubble>(true);
+    }
 
     void Start()
     {
@@ -73,6 +79,11 @@ public class CharacterController : MonoBehaviour
     public void Stop()
     {
         _isStopped = true;
+    }
+
+    public void DisplayText()
+    {
+        _textBubble.gameObject.SetActive(true);
     }
 
     public void Die()

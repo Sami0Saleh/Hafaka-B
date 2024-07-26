@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public static class TextMeshProExtentions
 {
-    public static IEnumerator TypeText(this TMPro.TMP_Text tmp, string fullText, float typingSpeed, float displayTime)
+    public static IEnumerator TypeText(this TMPro.TMP_Text tmp, string fullText, float typingSpeed, float displayTime, Action onComplete)
     {
         foreach (char c in fullText)
         {
@@ -12,5 +13,6 @@ public static class TextMeshProExtentions
         }
 
         yield return new WaitForSeconds(displayTime);
+        onComplete?.Invoke();
     }
 }

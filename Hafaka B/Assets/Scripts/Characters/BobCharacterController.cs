@@ -19,6 +19,7 @@ public class BobCharacterController : MonoBehaviour
         GameObject tryFindTransformObject = GameObject.Find("Starting Spot");
         if (tryFindTransformObject == null) return;
         _startingSpot = tryFindTransformObject.transform;
+        _textBubble = GetComponentInChildren<TextBubble>(true);
     }
 
     private void Update()
@@ -48,16 +49,6 @@ public class BobCharacterController : MonoBehaviour
         _textBubble.TextToDisplay = _textFile;
         _textBubble.gameObject.SetActive(true);
     }
-
-    [ContextMenu("Move Bob")]
-    public void MoveToCharacter()
-    {
-        if (_hasReachedTarget) return;
-        _targetPosition = new Vector3(GameManager.Instance.LastSelectedCharacter.transform.position.x + _positionOffsetXAxis, transform.position.y, 0);
-        transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
-        CalculateDistanceToTarget();
-    }
-
     private void CalculateDistanceToTarget()
     {
         if (MathF.Abs(_targetPosition.x - transform.position.x) <= 0.1f)
@@ -67,11 +58,25 @@ public class BobCharacterController : MonoBehaviour
         }
     }
 
+    public void MoveToCharacter()
+    {
+        if (_hasReachedTarget) return;
+        _targetPosition = new Vector3(GameManager.Instance.LastSelectedCharacter.transform.position.x + _positionOffsetXAxis, transform.position.y, 0);
+        transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
+        CalculateDistanceToTarget();
+    }
+
     public void DeployBob(TextFileHolder textFile) //call from unity events on question buttons
     {
         _isDeployed = true;
         _textFile = textFile.TextFile.text;
         if (GameManager.Instance.LastSelectedCharacter != null)
             StopSelectedCharacter();
+    }
+
+    public static void TargetStartTalking()
+    {
+        if (GameManager.Instance.LastSelectedCharacter == null) return;
+        GameManager.Instance.LastSelectedCharacter.DisplayText();
     }
 }
