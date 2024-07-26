@@ -70,8 +70,14 @@ public class CharacterController : MonoBehaviour
         }
     }
 
+    public void Stop()
+    {
+        _isStopped = true;
+    }
+
     public void Die()
     {
+        _isStopped = true;
         Debug.Log("Character " + FullName + " has died!");
         GoalRecorder.Instance.AddCharacterToListOfDead(this);
         Debug.Log(GoalRecorder.Instance.GetDeadCharacters()[0].FullName);
