@@ -2,17 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-
+using UnityEditor;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] CharacterScriptableObject characterSO;
     [SerializeField] Transform Goal;
     [SerializeField] TextBubble _textBubble;
+    [SerializeField] SerializableDictionary<AnswerType, TextAsset> _test;
 
     // variables
     private bool _isStopped = false;
     [SerializeField] private float _speed;
     private bool _isAlien;
+    private Questions _question;
 
     // visual 
     private List<GameObject> _characterSprites;
@@ -87,6 +89,33 @@ public class CharacterController : MonoBehaviour
         _isStopped = false;
     }
 
+    public void SetQuestionStr(string questionStr)
+    {
+        switch (questionStr)
+        {
+            case "Appearance":
+                _question = Questions.Appearance;
+                break;
+            case "Department":
+                _question = Questions.Department;
+                break;
+            case "Position":
+                _question = Questions.Position;
+                break;
+            case "First":
+                _question = Questions.FirstName;
+                break;
+            case "Last":
+                _question = Questions.LastName;
+                break;
+            case "Date":
+                _question = Questions.DateOfBirth;
+                break;
+            default:
+                break;
+        }
+    }
+
     public void DisplayText()
     {
         if (!_isAlien)
@@ -98,7 +127,7 @@ public class CharacterController : MonoBehaviour
 
     private string ProvideBadAnswer()
     {
-        if (UnityEngine.Random.Range(0, 1) > 0.5f)
+        if (UnityEngine.Random.Range(0, 1) > 0.9f)
         {
             return AmbiguousAnswer();
         }
@@ -123,4 +152,21 @@ public class CharacterController : MonoBehaviour
         Debug.Log(GoalRecorder.Instance.GetDeadCharacters()[0].FullName);
         Destroy(gameObject);
     }
+}
+
+enum Questions
+{
+    Appearance,
+    Department,
+    Position,
+    FirstName,
+    LastName,
+    DateOfBirth
+}
+
+public enum AnswerType
+{
+    Good,
+    Bad,
+    Ambiguous
 }

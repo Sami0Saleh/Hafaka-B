@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 2441865232328755658}
   - component: {fileID: 4523624973094485489}
   m_Layer: 0
-  m_Name: Question 2 Button
+  m_Name: Department Q. Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -641,6 +641,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestionOnSelectedCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4523624973094485489}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: CloseGuard
         m_Mode: 1
@@ -714,7 +726,7 @@ GameObject:
   - component: {fileID: 840255465099617472}
   - component: {fileID: 5079100064790427464}
   m_Layer: 0
-  m_Name: Question 3 Button
+  m_Name: Position Q. Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -830,6 +842,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8952025698513959391}
           m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestionOnSelectedCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5079100064790427464}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1132,7 +1156,7 @@ GameObject:
   - component: {fileID: 3841574487519659874}
   - component: {fileID: 7481935558367595997}
   m_Layer: 0
-  m_Name: Question 6 Button
+  m_Name: Date Q. Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1248,6 +1272,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 217807150560900211}
           m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestionOnSelectedCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7481935558367595997}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1522,7 +1558,7 @@ GameObject:
   - component: {fileID: 182493641815021531}
   - component: {fileID: 2632370145850930939}
   m_Layer: 0
-  m_Name: 'Question 5 Button '
+  m_Name: 'Last Name Q. Button '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1638,6 +1674,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8967881722307039918}
           m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestionOnSelectedCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2632370145850930939}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1912,7 +1960,7 @@ GameObject:
   - component: {fileID: 9213342144778601073}
   - component: {fileID: 489142373091425329}
   m_Layer: 0
-  m_Name: Question 1 Button
+  m_Name: Appearance Q. Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2028,6 +2076,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 7545821890071316867}
           m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestionOnSelectedCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 489142373091425329}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2335,7 +2395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2674228495561102458
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2894,7 +2954,7 @@ GameObject:
   - component: {fileID: 971549660405378909}
   - component: {fileID: 5143063042584015588}
   m_Layer: 0
-  m_Name: Question 4 Button
+  m_Name: First Name Q. Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3010,6 +3070,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 7975639059738576272}
           m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetQuestionOnSelectedCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5143063042584015588}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
