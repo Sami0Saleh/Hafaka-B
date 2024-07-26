@@ -7,11 +7,12 @@ public class BobCharacterController : MonoBehaviour
     [Tooltip("Bob will stop at character's position + this value. Negative value for stopping on the left side")]
     [SerializeField] float _positionOffsetXAxis = -1;
     [SerializeField] Transform _startingSpot;
-    [SerializeField] GameObject _textBubble;
+    [SerializeField] TextBubble _textBubble;
 
     private bool _isDeployed = false;
     private bool _hasReachedTarget = false;
     private Vector3 _targetPosition;
+    private string _textFile;
 
     private void OnValidate()
     {
@@ -44,7 +45,8 @@ public class BobCharacterController : MonoBehaviour
 
     private void DisplayText()
     {
-        _textBubble.SetActive(true);
+        _textBubble.TextToDisplay = _textFile;
+        _textBubble.gameObject.SetActive(true);
     }
 
     [ContextMenu("Move Bob")]
@@ -65,9 +67,10 @@ public class BobCharacterController : MonoBehaviour
         }
     }
 
-    public void DeployBob() //call from unity events on question buttons
+    public void DeployBob(TextFileHolder textFile) //call from unity events on question buttons
     {
         _isDeployed = true;
+        _textFile = textFile.TextFile.text;
         if (GameManager.Instance.LastSelectedCharacter != null)
             StopSelectedCharacter();
     }
