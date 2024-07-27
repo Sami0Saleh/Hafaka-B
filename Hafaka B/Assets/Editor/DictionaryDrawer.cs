@@ -8,7 +8,7 @@ public abstract class DictionaryDrawer<TK, TV> : PropertyDrawer
 {
     private SerializableDictionary<TK, TV> _Dictionary;
     private bool _Foldout;
-    private const float kButtonWidth = 18f;
+    private const float kButtonWidth = 20f;
 
     public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
     {
@@ -33,7 +33,7 @@ public abstract class DictionaryDrawer<TK, TV> : PropertyDrawer
 
         var buttonRect = position;
         buttonRect.x = position.width - kButtonWidth + position.x;
-        buttonRect.width = kButtonWidth + 2;
+        buttonRect.width = kButtonWidth;
 
         if (GUI.Button(buttonRect, new GUIContent("+", "Add item"), EditorStyles.miniButton))
         {
@@ -89,7 +89,7 @@ public abstract class DictionaryDrawer<TK, TV> : PropertyDrawer
 
             var removeRect = valueRect;
             removeRect.x = valueRect.xMax + 2;
-            removeRect.width = kButtonWidth;
+            removeRect.width = kButtonWidth - 10;
             if (GUI.Button(removeRect, new GUIContent("x", "Remove item"), EditorStyles.miniButtonRight))
             {
                 RemoveItem(key);

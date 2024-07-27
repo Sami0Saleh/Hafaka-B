@@ -2,17 +2,21 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEditor;
 public class CharacterController : MonoBehaviour
 {
-    [SerializeField] CharacterScriptableObject characterSO;
-    [SerializeField] Transform Goal;
+    [SerializeField] CharacterScriptableObject _characterSO;
+    [SerializeField] private float _speed;
+    [SerializeField] Transform _goal;
     [SerializeField] TextBubble _textBubble;
-    [SerializeField] SerializableDictionary<AnswerType, TextAsset> _test;
+    [SerializeField] SerializableDictionary<AnswerType, TextAsset> _appearanceTexts;
+    [SerializeField] SerializableDictionary<AnswerType, TextAsset> _departmentTexts;
+    [SerializeField] SerializableDictionary<AnswerType, TextAsset> _positionTexts;
+    [SerializeField] SerializableDictionary<AnswerType, TextAsset> _firstNameTexts;
+    [SerializeField] SerializableDictionary<AnswerType, TextAsset> _lastNameTexts;
+    [SerializeField] SerializableDictionary<AnswerType, TextAsset> _dateOfBirthTexts;
 
     // variables
     private bool _isStopped = false;
-    [SerializeField] private float _speed;
     private bool _isAlien;
     private Questions _question;
 
@@ -45,20 +49,61 @@ public class CharacterController : MonoBehaviour
     private void OnValidate()
     {
         _textBubble = GetComponentInChildren<TextBubble>(true);
+        if(_appearanceTexts.Count == 0)
+        {
+            _appearanceTexts.Add(AnswerType.Good, null);
+            _appearanceTexts.Add(AnswerType.Bad, null);
+            _appearanceTexts.Add(AnswerType.Ambiguous, null);
+        }
+
+        if (_departmentTexts.Count == 0)
+        {
+            _departmentTexts.Add(AnswerType.Good, null);
+            _departmentTexts.Add(AnswerType.Bad, null);
+            _departmentTexts.Add(AnswerType.Ambiguous, null);
+        }
+
+        if (_positionTexts.Count == 0)
+        {
+            _positionTexts.Add(AnswerType.Good, null);
+            _positionTexts.Add(AnswerType.Bad, null);
+            _positionTexts.Add(AnswerType.Ambiguous, null);
+        }
+
+        if (_firstNameTexts.Count == 0)
+        {
+            _firstNameTexts.Add(AnswerType.Good, null);
+            _firstNameTexts.Add(AnswerType.Bad, null);
+            _firstNameTexts.Add(AnswerType.Ambiguous, null);
+        }
+
+        if (_lastNameTexts.Count == 0)
+        {
+            _lastNameTexts.Add(AnswerType.Good, null);
+            _lastNameTexts.Add(AnswerType.Bad, null);
+            _lastNameTexts.Add(AnswerType.Ambiguous, null);
+        }
+
+        if (_dateOfBirthTexts.Count == 0)
+        {
+            _dateOfBirthTexts.Add(AnswerType.Good, null);
+            _dateOfBirthTexts.Add(AnswerType.Bad, null);
+            _dateOfBirthTexts.Add(AnswerType.Ambiguous, null);
+        }
     }
 
     void Start()
     {
-        _speed = characterSO.MoveSpeed;
-        _isAlien = characterSO.IsAlien;
-        _characterSprites = characterSO.CharacterSprites;
-        _bloodPool = characterSO.BloodPool;
+        _speed = _characterSO.MoveSpeed;
+        _isAlien = _characterSO.IsAlien;
+        _characterSprites = _characterSO.CharacterSprites;
+        _bloodPool = _characterSO.BloodPool;
 
-        IdImage = characterSO.IdImage;
-        FirstName = characterSO.FirstName;
-        LastName = characterSO.LastName;
-        Department = characterSO.Department;
-        JobTitle = characterSO.JobTitle;
+        IdImage = _characterSO.IdImage;
+        FirstName = _characterSO.FirstName;
+        LastName = _characterSO.LastName;
+        Department = _characterSO.Department;
+        JobTitle = _characterSO.JobTitle;
         
     }
 
@@ -66,7 +111,7 @@ public class CharacterController : MonoBehaviour
     {
         if (!_isStopped)
         {
-            float Direction = Mathf.Sign(Goal.position.x - transform.position.x);
+            float Direction = Mathf.Sign(_goal.position.x - transform.position.x);
             MovePos = new Vector2(
                 transform.position.x + Direction * _speed * Time.deltaTime, //MoveTowards on 1 axis
                 transform.position.y
