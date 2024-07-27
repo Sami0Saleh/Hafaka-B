@@ -176,17 +176,65 @@ public class CharacterController : MonoBehaviour
         {
             return AmbiguousAnswer();
         }
-        return "Bad Answer";
+        switch (_question)
+        {
+            case Questions.Appearance:
+                return _appearanceTexts.GetValueOrDefault(AnswerType.Bad).text;
+            case Questions.Department:
+                return _departmentTexts.GetValueOrDefault(AnswerType.Bad).text;
+            case Questions.Position:
+                return _positionTexts.GetValueOrDefault(AnswerType.Bad).text;
+            case Questions.FirstName:
+                return _firstNameTexts.GetValueOrDefault(AnswerType.Bad).text;
+            case Questions.LastName:
+                return _lastNameTexts.GetValueOrDefault(AnswerType.Bad).text;
+            case Questions.DateOfBirth:
+                return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Bad).text;
+            default:
+                return "Bad Answer";
+        }
     }
 
     private string AmbiguousAnswer()
     {
-        return "Ambiguous Answer";
+        switch (_question)
+        {
+            case Questions.Appearance:
+                return _appearanceTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
+            case Questions.Department:
+                return _departmentTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
+            case Questions.Position:
+                return _positionTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
+            case Questions.FirstName:
+                return _firstNameTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
+            case Questions.LastName:
+                return _lastNameTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
+            case Questions.DateOfBirth:
+                return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
+            default:
+                return "Ambiguous Answer";
+        }
     }
 
     private string ProvideGoodAnswer()
     {
-        return "Good Answer";
+        switch (_question)
+        {
+            case Questions.Appearance:
+                return _appearanceTexts.GetValueOrDefault(AnswerType.Good).text;
+            case Questions.Department:
+                return _departmentTexts.GetValueOrDefault(AnswerType.Good).text;
+            case Questions.Position:
+                return _positionTexts.GetValueOrDefault(AnswerType.Good).text;
+            case Questions.FirstName:
+                return _firstNameTexts.GetValueOrDefault(AnswerType.Good).text;
+            case Questions.LastName:
+                return _lastNameTexts.GetValueOrDefault(AnswerType.Good).text;
+            case Questions.DateOfBirth:
+                return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Good).text;
+            default:
+                return "Good Answer";
+        }
     }
 
     public void Die()
