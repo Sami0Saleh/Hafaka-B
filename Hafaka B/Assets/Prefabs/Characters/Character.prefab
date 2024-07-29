@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b357989a5b8441344ac25a68e2d75bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterSO: {fileID: 0}
+  _characterSO: {fileID: 11400000, guid: b07bd913970f49c4b958f4d71375ad16, type: 2}
   _speed: 0
   _goal: {fileID: 0}
   _textBubble: {fileID: 9147399101436207399}
