@@ -34,4 +34,15 @@ public class CharacterScriptableObject : ScriptableObject
     public string Department { get => _department; }
     public string JobTitle { get => _jobTitle; }
     public Sprite IdImage { get => _idImage; }
+
+    [Header("Alien Defects")]
+    #region AlienDefects
+    [SerializeField] string _buffer = "Ignore this, don't delete";
+    [field: SerializeField] public bool IsSpriteWrong { get; set; } = false;
+    [field: SerializeField] public bool IsFirstNameWrong { get; set; } = false;
+    [field: SerializeField] public bool IsLastNameWrong { get; set; } = false;
+    [field: SerializeField] public bool IsDepartmentWrong { get; set; } = false;
+    [field: SerializeField] public bool IsPositionWrong { get; set; } = false;
+    [field: SerializeField] public bool IsDateOfBirthWrong { get; set; } = false;
+    #endregion
 }

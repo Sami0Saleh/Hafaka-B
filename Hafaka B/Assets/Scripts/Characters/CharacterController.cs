@@ -8,6 +8,9 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] Transform _goal;
     [SerializeField] TextBubble _textBubble;
+
+    [Header("Text Files")]
+    [SerializeField] TextAsset _defaultText;
     [SerializeField] SerializableDictionary<AnswerType, TextAsset> _appearanceTexts;
     [SerializeField] SerializableDictionary<AnswerType, TextAsset> _departmentTexts;
     [SerializeField] SerializableDictionary<AnswerType, TextAsset> _positionTexts;
@@ -172,23 +175,29 @@ public class CharacterController : MonoBehaviour
 
     private string ProvideBadAnswer()
     {
-        if (UnityEngine.Random.Range(0, 1) > 0.9f)
+        if (UnityEngine.Random.Range(0, 1) > 0.75f)
         {
             return AmbiguousAnswer();
         }
         switch (_question)
         {
             case Questions.Appearance:
+                if (!_characterSO.IsSpriteWrong) return _defaultText.text;
                 return _appearanceTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.Department:
+                if (!_characterSO.IsDepartmentWrong) return _defaultText.text;
                 return _departmentTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.Position:
+                if (!_characterSO.IsPositionWrong) return _defaultText.text;
                 return _positionTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.FirstName:
+                if (!_characterSO.IsFirstNameWrong) return _defaultText.text;
                 return _firstNameTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.LastName:
+                if (!_characterSO.IsLastNameWrong) return _defaultText.text;
                 return _lastNameTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.DateOfBirth:
+                if (!_characterSO.IsDepartmentWrong) return _defaultText.text;
                 return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Bad).text;
             default:
                 return "Bad Answer";
@@ -218,6 +227,10 @@ public class CharacterController : MonoBehaviour
 
     private string ProvideGoodAnswer()
     {
+        if (UnityEngine.Random.Range(0, 1) > 0.9f)
+        {
+            return AmbiguousAnswer();
+        }
         switch (_question)
         {
             case Questions.Appearance:
