@@ -222,6 +222,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1182,7 +1195,50 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_0: -4039785648324804260
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_1: -5041838735466696951
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_10: 5895907551334233939
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_11: -1103216630211448736
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_12: 8594613015167232937
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_13: 1202652612458272157
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_14: -986644743248832060
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_15: 4203361663770238943
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_16: -5206786422670640427
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_17: 4744446612663131573
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_18: -6707523976813728806
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_19: 71419055151950589
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_2: -6908019515742516079
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_20: 338754908231357833
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_21: -2773210901560353829
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_22: 1996121989084548230
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_23: 3328486945297531905
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_24: -4559606071324365052
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_25: 434379732177409152
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_26: -4057506274987379329
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_27: 5557040717867008964
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_28: 5210533387688400649
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_29: -159056587208644333
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_3: 727117614331540705
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_30: -2651264207208085925
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_31: 2715958524241198958
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_32: -1385607285248744261
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_33: 5865666495621547232
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_34: 69182820598025148
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_35: -8613756320008559732
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_36: 5919402833383339687
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_37: -949866799707447161
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_38: -1925066999237132869
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_39: -5399658026415349887
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_4: -8067249159278719279
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_40: -7197890344313944268
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_41: -7941055066706856779
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_42: -964428610646105815
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_5: 9210260898391524081
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_6: 8634594924235622940
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_7: 1440465313535095769
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_8: -4604253425406982281
+      pngtree-sniper-scope-sight-view-crosshair-picture-image_8689332_9: 2038237166236797281
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

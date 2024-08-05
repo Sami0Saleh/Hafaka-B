@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2ee6bf45a22499d4d97734e54a539f23
+guid: af036e58c2c617a4e9dfa069d26bef4d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5877103912400527163
-    second: png-transparent-reticle-illustration-telescopic-sight-reticle-optics-scopes-miscellaneous-sniper-rim_0
+      213: -1420974369826819132
+    second: b0cd3d55587a3b96e4471820af0b0137_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: png-transparent-reticle-illustration-telescopic-sight-reticle-optics-scopes-miscellaneous-sniper-rim_0
+      name: b0cd3d55587a3b96e4471820af0b0137_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 920
-        height: 920
+        width: 735
+        height: 490
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c0ee414125507ea0800000000000000
-      internalID: -5877103912400527163
+      spriteID: 4c3b98bd65fa74ce0800000000000000
+      internalID: -1420974369826819132
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      png-transparent-reticle-illustration-telescopic-sight-reticle-optics-scopes-miscellaneous-sniper-rim_0: -5877103912400527163
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
