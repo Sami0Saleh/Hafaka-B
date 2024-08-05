@@ -244,6 +244,7 @@ MonoBehaviour:
   _speed: 0
   _goal: {fileID: 0}
   _textBubble: {fileID: 9147399101436207399}
+  _defaultText: {fileID: 4900000, guid: a67ed462ec7b491418225f5fa24a566e, type: 3}
   _appearanceTexts:
     keys: 020000000100000000000000
     values:

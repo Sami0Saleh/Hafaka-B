@@ -2689,22 +2689,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1270272761658779867, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
-      propertyPath: m_Size.x
-      value: 2.580285
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270272761658779867, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.81831455
-      objectReference: {fileID: 0}
-    - target: {fileID: 1382017083335642327, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 2883315210462569942, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
-      propertyPath: _scrollers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2883315210462569942, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: '_scrollers.Array.data[0]'
       value: 
@@ -2756,10 +2740,6 @@ PrefabInstance:
     - target: {fileID: 5848110641332042780, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7099974375102135849, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
-      propertyPath: _scrollers.Array.size
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7099974375102135849, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: '_scrollers.Array.data[0]'
@@ -5580,10 +5560,6 @@ PrefabInstance:
     - target: {fileID: 7716487322249704203, guid: 5145cabd1cf796444af44c12a1bbb24a, type: 3}
       propertyPath: m_Name
       value: Guard Screen
-      objectReference: {fileID: 0}
-    - target: {fileID: 7716487322249704203, guid: 5145cabd1cf796444af44c12a1bbb24a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8481140249937103833, guid: 5145cabd1cf796444af44c12a1bbb24a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
