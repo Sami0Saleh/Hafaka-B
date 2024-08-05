@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,5 +35,11 @@ public class GameManager : MonoBehaviour
     {
         LastSelectedCharacter = null;
         OnCharacterUnassignment?.Invoke();
+    }
+
+    public void SetQuestionOnSelectedCharacter(Button button)
+    {
+        if (LastSelectedCharacter == null) return;
+        LastSelectedCharacter.SetQuestionStr(button.name.Split()[0]);
     }
 }

@@ -17,7 +17,7 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] Sprite _idImage;
     [SerializeField] string _firstName;
     [SerializeField] string _lastName;
-    [SerializeField] string _gender;
+    [SerializeField] Genders _gender;
     [SerializeField] string _dateOfBirth;
     [SerializeField] string _department;
     [SerializeField] string _jobTitle;
@@ -29,9 +29,27 @@ public class CharacterScriptableObject : ScriptableObject
     public Sprite BloodPool { get => _bloodPool; }
     public string FirstName { get => _firstName; }
     public string LastName { get => _lastName; }
-    public string Gender { get => _gender;  }
+    public Genders Gender { get => _gender;  }
     public string DateOfBirth { get => _dateOfBirth; }
     public string Department { get => _department; }
     public string JobTitle { get => _jobTitle; }
     public Sprite IdImage { get => _idImage; }
+
+    [Header("Alien Defects")]
+    #region AlienDefects
+    [SerializeField] string _buffer = "Ignore this, don't delete";
+    [field: SerializeField] public bool IsSpriteWrong { get; set; } = false;
+    [field: SerializeField] public bool IsFirstNameWrong { get; set; } = false;
+    [field: SerializeField] public bool IsLastNameWrong { get; set; } = false;
+    [field: SerializeField] public bool IsDepartmentWrong { get; set; } = false;
+    [field: SerializeField] public bool IsPositionWrong { get; set; } = false;
+    [field: SerializeField] public bool IsDateOfBirthWrong { get; set; } = false;
+    #endregion
+}
+
+public enum Genders
+{
+    Male,
+    Female,
+    NonBinary
 }
