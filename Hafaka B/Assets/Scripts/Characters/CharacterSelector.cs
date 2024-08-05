@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterSelector : MonoBehaviour
 {
+    [SerializeField] Image _indicatorImage;
+
     CharacterController _thisCharacter;
     private Ray ray;
     private RaycastHit2D hit;
@@ -10,6 +13,7 @@ public class CharacterSelector : MonoBehaviour
     {
         if (!TryGetComponent(out _thisCharacter))
             _thisCharacter = gameObject.AddComponent(typeof(CharacterController)) as CharacterController;
+        DeactivateIndicator();
     }
 
     private void OnMouseDown()
@@ -21,6 +25,17 @@ public class CharacterSelector : MonoBehaviour
         {
             hit.collider.TryGetComponent(out _thisCharacter);
             GameManager.Instance.SetSelectedCharacter(_thisCharacter);
+            ActivateIndicator();
         }
+    }
+
+    private void ActivateIndicator()
+    {
+        _indicatorImage.gameObject.SetActive(true);
+    }
+
+    public void DeactivateIndicator()
+    {
+        _indicatorImage.gameObject.SetActive(false);
     }
 }

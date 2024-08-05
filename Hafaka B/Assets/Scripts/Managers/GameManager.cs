@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
     {
         if (chr == null)
             return;
+        if(LastSelectedCharacter != null)
+        {
+            LastSelectedCharacter.GetComponent<CharacterSelector>().DeactivateIndicator();
+        }
         LastSelectedCharacter = chr;
         OnCharacterClicked?.Invoke();
     }
