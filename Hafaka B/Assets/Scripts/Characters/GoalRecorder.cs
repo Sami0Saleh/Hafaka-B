@@ -8,9 +8,11 @@ public class GoalRecorder : MonoBehaviour
     private List<CharacterController> _charactersWhoReachedGoal = new List<CharacterController>();
     private List<CharacterController> _deadCharacters = new List<CharacterController>();
 
+    private int _finishedCharacters = 0;
     public int NumberOfHumans { get => _charactersWhoReachedGoal.Where(human => human.IsAlien == false).Count(); }
     public int NumberOfAliens { get => _charactersWhoReachedGoal.Where(human => human.IsAlien == true).Count(); }
     public static GoalRecorder Instance { get; private set; }
+    public int FinishedCharacters { get => _finishedCharacters; set => _finishedCharacters = value; }
 
     private void Awake()
     {
@@ -36,12 +38,14 @@ public class GoalRecorder : MonoBehaviour
         if (_cc == GameManager.Instance.LastSelectedCharacter)
             GameManager.Instance.UnassignSelectedCharacter();
         Destroy(collision.gameObject);
+        FinishedCharacters++;
     }
 
     public void AddCharacterToListOfDead(CharacterController cc)
     {
         CharacterController temp = cc;
         _deadCharacters.Add(temp);
+        FinishedCharacters++;
     }
 
     public List<CharacterController> GetDeadCharacters()

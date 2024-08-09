@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterSpawner : MonoBehaviour
 {
+    private int _spawnCount = 0;
     [SerializeField] List<CharacterScriptableObject> _allCharacters;
     [SerializeField] GameObject _characterPrefab;
     [SerializeField] int _minExpectedWorkers = 2;
@@ -12,6 +13,8 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] Transform _lastGoal;
 
     private List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
+
+    public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
 
     void Start()
     {
@@ -33,6 +36,7 @@ public class CharacterSpawner : MonoBehaviour
             workersPool.RemoveAt(randomIndex);
         }
     }
+
 
     private IEnumerator SpawnCharactersCoroutine(int numberOfExpectedWorkers)
     {
@@ -65,5 +69,6 @@ public class CharacterSpawner : MonoBehaviour
 
         // Set the last goal for the character
         characterController.SetGoal(_lastGoal);
+        SpawnCount++;
     }
 }

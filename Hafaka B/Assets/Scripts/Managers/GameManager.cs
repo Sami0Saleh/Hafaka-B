@@ -5,7 +5,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] CharacterController _lastSelectedCharacter;
-
+    [SerializeField] CharacterSpawner spawner;
+    [SerializeField] GoalRecorder goalRecorder;
     public static GameManager Instance { get; private set; }
     public CharacterController LastSelectedCharacter { get => _lastSelectedCharacter; private set => _lastSelectedCharacter = value; }
 
@@ -21,6 +22,11 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
+    }
+
+    private void Update()
+    {
+        EndGame();
     }
 
     public void SetSelectedCharacter(CharacterController chr)
@@ -45,5 +51,13 @@ public class GameManager : MonoBehaviour
     {
         if (LastSelectedCharacter == null) return;
         LastSelectedCharacter.SetQuestionStr(button.name.Split()[0]);
+    }
+
+    public void EndGame()
+    {
+        if (goalRecorder.FinishedCharacters == spawner.SpawnCount)
+        {
+            Debug.Log("Game Over");
+        }
     }
 }
