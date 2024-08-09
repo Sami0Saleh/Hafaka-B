@@ -6,8 +6,9 @@ public class CharacterController : MonoBehaviour
 {
     [SerializeField] CharacterScriptableObject _characterSO;
     [SerializeField] private float _speed;
-    [SerializeField] Transform _goal;
     [SerializeField] TextBubble _textBubble;
+    private Transform _goal;
+
 
     [Header("Text Files")]
     [SerializeField] TextAsset _defaultText;
@@ -250,6 +251,11 @@ public class CharacterController : MonoBehaviour
         }
     }
 
+    public void SetGoal(Transform goal)
+    {
+        _goal = goal;
+    }
+
     public void Die()
     {
         _isStopped = true;
@@ -257,6 +263,36 @@ public class CharacterController : MonoBehaviour
         GoalRecorder.Instance.AddCharacterToListOfDead(this);
         Debug.Log(GoalRecorder.Instance.GetDeadCharacters()[0].FullName);
         Destroy(gameObject);
+    }
+
+    public void Init(CharacterScriptableObject characterSO)
+    {
+        _characterSO = characterSO;
+
+        // Initialize movement and visual fields
+        _speed = _characterSO.MoveSpeed;
+        _characterSprites = _characterSO.CharacterSprites;
+        _animator = _characterSO.Animator;
+        _bloodPool = _characterSO.BloodPool;
+
+        // Initialize identity fields
+        _idImage = _characterSO.IdImage;
+        _firstName = _characterSO.FirstName;
+        _lastName = _characterSO.LastName;
+        _gender = _characterSO.Gender.ToString();
+        _department = _characterSO.Department;
+        _jobTitle = _characterSO.JobTitle;
+
+        // Initialize alien-specific fields
+        _isAlien = _characterSO.IsAlien;
+
+        // You can also initialize alien defects if needed:
+        // _isSpriteWrong = _characterSO.IsSpriteWrong;
+        // _isFirstNameWrong = _characterSO.IsFirstNameWrong;
+        // _isLastNameWrong = _characterSO.IsLastNameWrong;
+        // _isDepartmentWrong = _characterSO.IsDepartmentWrong;
+        // _isPositionWrong = _characterSO.IsPositionWrong;
+        // _isDateOfBirthWrong = _characterSO.IsDateOfBirthWrong;
     }
 }
 

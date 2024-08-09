@@ -22,7 +22,11 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] string _department;
     [SerializeField] string _jobTitle;
 
+    [Header("Character Type")]
+    [SerializeField] private bool _isExpectedWorker;
+    
     public float MoveSpeed { get => _moveSpeed; }
+    public bool IsExpectedWorker { get => _isExpectedWorker; }
     public bool IsAlien { get => _isAlien; }
     public List<GameObject> CharacterSprites { get => _characterSprites; }
     public Animator Animator { get => _animator; }
