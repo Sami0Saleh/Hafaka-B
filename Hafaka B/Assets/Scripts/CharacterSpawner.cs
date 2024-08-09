@@ -9,7 +9,7 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] int _minExpectedWorkers = 2;
     [SerializeField] int _maxExpectedWorkers = 4;
     [SerializeField] ExpectedListUI _expectedListUI;
-    [SerializeField] Transform _lastGoal;  // Assign this in the inspector to set the last goal position
+    [SerializeField] Transform _lastGoal;
 
     private List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
 
@@ -39,7 +39,7 @@ public class CharacterSpawner : MonoBehaviour
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
             SpawnCharacter(_expectedWorkers[i]);
-            yield return new WaitForSeconds(5f);  // Wait for 5 seconds before spawning the next worker
+            yield return new WaitForSeconds(5f);
         }
 
         // Optionally spawn additional aliens or unexpected workers
@@ -49,7 +49,7 @@ public class CharacterSpawner : MonoBehaviour
             int randomIndex = Random.Range(0, _allCharacters.Count);
             CharacterScriptableObject randomCharacter = _allCharacters[randomIndex];
             SpawnCharacter(randomCharacter);
-            yield return new WaitForSeconds(5f);  // Wait for 5 seconds before spawning the next character
+            yield return new WaitForSeconds(5f);
         }
     }
 

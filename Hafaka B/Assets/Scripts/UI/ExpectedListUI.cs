@@ -19,7 +19,7 @@ public class ExpectedListUI : MonoBehaviour
         foreach (CharacterScriptableObject worker in expectedWorkers)
         {
             Text workerText = Instantiate(_textPrefab, _expectedListContainer.transform);
-            workerText.text = $"{worker.FirstName} {worker.LastName} - {worker.JobTitle}";
+            workerText.text = $"{worker.FirstName} {worker.LastName} - {worker.JobTitle}\n";
         }
     }
 }
