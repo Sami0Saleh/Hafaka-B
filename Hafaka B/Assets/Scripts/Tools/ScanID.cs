@@ -10,7 +10,7 @@ public class ScanID : MonoBehaviour
     [SerializeField] TMP_Text _department;
     [SerializeField] TMP_Text _position;
     [SerializeField] GameObject _viewPort;
-    //[SerializeField] TMP_Text _dateOfBirth;
+    [SerializeField] TMP_Text _dateOfBirth;
 
     private CharacterController _character;
 
@@ -42,7 +42,7 @@ public class ScanID : MonoBehaviour
         _name.text = $"{_character.FirstName} {_character.LastName}";
         _department.text = _character.Department;
         _position.text = _character.JobTitle;
-        //_dateOfBirth.text = _character.
+        _dateOfBirth.text = _character.DateOfBirth;
     }
 
     public void HideScanner()

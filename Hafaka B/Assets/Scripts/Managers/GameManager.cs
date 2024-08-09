@@ -24,10 +24,6 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    private void Update()
-    {
-        EndGame();
-    }
 
     public void SetSelectedCharacter(CharacterController chr)
     {

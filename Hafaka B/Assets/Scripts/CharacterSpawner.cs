@@ -6,13 +6,15 @@ public class CharacterSpawner : MonoBehaviour
 {
     private int _spawnCount = 0;
     [SerializeField] List<CharacterScriptableObject> _allCharacters;
+    [SerializeField] List<CharacterScriptableObject> _workers;
     [SerializeField] GameObject _characterPrefab;
     [SerializeField] int _minExpectedWorkers = 2;
     [SerializeField] int _maxExpectedWorkers = 4;
     [SerializeField] ExpectedListUI _expectedListUI;
     [SerializeField] Transform _lastGoal;
 
-    private List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
+    public List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
+    private float _secondsToWait;
 
     public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
 
@@ -26,7 +28,7 @@ public class CharacterSpawner : MonoBehaviour
 
     private void SelectExpectedWorkers(int numberOfExpectedWorkers)
     {
-        List<CharacterScriptableObject> workersPool = new List<CharacterScriptableObject>(_allCharacters.FindAll(c => !c.IsAlien));
+        List<CharacterScriptableObject> workersPool = new List<CharacterScriptableObject>(_workers);
 
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
@@ -40,20 +42,16 @@ public class CharacterSpawner : MonoBehaviour
 
     private IEnumerator SpawnCharactersCoroutine(int numberOfExpectedWorkers)
     {
+        List<CharacterScriptableObject> spawnPool = new List<CharacterScriptableObject>(_allCharacters);
+
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
-            SpawnCharacter(_expectedWorkers[i]);
-            yield return new WaitForSeconds(5f);
-        }
-
-        // Optionally spawn additional aliens or unexpected workers
-        int additionalCharacters = Random.Range(2, 5);
-        for (int i = 0; i < additionalCharacters; i++)
-        {
-            int randomIndex = Random.Range(0, _allCharacters.Count);
-            CharacterScriptableObject randomCharacter = _allCharacters[randomIndex];
+            int randomIndex = Random.Range(0, spawnPool.Count);
+            CharacterScriptableObject randomCharacter = spawnPool[randomIndex];
             SpawnCharacter(randomCharacter);
-            yield return new WaitForSeconds(5f);
+            spawnPool.RemoveAt(randomIndex);
+            _secondsToWait = Random.Range(5f, 7f);
+            yield return new WaitForSeconds(_secondsToWait);
         }
     }
 

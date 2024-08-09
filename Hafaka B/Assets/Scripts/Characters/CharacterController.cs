@@ -38,6 +38,7 @@ public class CharacterController : MonoBehaviour
     private string _lastName;
     private string _department;
     private string _jobTitle;
+    private string _dateOfBirth;
 
     private Vector2 MovePos;
 
@@ -49,6 +50,7 @@ public class CharacterController : MonoBehaviour
     public string Department { get => _department; private set => _department = value; }
     public string JobTitle { get => _jobTitle; private set => _jobTitle = value; }
     public string FullName { get => $"{FirstName} {LastName}"; }
+    public string DateOfBirth { get => _dateOfBirth; private set => _dateOfBirth = value; }
 
     private void OnValidate()
     {
@@ -108,6 +110,7 @@ public class CharacterController : MonoBehaviour
         LastName = _characterSO.LastName;
         Department = _characterSO.Department;
         JobTitle = _characterSO.JobTitle;
+        DateOfBirth = _characterSO.DateOfBirth;
         
     }
 

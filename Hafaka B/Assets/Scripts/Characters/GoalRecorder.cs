@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GoalRecorder : MonoBehaviour
 {
+  
     private CharacterController _cc;
     private List<CharacterController> _charactersWhoReachedGoal = new List<CharacterController>();
     private List<CharacterController> _deadCharacters = new List<CharacterController>();
@@ -11,6 +12,8 @@ public class GoalRecorder : MonoBehaviour
     private int _finishedCharacters = 0;
     public int NumberOfHumans { get => _charactersWhoReachedGoal.Where(human => human.IsAlien == false).Count(); }
     public int NumberOfAliens { get => _charactersWhoReachedGoal.Where(human => human.IsAlien == true).Count(); }
+    public int NumberOfDeadHumans { get => _deadCharacters.Where(human => human.IsAlien == false).Count(); }
+    public int NumberOfDeadAliens { get => _deadCharacters.Where(human => human.IsAlien == true).Count(); }
     public static GoalRecorder Instance { get; private set; }
     public int FinishedCharacters { get => _finishedCharacters; set => _finishedCharacters = value; }
 
@@ -39,13 +42,20 @@ public class GoalRecorder : MonoBehaviour
             GameManager.Instance.UnassignSelectedCharacter();
         Destroy(collision.gameObject);
         FinishedCharacters++;
+        GameManager.Instance.EndGame();
     }
 
     public void AddCharacterToListOfDead(CharacterController cc)
     {
         CharacterController temp = cc;
         _deadCharacters.Add(temp);
+        foreach (var character in _deadCharacters)
+        {
+            Debug.Log("Number of dead humans: " + NumberOfDeadHumans);
+            Debug.Log("Number of dead aliens: " + NumberOfDeadAliens);
+        }
         FinishedCharacters++;
+        GameManager.Instance.EndGame();
     }
 
     public List<CharacterController> GetDeadCharacters()
