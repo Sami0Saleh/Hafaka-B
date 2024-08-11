@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 
     public void OpenWorkersList()
     {
+        if (GameManager.Instance.IsGameOver) return;
         _viewScreen.SetActive(false);
         _workersListScreen.SetActive(true);
     }
@@ -20,6 +21,7 @@ public class UIManager : MonoBehaviour
     }
     public void OpenScanner()
     {
+        if (GameManager.Instance.IsGameOver) return;
         _viewScreen.SetActive(false);
         _scannerScreen.SetActive(true);
     }
@@ -30,6 +32,7 @@ public class UIManager : MonoBehaviour
     }
     public void OpenGuard()
     {
+        if (GameManager.Instance.IsGameOver) return;
         _viewScreen.SetActive(false);
         _guardScreen.SetActive(true);
     }
@@ -40,6 +43,7 @@ public class UIManager : MonoBehaviour
     }
     public void OpenSniper()
     {
+        if (GameManager.Instance.IsGameOver) return;
         _viewScreen.SetActive(false);
         _sniperScreen.SetActive(true);
     }
@@ -50,10 +54,19 @@ public class UIManager : MonoBehaviour
     }
     public void OpenList(GameObject panel)
     {
+        if (GameManager.Instance.IsGameOver) return;
         panel.SetActive(true);
     }
     public void CloseList(GameObject panel)
     {
         panel.SetActive(false);
+    }
+
+    public void CloseAll()
+    {
+        CloseSniper();
+        CloseGuard();
+        CloseScanner();
+        CloseWorkersList();
     }
 }

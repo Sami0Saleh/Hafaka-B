@@ -16,6 +16,7 @@ public class CharacterSpawner : MonoBehaviour
     public List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
     private float _secondsToWait;
 
+    public int CharacterCount { get { return _expectedWorkers.Count; } }
     public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
 
     void Start()

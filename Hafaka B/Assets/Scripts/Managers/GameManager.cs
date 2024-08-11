@@ -7,8 +7,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] CharacterController _lastSelectedCharacter;
     [SerializeField] CharacterSpawner spawner;
     [SerializeField] GoalRecorder goalRecorder;
+    [SerializeField] ScoreScreen _scoreScreen;
     public static GameManager Instance { get; private set; }
     public CharacterController LastSelectedCharacter { get => _lastSelectedCharacter; private set => _lastSelectedCharacter = value; }
+    public bool IsGameOver { get; private set; } = false;
 
     public event Action OnCharacterUnassignment;
     public event Action OnCharacterClicked;
@@ -54,6 +56,8 @@ public class GameManager : MonoBehaviour
         if (goalRecorder.FinishedCharacters == spawner.SpawnCount)
         {
             Debug.Log("Game Over");
+            IsGameOver = true;
+            _scoreScreen.gameObject.SetActive(true);
         }
     }
 }
