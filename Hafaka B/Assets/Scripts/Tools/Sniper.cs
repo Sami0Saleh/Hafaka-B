@@ -7,6 +7,7 @@ public class Sniper : MonoBehaviour
     [SerializeField] private CameraZoom _scopeCamera;
 
     private RectTransform _canvasRectTransform;
+    private bool _canSnipe = true;
 
     private void OnEnable()
     {
@@ -24,9 +25,16 @@ public class Sniper : MonoBehaviour
 
     public void Shoot()
     {
+        if (!_canSnipe) return;
         Debug.Log("SHOOT");
         if (GameManager.Instance.LastSelectedCharacter == null)
             return;
         GameManager.Instance.LastSelectedCharacter.Die();
+        _canSnipe = false;
+    }
+
+    public void Reload()
+    {
+        _canSnipe = true;
     }
 }
