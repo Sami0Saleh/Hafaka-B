@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -7,6 +9,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject _scannerScreen;
     [SerializeField] GameObject _guardScreen;
     [SerializeField] GameObject _sniperScreen;
+    [SerializeField] List<Button> _buttons; 
 
     public void OpenWorkersList()
     {
@@ -68,5 +71,14 @@ public class UIManager : MonoBehaviour
         CloseGuard();
         CloseScanner();
         CloseWorkersList();
+        DeactivateAllButtons();
+    }
+
+    private void DeactivateAllButtons()
+    {
+        foreach (var button in _buttons)
+        {
+            button.interactable = false;
+        }
     }
 }

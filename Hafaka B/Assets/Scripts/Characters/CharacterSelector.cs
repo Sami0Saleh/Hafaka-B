@@ -31,7 +31,8 @@ public class CharacterSelector : MonoBehaviour
 
     private void ActivateIndicator()
     {
-        if(GameObject.Find("Sniper Screen").activeSelf)
+        GameObject snipeObject = GameObject.Find("Sniper Screen");
+        if (snipeObject != null && snipeObject.activeSelf)
         {
             Debug.Log("Sniping");
             return;

@@ -23,6 +23,14 @@ public class Sniper : MonoBehaviour
         _scopeCamera.ZoomOut();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Reload();
+        }
+    }
+
     public void Shoot()
     {
         if (!_canSnipe) return;
