@@ -16,15 +16,16 @@ public class CharacterSpawner : MonoBehaviour
     public List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
     private float _secondsToWait;
 
-    public int CharacterCount { get { return _expectedWorkers.Count; } }
+    public int CharacterCount { get; private set; }
     public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
 
     void Start()
     {
-        int numberOfExpectedWorkers = Random.Range(_minExpectedWorkers, _maxExpectedWorkers + 1);
-        SelectExpectedWorkers(numberOfExpectedWorkers);
+        CharacterCount = Random.Range(_minExpectedWorkers, _maxExpectedWorkers + 1);
+        Debug.Log("will spawn " + CharacterCount);
+        SelectExpectedWorkers(CharacterCount);
         _expectedListUI.UpdateExpectedList(_expectedWorkers); // Update the UI
-        StartCoroutine(SpawnCharactersCoroutine(numberOfExpectedWorkers));
+        StartCoroutine(SpawnCharactersCoroutine(CharacterCount));
     }
 
     private void SelectExpectedWorkers(int numberOfExpectedWorkers)

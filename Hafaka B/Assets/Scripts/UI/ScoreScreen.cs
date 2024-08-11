@@ -22,7 +22,7 @@ public class ScoreScreen : MonoBehaviour
     private string RankCalculator()
     {
         int score = 6;
-        score -= GoalRecorder.Instance.NumberOfDeadAliens;
+        score -= GoalRecorder.Instance.NumberOfDeadHumans;
         score -= GoalRecorder.Instance.NumberOfAliens;
         switch (score)
         {

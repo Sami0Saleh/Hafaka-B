@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        if (goalRecorder.FinishedCharacters == spawner.SpawnCount)
+        if (goalRecorder.FinishedCharacters >= spawner.CharacterCount)
         {
             Debug.Log("Game Over");
             IsGameOver = true;
