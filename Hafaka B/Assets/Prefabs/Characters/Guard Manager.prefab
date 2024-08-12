@@ -347,25 +347,7 @@ MonoBehaviour:
   _positionOffsetXAxis: -2
   _startingSpot: {fileID: 0}
   _textBubble: {fileID: 7488862681604902501}
-  _allSprites:
-  - {fileID: 3183834476581931240}
-  - {fileID: 200017343768106200}
-  - {fileID: 3169049128207975662}
-  - {fileID: 8042205331757312461}
-  - {fileID: 8345793530553406198}
-  - {fileID: 3204325087654965170}
-  - {fileID: 4719447439448255049}
-  - {fileID: 2900180817273252153}
-  - {fileID: 3872595608924345}
-  - {fileID: 2540122824423494497}
-  - {fileID: 4499058024950894807}
-  - {fileID: 7727790912847604017}
-  - {fileID: 6633916871830360592}
-  - {fileID: 2087335796231611523}
-  - {fileID: 4978161872147886763}
-  - {fileID: 2467298946251674289}
-  - {fileID: 6051899137029322236}
-  - {fileID: 7237243780032758758}
+  Graphics: {fileID: 0}
 --- !u!1 &1378387226474127612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8777306020660293951
 Transform:
   m_ObjectHideFlags: 0
@@ -2513,7 +2495,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.14999999, y: 0.14999999, z: 0.14999999}
+  m_LocalScale: {x: -0.14999999, y: 0.14999999, z: 0.14999999}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4033455588606487376}

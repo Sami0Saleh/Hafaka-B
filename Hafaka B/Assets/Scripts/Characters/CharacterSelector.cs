@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class CharacterSelector : MonoBehaviour
 {
-    [SerializeField] Image _indicatorImage;
+    [SerializeField] SpriteRenderer _indicatorImage;
 
     CharacterController _thisCharacter;
     private Ray ray;

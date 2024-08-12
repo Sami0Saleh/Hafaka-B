@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
     [SerializeField] CharacterScriptableObject _characterSO;
+    [SerializeField] SkinController _skin;
     [SerializeField] private float _speed;
     [SerializeField] TextBubble _textBubble;
     private Transform _goal;
@@ -268,10 +269,11 @@ public class CharacterController : MonoBehaviour
         Destroy(gameObject);
     }
 
+    [ContextMenu("init")]
     public void Init(CharacterScriptableObject characterSO)
     {
         _characterSO = characterSO;
-
+        _skin.SetSkin(_characterSO._material, _characterSO.Head, _characterSO.Eyes, _characterSO.Nose, _characterSO.Hair, _characterSO.MouthClosed, _characterSO.MouthOpenSmall, _characterSO.MouthOpenBig, _characterSO.FrontEar, _characterSO.BackEar, _characterSO.Neck, _characterSO.Body, _characterSO.SholderFront, _characterSO.SholderBack, _characterSO.ForearmFront, _characterSO.ForearmBack, _characterSO.KneeRight, _characterSO.KneeLeft, _characterSO.AnkleRight, _characterSO.AnkleLeft, _characterSO.FootRight, _characterSO.FootLeft); ;
         // Initialize movement and visual fields
         _speed = _characterSO.MoveSpeed;
         _characterSprites = _characterSO.CharacterSprites;

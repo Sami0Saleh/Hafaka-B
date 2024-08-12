@@ -12,6 +12,32 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] List<GameObject> _characterSprites;
     [SerializeField] Animator _animator;
     [SerializeField] Sprite _bloodPool;
+    [SerializeField] public Material _material;
+
+    [Header("Head Renderers")]
+    [SerializeField] public Sprite Head;
+    [SerializeField] public Sprite Eyes;
+    [SerializeField] public Sprite Nose;
+    [SerializeField] public Sprite Hair;
+    [SerializeField] public Sprite MouthClosed;
+    [SerializeField] public Sprite MouthOpenSmall;
+    [SerializeField] public Sprite MouthOpenBig;
+    [SerializeField] public Sprite FrontEar;
+    [SerializeField] public Sprite BackEar;
+    [SerializeField] public Sprite Neck;
+
+    [Header("Body Renderers")]
+    [SerializeField] public Sprite Body;
+    [SerializeField] public Sprite SholderFront;
+    [SerializeField] public Sprite SholderBack;
+    [SerializeField] public Sprite ForearmFront;
+    [SerializeField] public Sprite ForearmBack;
+    [SerializeField] public Sprite KneeRight;
+    [SerializeField] public Sprite KneeLeft;
+    [SerializeField] public Sprite AnkleRight;
+    [SerializeField] public Sprite AnkleLeft;
+    [SerializeField] public Sprite FootRight;
+    [SerializeField] public Sprite FootLeft;
 
     [Header("ID")]
     [SerializeField] Sprite _idImage;
