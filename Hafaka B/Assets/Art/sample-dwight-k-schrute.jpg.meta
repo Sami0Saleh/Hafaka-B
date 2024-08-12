@@ -145,7 +145,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sample-dwight-k-schrute_0: 7447593310273989443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

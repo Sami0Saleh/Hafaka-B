@@ -12,32 +12,43 @@ public class ScoreScreen : MonoBehaviour
 
     private void OnEnable()
     {
+        UdateUITexts();
+        CloseOtherUI();
+    }
+
+    private void CloseOtherUI()
+    {
+        _uiManager.CloseAll();
+    }
+
+    private void UdateUITexts()
+    {
         _aliensKilledText.text = GoalRecorder.Instance.NumberOfDeadAliens.ToString();
         _humansKilledText.text = GoalRecorder.Instance.NumberOfDeadHumans.ToString();
         _aliensAliveText.text = GoalRecorder.Instance.NumberOfAliens.ToString();
         _rankText.text = RankCalculator();
-        _uiManager.CloseAll();
     }
 
     private string RankCalculator()
     {
-        int score = 6;
+        int score = 8;
         score -= GoalRecorder.Instance.NumberOfDeadHumans;
         score -= GoalRecorder.Instance.NumberOfAliens;
         switch (score)
         {
-            case 6:
+            case 8:
                 return "S";
-            case 5:
+            case 7:
                 return "A";
-            case 4:
+            case 6:
+            case 5:
                 return "B";
+            case 4:
             case 3:
                 return "C";
             case 2:
-                return "C";
-            case 1:
                 return "D";
+            case 1:
             case 0:
                 return "F";
             default:

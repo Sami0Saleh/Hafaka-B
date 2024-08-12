@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BobCharacterController : MonoBehaviour
@@ -8,8 +10,10 @@ public class BobCharacterController : MonoBehaviour
     [SerializeField] float _positionOffsetXAxis = -1;
     [SerializeField] Transform _startingSpot;
     [SerializeField] TextBubble _textBubble;
+    [SerializeField] List<SpriteRenderer> _allSprites;
 
     private static bool _isDeployed = false;
+    private static bool _isAtStart = true;
     private bool _hasReachedTarget = false;
     private Vector3 _targetPosition;
     private string _textFile;
@@ -22,6 +26,7 @@ public class BobCharacterController : MonoBehaviour
         if (tryFindTransformObject == null) return;
         _startingSpot = tryFindTransformObject.transform;
         _textBubble = GetComponentInChildren<TextBubble>(true);
+        _allSprites = GetComponentsInChildren<SpriteRenderer>().ToList();
     }
 
     private void Update()
@@ -40,6 +45,11 @@ public class BobCharacterController : MonoBehaviour
         IsDeployed = false;
         _hasReachedTarget = false;
         HaveCharacterResumeWalking();
+        if (!_isAtStart && MathF.Abs(_startingSpot.position.x - transform.position.x) <= 0.1f)
+        {
+            FlipCharacter();
+            _isAtStart = true;
+        }
     }
 
     private static void HaveCharacterResumeWalking()
@@ -62,14 +72,25 @@ public class BobCharacterController : MonoBehaviour
     {
         if (MathF.Abs(_targetPosition.x - transform.position.x) <= 0.1f)
         {
+            FlipCharacter();
             DisplayText();
             _hasReachedTarget = true;
+        }
+    }
+
+    [ContextMenu("Flip")]
+    private void FlipCharacter()
+    {
+        foreach (var sprite in _allSprites)
+        {
+            sprite.flipX = !sprite.flipX;
         }
     }
 
     public void MoveToCharacter()
     {
         if (_hasReachedTarget) return;
+        _isAtStart = false;
         _targetPosition = new Vector3(GameManager.Instance.LastSelectedCharacter.transform.position.x + _positionOffsetXAxis, transform.position.y, 0);
         transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
         CalculateDistanceToTarget();
