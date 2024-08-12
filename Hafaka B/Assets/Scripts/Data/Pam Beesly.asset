@@ -45,7 +45,7 @@ MonoBehaviour:
   _gender: 1
   id: 6
   _dateOfBirth: 14.02.85
-  _department: Department
+  _department: Sales
   _jobTitle: Secretary
   _keyFeatures: 
   _isExpectedWorker: 0
