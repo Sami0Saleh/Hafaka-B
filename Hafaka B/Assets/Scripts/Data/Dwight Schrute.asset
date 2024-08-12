@@ -10,20 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
-  m_Name: g
+  m_Name: Dwight Schrute
   m_EditorClassIdentifier: 
   _moveSpeed: 1
   _isAlien: 1
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
-  _firstName: g
-  _lastName: g
+  _idImage: {fileID: 7447593310273989443, guid: 409ac5a3cbe14d348b2f1f114d430ea7, type: 3}
+  _firstName: Dwight
+  _lastName: Schrute
   _gender: 0
-  _dateOfBirth: 14.02.85
-  _department: Department
-  _jobTitle: 'g '
+  id: 832953204
+  _dateOfBirth: 11.04.95
+  _department: Sales
+  _jobTitle: Sales Rep
+  _keyFeatures: Insane
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 0
@@ -31,4 +33,4 @@ MonoBehaviour:
   <IsLastNameWrong>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 0
-  <IsDateOfBirthWrong>k__BackingField: 0
+  <IsDateOfBirthWrong>k__BackingField: 1

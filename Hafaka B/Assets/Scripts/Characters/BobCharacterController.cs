@@ -10,7 +10,6 @@ public class BobCharacterController : MonoBehaviour
     [SerializeField] float _positionOffsetXAxis = -1;
     [SerializeField] Transform _startingSpot;
     [SerializeField] TextBubble _textBubble;
-    [SerializeField] List<SpriteRenderer> _allSprites;
 
     private static bool _isDeployed = false;
     private static bool _isAtStart = true;
@@ -26,7 +25,6 @@ public class BobCharacterController : MonoBehaviour
         if (tryFindTransformObject == null) return;
         _startingSpot = tryFindTransformObject.transform;
         _textBubble = GetComponentInChildren<TextBubble>(true);
-        _allSprites = GetComponentsInChildren<SpriteRenderer>().ToList();
     }
 
     private void Update()
@@ -81,10 +79,12 @@ public class BobCharacterController : MonoBehaviour
     [ContextMenu("Flip")]
     private void FlipCharacter()
     {
-        foreach (var sprite in _allSprites)
-        {
-            sprite.flipX = !sprite.flipX;
-        }
+        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        _textBubble.transform.localScale = new Vector3(_textBubble.transform.localScale.x * -1, _textBubble.transform.localScale.y, _textBubble.transform.localScale.z);
+        //if(_isAtStart)
+        //    _textBubble.transform.position = new Vector3(_startingBubblePosition, _textBubble.transform.position.y, _textBubble.transform.position.z);
+        //else
+        //    _textBubble.transform.position = new Vector3(_flippedBubblePosition, _textBubble.transform.position.y, _textBubble.transform.position.z);
     }
 
     public void MoveToCharacter()

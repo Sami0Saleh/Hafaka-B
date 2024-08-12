@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
-  m_Name: a
+  m_Name: Gabe Lewis
   m_EditorClassIdentifier: 
   _moveSpeed: 1
-  _isAlien: 0
+  _isAlien: 1
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _idImage: {fileID: 2057452171022541536, guid: 8ada53da8c1aafa4e965a89cd4924e02, type: 3}
-  _firstName: Jim
-  _lastName: Helpert
+  _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
+  _firstName: Gabe
+  _lastName: Lewis
   _gender: 0
-  id: 318918075
+  id: 
   _dateOfBirth: 14.02.85
-  _department: Sales
-  _jobTitle: Sale Rep
-  _keyFeatures: Looks At The Camera
+  _department: Management
+  _jobTitle: Branch Manager
+  _keyFeatures: Tall
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
-  <IsSpriteWrong>k__BackingField: 0
+  <IsSpriteWrong>k__BackingField: 1
   <IsFirstNameWrong>k__BackingField: 0
   <IsLastNameWrong>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
