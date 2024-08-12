@@ -18,9 +18,11 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] string _firstName;
     [SerializeField] string _lastName;
     [SerializeField] Genders _gender;
+    [SerializeField] string id;
     [SerializeField] string _dateOfBirth;
     [SerializeField] string _department;
     [SerializeField] string _jobTitle;
+    [SerializeField] string _keyFeatures;
 
     [Header("Character Type")]
     [SerializeField] private bool _isExpectedWorker;
@@ -48,6 +50,8 @@ public class CharacterScriptableObject : ScriptableObject
     [field: SerializeField] public bool IsDepartmentWrong { get; set; } = false;
     [field: SerializeField] public bool IsPositionWrong { get; set; } = false;
     [field: SerializeField] public bool IsDateOfBirthWrong { get; set; } = false;
+    public string ID { get => id; set => id = value; }
+    public string KeyFeatures { get => _keyFeatures; set => _keyFeatures = value; }
     #endregion
 }
 

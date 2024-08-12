@@ -17,13 +17,15 @@ MonoBehaviour:
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
-  _firstName: a
-  _lastName: a
+  _idImage: {fileID: 2057452171022541536, guid: 8ada53da8c1aafa4e965a89cd4924e02, type: 3}
+  _firstName: Jim
+  _lastName: Helpert
   _gender: 0
+  id: 318918075
   _dateOfBirth: 14.02.85
-  _department: Department
-  _jobTitle: 'a '
+  _department: Sales
+  _jobTitle: Sale Rep
+  _keyFeatures: Looks At The Camera
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 0
