@@ -2252,7 +2252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterSO: {fileID: 11400000, guid: 1a6068e9f3c0cf343b9639635932c7c5, type: 2}
-  _skin: {fileID: 0}
+  _skin: {fileID: 541913685716365847}
   _speed: 0
   _textBubble: {fileID: 1642297477224495781}
   _defaultText: {fileID: 4900000, guid: a67ed462ec7b491418225f5fa24a566e, type: 3}
