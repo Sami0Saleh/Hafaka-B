@@ -11,8 +11,16 @@ public class AudioManager : MonoBehaviour
     [SerializeField, Range(0, 1)] float _musicVolume;
     [SerializeField, Range(0, 1)] float _SFXVolume;
 
+    public static AudioManager Instance { get; private set; }
+
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+            return;
+        }
+
         DontDestroyOnLoad(this);
     }
 
