@@ -24,18 +24,18 @@ public class ScrollCamera : MonoBehaviour
             _direction = -1;
     }
 
-    private void Update()
-    {
-        if (IsMouseNearEdge())
-        {
-            if (IsAheadOfBoundary()) return;
-            foreach (var scroller in _scrollers)
-            {
-                scroller.transform.position = new Vector2(scroller.transform.position.x + _scrollSpeed * _direction * Time.deltaTime * -1, scroller.transform.position.y);
-            }
-            _camera.transform.position = new Vector3(_camera.transform.position.x + _scrollSpeed * _direction * Time.deltaTime * -1, _camera.transform.position.y, _camera.transform.position.z);
-        }
-    }
+    //private void Update()
+    //{
+    //    if (IsMouseNearEdge())
+    //    {
+    //        if (IsAheadOfBoundary()) return;
+    //        foreach (var scroller in _scrollers)
+    //        {
+    //            scroller.transform.position = new Vector2(scroller.transform.position.x + _scrollSpeed * _direction * Time.deltaTime * -1, scroller.transform.position.y);
+    //        }
+    //        _camera.transform.position = new Vector3(_camera.transform.position.x + _scrollSpeed * _direction * Time.deltaTime * -1, _camera.transform.position.y, _camera.transform.position.z);
+    //    }
+    //}
 
     private bool IsMouseNearEdge()
     {
@@ -45,9 +45,6 @@ public class ScrollCamera : MonoBehaviour
         else
             return Input.mousePosition.x >= Screen.width - edgeThreshold;
     }
-
-
-
 
     private void OnMouseOver()
     {

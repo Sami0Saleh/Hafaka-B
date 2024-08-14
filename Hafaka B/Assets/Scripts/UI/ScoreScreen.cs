@@ -8,6 +8,7 @@ public class ScoreScreen : MonoBehaviour
     [SerializeField] TMP_Text _humansKilledText;
     [SerializeField] TMP_Text _aliensAliveText;
     [SerializeField] TMP_Text _rankText;
+    [SerializeField] TMP_Text _lawText;
     [SerializeField] UIManager _uiManager;
 
     private void OnEnable()
@@ -27,6 +28,42 @@ public class ScoreScreen : MonoBehaviour
         _humansKilledText.text = GoalRecorder.Instance.NumberOfDeadHumans.ToString();
         _aliensAliveText.text = GoalRecorder.Instance.NumberOfAliens.ToString();
         _rankText.text = RankCalculator();
+        _lawText.text = CreateNewLawText();
+    }
+
+    private string CreateNewLawText()
+    {
+        string law = "";
+        switch (_rankText.text)
+        {
+            case "S":
+                law = "Global satellite defense will be doubled!";
+                break;
+            case "A":
+                law = "It's OK to be racist towards green people!";
+                break;
+            case "B":
+                if (GoalRecorder.Instance.NumberOfAliens > 0)
+                    law = "'People' with 3 eyes get free Healthcare.";
+                else
+                    law = "White House Security is now unprivatized.";
+                break;
+            case "C":
+                if (GoalRecorder.Instance.NumberOfAliens > 0)
+                    law = "Illegal aliens, now legal!";
+                else
+                    law = "We will start to think about gun control. Promise.";
+                break;
+            case "D":
+                law = "";
+                break;
+            case "F":
+                law = "Nuclear launch control is passed onto Lord Zorg!";
+                break;
+            default:
+                break;
+        }
+        return $"New Bill: \"{law}\"";
     }
 
     private string RankCalculator()
