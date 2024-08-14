@@ -41,6 +41,7 @@ public class AudioManager : MonoBehaviour
     public void PlayMusic(AudioClip clip)
     {
         _musicSource.clip = clip;
+        _musicSource.Play();
     }
 
     public void PlaySFX(AudioClip clip)
@@ -50,6 +51,7 @@ public class AudioManager : MonoBehaviour
             if(!_SFXSources[i].isPlaying)
             {
                 _SFXSources[i].clip = clip;
+                _SFXSources[i].Play();
                 break;
             }
         }
@@ -58,6 +60,7 @@ public class AudioManager : MonoBehaviour
             CreateNewAudioSource();
         }
         _SFXSources[_SFXSources.Count - 1].clip = clip;
+        _SFXSources[_SFXSources.Count - 1].Play();
     }
 
     private void CreateNewAudioSource()

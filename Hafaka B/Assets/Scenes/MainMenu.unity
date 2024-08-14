@@ -1188,11 +1188,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731080070}
   m_CullTransparentMesh: 1
---- !u!82 &787255860 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3986087092840251942, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-  m_PrefabInstance: {fileID: 6347026915787848557}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &788889221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,32 +2683,17 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1412137216 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3226984043790692747, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
+--- !u!114 &1412137218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9077212180489945767, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
   m_PrefabInstance: {fileID: 6347026915787848557}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1412137218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412137216}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2bc60820e3b6a245a000cb18136b886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _musicSource: {fileID: 799969264}
-  _SFXSources:
-  - {fileID: 787255860}
-  - {fileID: 1473920422}
-  - {fileID: 1601279181}
-  - {fileID: 1880379421}
-  - {fileID: 593183385}
-  _musicVolume: 0.5
-  _SFXVolume: 0.5
 --- !u!1 &1466067013
 GameObject:
   m_ObjectHideFlags: 0
@@ -2789,16 +2769,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466067013}
   m_CullTransparentMesh: 1
---- !u!82 &1473920422 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8092920426477169725, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-  m_PrefabInstance: {fileID: 6347026915787848557}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1601279181 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5403313341396401385, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-  m_PrefabInstance: {fileID: 6347026915787848557}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1642483682
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,11 +3298,6 @@ RectTransform:
   m_AnchoredPosition: {x: 960, y: -847.4}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!82 &1880379421 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8388072068759776668, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-  m_PrefabInstance: {fileID: 6347026915787848557}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1886291126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4132,41 +4097,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1925687919218594745, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2854955836990376327, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3226984043790692747, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
       propertyPath: m_Name
       value: Audio Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 3986087092840251942, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5403313341396401385, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8092920426477169725, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8388072068759776668, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3226984043790692747, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1412137218}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6412e0b389601b489c9547e0b1116cb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
