@@ -31,10 +31,10 @@ public class AudioManager : MonoBehaviour
 
     private void SetVoulumes()
     {
-        _musicSource.volume = _musicVolume;
+        _musicSource.volume = Math.Clamp(_musicVolume, 0, 1);
         for (int i = 0; i < _SFXSources.Count; i++)
         {
-            _SFXSources[i].volume = _SFXVolume;
+            _SFXSources[i].volume = Math.Clamp(_SFXVolume, 0, 1);
         }
     }
 
