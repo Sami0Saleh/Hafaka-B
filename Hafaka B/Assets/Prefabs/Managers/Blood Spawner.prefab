@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9190895569956958840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42100196175315224}
+  - component: {fileID: 6764517750648091131}
+  m_Layer: 0
+  m_Name: Blood Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &42100196175315224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9190895569956958840}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6764517750648091131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9190895569956958840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d09c1321479d1419bf363c75d4e33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sprite: {fileID: 6525668136912740586, guid: 3071c82ccc047b34cbe62faa89e8d5b3, type: 3}
+  _bloodImages:
+  - {fileID: 42189992, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  - {fileID: -779323981, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  - {fileID: -2031720038, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  - {fileID: 1112561334, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  - {fileID: -371283651, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  - {fileID: 2145930731, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  - {fileID: 1067499366, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  - {fileID: 1566514389, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  - {fileID: 1085938871, guid: 0e34342e31a5de443a1b879e51529a74, type: 3}
+  _materials:
+  - {fileID: 2100000, guid: 681b4f57424527c479c11a09a5dbab0c, type: 2}
+  - {fileID: 2100000, guid: fd874b1286ac40b4993fcc1a17c5e6b1, type: 2}
+  - {fileID: 2100000, guid: 883340d67147fd943a222128f49e8692, type: 2}
+  - {fileID: 2100000, guid: cac8d50a33b6f5f4894d63c423af99cb, type: 2}
+  - {fileID: 2100000, guid: 08015a47fcf398f4b9c775d346271b36, type: 2}
+  - {fileID: 2100000, guid: 6b5eb915041653b41a1d557dbd445f72, type: 2}
+  - {fileID: 2100000, guid: 49cbf1f44090daf45b7a20b36585a180, type: 2}

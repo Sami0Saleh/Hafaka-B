@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
             Destroy(this);
             return;
         }
+        Instance = this;
 
         DontDestroyOnLoad(this);
     }

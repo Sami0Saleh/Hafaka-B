@@ -37,6 +37,9 @@ public class Sniper : MonoBehaviour
         Debug.Log("SHOOT");
         if (GameManager.Instance.LastSelectedCharacter == null)
             return;
+        Debug.Log(BloodSpawner.Instance);
+        
+        BloodSpawner.Instance.SpawnBlood(GameManager.Instance.LastSelectedCharacter);
         GameManager.Instance.LastSelectedCharacter.Die();
         _canSnipe = false;
     }

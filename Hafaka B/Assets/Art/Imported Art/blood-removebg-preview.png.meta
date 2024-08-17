@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 0e34342e31a5de443a1b879e51529a74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3756039920635620068
+    second: blood-removebg-preview_0
+  - first:
+      213: 5734789812388383889
+    second: blood-removebg-preview_1
+  - first:
+      213: -4899035416951676076
+    second: blood-removebg-preview_2
+  - first:
+      213: -1381464656479036137
+    second: blood-removebg-preview_3
+  - first:
+      213: -1641730615257349961
+    second: blood-removebg-preview_4
+  - first:
+      213: 5007412439507360995
+    second: blood-removebg-preview_5
+  - first:
+      213: -4015776288985528879
+    second: blood-removebg-preview_6
+  - first:
+      213: -1806393421727130230
+    second: blood-removebg-preview_7
+  - first:
+      213: -6908375239269954315
+    second: blood-removebg-preview_8
+  - first:
+      213: 8441068384532857230
+    second: blood-removebg-preview_9
+  - first:
+      213: 7360747880348426785
+    second: blood-removebg-preview_10
+  - first:
+      213: -6197757304728250702
+    second: blood-removebg-preview_11
+  - first:
+      213: -3886820145657233428
+    second: blood-removebg-preview_12
+  - first:
+      213: 413787306123296823
+    second: blood-removebg-preview_13
+  - first:
+      213: 8173520079502708940
+    second: blood-removebg-preview_14
+  - first:
+      213: 1318939571752834385
+    second: blood-removebg-preview_15
+  - first:
+      213: -7851439173439661150
+    second: blood-removebg-preview_16
+  - first:
+      213: 8787787744399540012
+    second: blood-removebg-preview_17
+  - first:
+      213: -6298880518372693200
+    second: blood-removebg-preview_18
+  - first:
+      213: -5585957716964283354
+    second: blood-removebg-preview_19
+  - first:
+      213: -5827718726311540349
+    second: blood-removebg-preview_20
+  - first:
+      213: -2915063715531656324
+    second: blood-removebg-preview_21
+  - first:
+      213: -5929821720727968301
+    second: blood-removebg-preview_22
+  - first:
+      213: -7873079268576765840
+    second: blood-removebg-preview_23
+  - first:
+      213: 6071923884465789393
+    second: blood-removebg-preview_24
+  - first:
+      213: -867327766649737478
+    second: blood-removebg-preview_25
+  - first:
+      213: -8050460261047322253
+    second: blood-removebg-preview_26
+  - first:
+      213: 5370344403185412009
+    second: blood-removebg-preview_27
+  - first:
+      213: -5252096671363517192
+    second: blood-removebg-preview_28
+  - first:
+      213: 6763760533297688745
+    second: blood-removebg-preview_29
+  - first:
+      213: -5727798482201449155
+    second: blood-removebg-preview_30
+  - first:
+      213: 1304950092205319431
+    second: blood-removebg-preview_31
+  - first:
+      213: -2892410425070998980
+    second: blood-removebg-preview_32
+  - first:
+      213: -3121294243050938077
+    second: blood-removebg-preview_33
+  - first:
+      213: -4075519261514799334
+    second: blood-removebg-preview_34
+  - first:
+      213: 6228068193694363413
+    second: blood-removebg-preview_35
+  - first:
+      213: -5458762502791783360
+    second: blood-removebg-preview_36
+  - first:
+      213: -2115894560677242275
+    second: blood-removebg-preview_37
+  - first:
+      213: 6906605634564524368
+    second: blood-removebg-preview_38
+  - first:
+      213: 6472587288588630033
+    second: blood-removebg-preview_39
+  - first:
+      213: -1979299040017903395
+    second: blood-removebg-preview_40
+  - first:
+      213: -6611544239921360094
+    second: blood-removebg-preview_41
+  - first:
+      213: -4624510931910475107
+    second: blood-removebg-preview_42
+  - first:
+      213: 2575576368206679769
+    second: blood-removebg-preview_43
+  - first:
+      213: 5657858101653135940
+    second: blood-removebg-preview_44
+  - first:
+      213: -5757329544915258921
+    second: blood-removebg-preview_45
+  - first:
+      213: 6083037202669885982
+    second: blood-removebg-preview_46
+  - first:
+      213: -3305362258166966520
+    second: blood-removebg-preview_47
+  - first:
+      213: 6636322742806272096
+    second: blood-removebg-preview_48
+  - first:
+      213: 4437684306599051509
+    second: blood-removebg-preview_49
+  - first:
+      213: -7478012134139410754
+    second: blood-removebg-preview_50
+  - first:
+      213: -260597731930253707
+    second: blood-removebg-preview_51
+  - first:
+      213: -636145117395630355
+    second: blood-removebg-preview_52
+  - first:
+      213: -4299345497890461861
+    second: blood-removebg-preview_53
+  - first:
+      213: -3643307799748472611
+    second: blood-removebg-preview_54
+  - first:
+      213: 425703798309801817
+    second: blood-removebg-preview_55
+  - first:
+      213: -4982283233077569426
+    second: blood-removebg-preview_56
+  - first:
+      213: 7234249344669887952
+    second: blood-removebg-preview_57
+  - first:
+      213: -3541816002234696218
+    second: blood-removebg-preview_58
+  - first:
+      213: 1924884804321095879
+    second: blood-removebg-preview_59
+  - first:
+      213: 8601738265465006597
+    second: blood-removebg-preview_60
+  - first:
+      213: 4210061267991912726
+    second: blood-removebg-preview_61
+  - first:
+      213: -7369454744104122851
+    second: blood-removebg-preview_62
+  - first:
+      213: -1402231700561042050
+    second: blood-removebg-preview_63
+  - first:
+      213: 3572273381822057704
+    second: blood-removebg-preview_64
+  - first:
+      213: 1453711655303149019
+    second: blood-removebg-preview_65
+  - first:
+      213: 248537981868939132
+    second: blood-removebg-preview_66
+  - first:
+      213: 8558847067980755524
+    second: blood-removebg-preview_67
+  - first:
+      213: -8028249622294716462
+    second: blood-removebg-preview_68
+  - first:
+      213: -5635428039691562893
+    second: blood-removebg-preview_69
+  - first:
+      213: 2208754523497186432
+    second: blood-removebg-preview_70
+  - first:
+      213: -3500576298669520867
+    second: blood-removebg-preview_71
+  - first:
+      213: 573674215420351982
+    second: blood-removebg-preview_72
+  - first:
+      213: -643968627230238543
+    second: blood-removebg-preview_73
+  - first:
+      213: 1416940669842750114
+    second: blood-removebg-preview_74
+  - first:
+      213: 5210006748575057486
+    second: blood-removebg-preview_75
+  - first:
+      213: -101082666837810962
+    second: blood-removebg-preview_76
+  - first:
+      213: 7586321148381660429
+    second: blood-removebg-preview_77
+  - first:
+      213: -1035521134493159813
+    second: blood-removebg-preview_78
+  - first:
+      213: -7638173339435265411
+    second: blood-removebg-preview_79
+  - first:
+      213: -7236112740179379277
+    second: blood-removebg-preview_80
+  - first:
+      213: -7824300491396667618
+    second: blood-removebg-preview_81
+  - first:
+      213: 8402178741482746210
+    second: blood-removebg-preview_82
+  - first:
+      213: -1428531846838412679
+    second: blood-removebg-preview_83
+  - first:
+      213: -1886289135651427407
+    second: blood-removebg-preview_84
+  - first:
+      213: 342052251615355610
+    second: blood-removebg-preview_85
+  - first:
+      213: -8072697053539895329
+    second: blood-removebg-preview_86
+  - first:
+      213: 4263765447338608417
+    second: blood-removebg-preview_87
+  - first:
+      213: 5958521269219847573
+    second: blood-removebg-preview_88
+  - first:
+      213: 8362635081246705094
+    second: blood-removebg-preview_89
+  - first:
+      213: -1175465197398503447
+    second: blood-removebg-preview_90
+  - first:
+      213: 7258609491545309159
+    second: blood-removebg-preview_91
+  - first:
+      213: 2759923851437250708
+    second: blood-removebg-preview_92
+  - first:
+      213: 5312602232368302174
+    second: blood-removebg-preview_93
+  - first:
+      213: 8794178189400804659
+    second: blood-removebg-preview_94
+  - first:
+      213: -4141693842069021378
+    second: blood-removebg-preview_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blood-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 334
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37eea8176258bc44fad84e3b2c738055
+      internalID: 42189992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 334
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ac131b05fe4e244b197f8f03eb4982
+      internalID: -779323981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 334
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4889c4d23a88dc4f97f15a40ee4a3c3
+      internalID: -2031720038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 168
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98da162d03da784aa127f0575b4bd8c
+      internalID: 1112561334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 168
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf129421474c40439f3b61cf5a7ba74
+      internalID: -371283651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 168
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571da85791c027248b7ddc26bd9a0a6b
+      internalID: 2145930731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3956f3c5e0013454e843382394c27a59
+      internalID: 1067499366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36680e61820a9e7478ef3b9a149b728a
+      internalID: 1566514389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 2
+        width: 161
+        height: 166
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284e2823c9838c243a8ad55be35974e7
+      internalID: 1085938871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 376492bca99dd8f4591fb819d56fc9ae
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      blood-removebg-preview_0: 42189992
+      blood-removebg-preview_1: -779323981
+      blood-removebg-preview_2: -2031720038
+      blood-removebg-preview_3: 1112561334
+      blood-removebg-preview_4: -371283651
+      blood-removebg-preview_5: 2145930731
+      blood-removebg-preview_6: 1067499366
+      blood-removebg-preview_7: 1566514389
+      blood-removebg-preview_8: 1085938871
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
