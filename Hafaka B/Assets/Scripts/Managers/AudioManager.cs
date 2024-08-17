@@ -47,16 +47,17 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip)
     {
-        for (int i = 0; i < _SFXSources.Count; i++)
+        int sourceCount = _SFXSources.Count;
+        for (int i = 0; i < sourceCount; i++)
         {
             if(!_SFXSources[i].isPlaying)
             {
                 _SFXSources[i].clip = clip;
                 _SFXSources[i].Play();
-                break;
+                return;
             }
         }
-        for (int i = 0; i < _SFXSources.Count; i++)
+        for (int i = 0; i < sourceCount; i++)
         {
             CreateNewAudioSource();
         }
