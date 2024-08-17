@@ -6616,6 +6616,10 @@ PrefabInstance:
         "R" to reload'
       objectReference: {fileID: 0}
     - target: {fileID: 7339133781853623792, guid: 1217424b32e1ca244a9b9a74a45d8fa4, type: 3}
+      propertyPath: _clipSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 747191ef411465f4d9853e957d5eabc5, type: 3}
+    - target: {fileID: 7339133781853623792, guid: 1217424b32e1ca244a9b9a74a45d8fa4, type: 3}
       propertyPath: _scopeCamera
       value: 
       objectReference: {fileID: 519420033}

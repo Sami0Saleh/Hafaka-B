@@ -5,6 +5,7 @@ public class Sniper : MonoBehaviour
 {
     //[SerializeField] private Image _img;
     [SerializeField] private CameraZoom _scopeCamera;
+    [SerializeField] private AudioClip _clipSFX;
 
     private RectTransform _canvasRectTransform;
     private bool _canSnipe = true;
@@ -37,8 +38,7 @@ public class Sniper : MonoBehaviour
         Debug.Log("SHOOT");
         if (GameManager.Instance.LastSelectedCharacter == null)
             return;
-        Debug.Log(BloodSpawner.Instance);
-        
+        AudioManager.Instance.PlaySFX(_clipSFX);        
         BloodSpawner.Instance.SpawnBlood(GameManager.Instance.LastSelectedCharacter);
         GameManager.Instance.LastSelectedCharacter.Die();
         _canSnipe = false;
