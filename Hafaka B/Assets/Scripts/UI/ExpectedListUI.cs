@@ -6,7 +6,7 @@ public class ExpectedListUI : MonoBehaviour
 {
     [SerializeField] private GameObject _expectedListContainer;
     [SerializeField] private Text _textPrefab;
-    private float _xPosition = -160f;
+    private float _xPosition = -135f;
     private float _yPosition = 350f;
     private float _zPosition = 0f;
 
