@@ -2255,6 +2255,7 @@ MonoBehaviour:
   _skin: {fileID: 541913685716365847}
   _speed: 0
   _textBubble: {fileID: 1642297477224495781}
+  _goal: {fileID: 0}
   _defaultText: {fileID: 4900000, guid: a67ed462ec7b491418225f5fa24a566e, type: 3}
   _appearanceTexts:
     keys: 020000000100000000000000

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
+  m_Name: Edward Martinez Alien
+  m_EditorClassIdentifier: 
+  _moveSpeed: 2
+  _isAlien: 0
+  _characterSprites: []
+  _animator: {fileID: 0}
+  _bloodPool: {fileID: 0}
+  _material: {fileID: 2100000, guid: 871dfb7c49d001445a884a0f761ca51f, type: 2}
+  Head: {fileID: 21300000, guid: 8f98e81ccb562fc47aaabff6c1632c89, type: 3}
+  Eyes: {fileID: 21300000, guid: 0852670a83f094c409ac8c92906a0a95, type: 3}
+  Nose: {fileID: 21300000, guid: 3a9c3223e7cdf9c40a89408b37fa79ea, type: 3}
+  Hair: {fileID: 21300000, guid: 6a75893aef2741448b0f483acc702ad8, type: 3}
+  MouthClosed: {fileID: 21300000, guid: 89394fc612e216146845947930d86d07, type: 3}
+  MouthOpenSmall: {fileID: 21300000, guid: b6a5036ebacdf004f9c7b8c266e91219, type: 3}
+  MouthOpenBig: {fileID: 21300000, guid: 9aa0655db61a5e74497f30ecd54e22da, type: 3}
+  FrontEar: {fileID: 21300000, guid: 840373ab4347d8848a41b4bae5802226, type: 3}
+  BackEar: {fileID: 21300000, guid: fb30e2229c82eda499e90176287ef8b8, type: 3}
+  Neck: {fileID: 21300000, guid: 2a9330743dea317458313bc0511fc95b, type: 3}
+  Body: {fileID: 21300000, guid: 3064b8f0bc1c7cf489be5d35eff39591, type: 3}
+  SholderFront: {fileID: 21300000, guid: 8adc03ea4db2e6c4e98dafe02ce8d3c4, type: 3}
+  SholderBack: {fileID: 21300000, guid: bd4e09f624185f44098c3207a0a353d4, type: 3}
+  ForearmFront: {fileID: 21300000, guid: 05240cccd7d7ac940b667260550c19b1, type: 3}
+  ForearmBack: {fileID: 21300000, guid: a003fe79c79aaeb4e82520fb3bf7e0e5, type: 3}
+  KneeRight: {fileID: 21300000, guid: 56552606cd6521942b23eab4da46d7a5, type: 3}
+  KneeLeft: {fileID: 21300000, guid: 5f7bef237638f9d4ca16de6dc29af223, type: 3}
+  AnkleRight: {fileID: 21300000, guid: 5a008517d9d2b864588cbffc9e7bd4d8, type: 3}
+  AnkleLeft: {fileID: 21300000, guid: 2bac0004529050b4b913e2a4ca2afafe, type: 3}
+  FootRight: {fileID: 21300000, guid: 2386579f8c4f4ba44a6dc05b80b311f7, type: 3}
+  FootLeft: {fileID: 21300000, guid: c62c52b6b3d5d5a4d80540d0c8675988, type: 3}
+  _idImage: {fileID: 7447593310273989443, guid: 409ac5a3cbe14d348b2f1f114d430ea7, type: 3}
+  _firstName: Edward
+  _lastName: Martinez
+  _gender: 1
+  id: 832953204
+  _dateOfBirth: 11.04.95
+  _department: Education
+  _jobTitle: Spokesmen
+  _keyFeatures: Insane
+  _isExpectedWorker: 0
+  _buffer: Ignore this, don't delete
+  <IsSpriteWrong>k__BackingField: 0
+  <IsFirstNameWrong>k__BackingField: 0
+  <IsLastNameWrong>k__BackingField: 0
+  <IsDepartmentWrong>k__BackingField: 0
+  <IsPositionWrong>k__BackingField: 0
+  <IsDateOfBirthWrong>k__BackingField: 1
