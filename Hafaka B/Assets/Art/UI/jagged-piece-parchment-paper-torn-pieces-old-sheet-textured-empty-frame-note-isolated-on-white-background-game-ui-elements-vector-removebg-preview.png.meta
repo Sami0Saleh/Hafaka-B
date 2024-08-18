@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 0f47f63ba82870944a404ab400a424e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8729375552334591870
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_0
+  - first:
+      213: -5701876711847509402
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_1
+  - first:
+      213: 7135568270837894022
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_2
+  - first:
+      213: -5952078137178353882
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_3
+  - first:
+      213: 3403909477362590506
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_4
+  - first:
+      213: 8485416660042122905
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_5
+  - first:
+      213: -313145827293528014
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_6
+  - first:
+      213: 5453835601221301351
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_7
+  - first:
+      213: -3070228901548956067
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_8
+  - first:
+      213: 1288418052066537259
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_9
+  - first:
+      213: -6899578787869123109
+    second: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 266
+        width: 179
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2880e147f270bd680800000000000000
+      internalID: -8729375552334591870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 267
+        width: 98
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662c145275dded0b0800000000000000
+      internalID: -5701876711847509402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 252
+        width: 126
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b47d55981a60360800000000000000
+      internalID: 7135568270837894022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 256
+        width: 169
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f8d1e3878f56da0800000000000000
+      internalID: -5952078137178353882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 183
+        width: 280
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2368cd82ad1d3f20800000000000000
+      internalID: 3403909477362590506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 115
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9960ef0ae7142c570800000000000000
+      internalID: 8485416660042122905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 207
+        width: 176
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2300649778b77abf0800000000000000
+      internalID: -313145827293528014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 103
+        width: 281
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764bc2a659aefab40800000000000000
+      internalID: 5453835601221301351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 120
+        width: 185
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d566900b41b5465d0800000000000000
+      internalID: -3070228901548956067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 28
+        width: 292
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f60ab546161e110800000000000000
+      internalID: 1288418052066537259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jagged-piece-parchment-paper-torn-pieces-old-sheet-textured-empty-frame-note-isolated-on-white-background-game-ui-elements-vector-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 28
+        width: 289
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd9d31e5a5cf30a0800000000000000
+      internalID: -6899578787869123109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,7 +8,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] SkinController _skin;
     [SerializeField] private float _speed;
     [SerializeField] TextBubble _textBubble;
-    private Transform _goal;
+    [SerializeField]private Transform _goal;
 
 
     [Header("Text Files")]
@@ -119,13 +119,15 @@ public class CharacterController : MonoBehaviour
     {
         if (!_isStopped)
         {
-            float Direction = Mathf.Sign(_goal.position.x - transform.position.x);
-            MovePos = new Vector2(
-                transform.position.x + Direction * _speed * Time.deltaTime, //MoveTowards on 1 axis
-                transform.position.y
-            );
-            transform.position = MovePos;
-        }
+           
+                float Direction = Mathf.Sign(_goal.position.x - transform.position.x);
+                MovePos = new Vector2(
+                    transform.position.x + Direction * _speed * Time.deltaTime, //MoveTowards on 1 axis
+                    transform.position.y
+                );
+                transform.position = MovePos;
+           
+            }
         else
         {
 

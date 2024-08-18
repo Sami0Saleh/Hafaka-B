@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
+  m_Name: Mark White
+  m_EditorClassIdentifier: 
+  _moveSpeed: 1
+  _isAlien: 0
+  _characterSprites: []
+  _animator: {fileID: 0}
+  _bloodPool: {fileID: 0}
+  _material: {fileID: 2100000, guid: ff6244af30337804daeb38410f131ddc, type: 2}
+  Head: {fileID: 21300000, guid: 8f98e81ccb562fc47aaabff6c1632c89, type: 3}
+  Eyes: {fileID: 21300000, guid: 94c362c1cf224e145ba9e132d4d18121, type: 3}
+  Nose: {fileID: 21300000, guid: 3a9c3223e7cdf9c40a89408b37fa79ea, type: 3}
+  Hair: {fileID: 21300000, guid: 235fd1c936d4b304c83d96f73a12f3f5, type: 3}
+  MouthClosed: {fileID: 21300000, guid: 89394fc612e216146845947930d86d07, type: 3}
+  MouthOpenSmall: {fileID: 21300000, guid: b6a5036ebacdf004f9c7b8c266e91219, type: 3}
+  MouthOpenBig: {fileID: 21300000, guid: 9aa0655db61a5e74497f30ecd54e22da, type: 3}
+  FrontEar: {fileID: 21300000, guid: 840373ab4347d8848a41b4bae5802226, type: 3}
+  BackEar: {fileID: 21300000, guid: fb30e2229c82eda499e90176287ef8b8, type: 3}
+  Neck: {fileID: 21300000, guid: 2a9330743dea317458313bc0511fc95b, type: 3}
+  Body: {fileID: 21300000, guid: 3064b8f0bc1c7cf489be5d35eff39591, type: 3}
+  SholderFront: {fileID: 21300000, guid: 600141b451f297440b2b75875795e670, type: 3}
+  SholderBack: {fileID: 21300000, guid: 863c18f205242b54fb99a09c2b655436, type: 3}
+  ForearmFront: {fileID: 21300000, guid: 70aa546899183b74e89202af5bf2daeb, type: 3}
+  ForearmBack: {fileID: 21300000, guid: c2ccedbc3fdee694eb1e15139927e457, type: 3}
+  KneeRight: {fileID: 21300000, guid: 56552606cd6521942b23eab4da46d7a5, type: 3}
+  KneeLeft: {fileID: 21300000, guid: 5f7bef237638f9d4ca16de6dc29af223, type: 3}
+  AnkleRight: {fileID: 21300000, guid: 6c29daab0c51e10488ad7bb991ed423b, type: 3}
+  AnkleLeft: {fileID: 21300000, guid: a4bbb1d8a5ca29f4786bb016fc607396, type: 3}
+  FootRight: {fileID: 21300000, guid: 2386579f8c4f4ba44a6dc05b80b311f7, type: 3}
+  FootLeft: {fileID: 21300000, guid: c62c52b6b3d5d5a4d80540d0c8675988, type: 3}
+  _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
+  _firstName: Mark
+  _lastName: White
+  _gender: 0
+  id: 542765236
+  _dateOfBirth: 05.09.97
+  _department: Transportation
+  _jobTitle: Legal Analyst
+  _keyFeatures: 
+  _isExpectedWorker: 0
+  _buffer: Ignore this, don't delete
+  <IsSpriteWrong>k__BackingField: 0
+  <IsFirstNameWrong>k__BackingField: 0
+  <IsLastNameWrong>k__BackingField: 0
+  <IsDepartmentWrong>k__BackingField: 0
+  <IsPositionWrong>k__BackingField: 0
+  <IsDateOfBirthWrong>k__BackingField: 0

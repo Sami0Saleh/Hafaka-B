@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
+  m_Name: Carol Gracia
+  m_EditorClassIdentifier: 
+  _moveSpeed: 1
+  _isAlien: 0
+  _characterSprites: []
+  _animator: {fileID: 0}
+  _bloodPool: {fileID: 0}
+  _material: {fileID: 2100000, guid: 8bfddef67d7758d4cb4af7b0b1646466, type: 2}
+  Head: {fileID: 21300000, guid: 00770fb38cfea3e49a1f281fb840d947, type: 3}
+  Eyes: {fileID: 21300000, guid: e2fa7cd00e9817f41a4e121ba62d8acb, type: 3}
+  Nose: {fileID: 21300000, guid: e760255199b54d445b5248397b024bfa, type: 3}
+  Hair: {fileID: 21300000, guid: 235fd1c936d4b304c83d96f73a12f3f5, type: 3}
+  MouthClosed: {fileID: 21300000, guid: 28d420100ce6c73419fdd7f9d8e3dfad, type: 3}
+  MouthOpenSmall: {fileID: 21300000, guid: 013b205fda10c334382416d49cf7592d, type: 3}
+  MouthOpenBig: {fileID: 21300000, guid: d9529cba5a39df1499335b0b882064f4, type: 3}
+  FrontEar: {fileID: 21300000, guid: 5a23bcafad9f988459a699eba1becf3e, type: 3}
+  BackEar: {fileID: 21300000, guid: fb30e2229c82eda499e90176287ef8b8, type: 3}
+  Neck: {fileID: 21300000, guid: 2a9330743dea317458313bc0511fc95b, type: 3}
+  Body: {fileID: 21300000, guid: 4f212b24538e00442b5884978f0b87e1, type: 3}
+  SholderFront: {fileID: 21300000, guid: 600141b451f297440b2b75875795e670, type: 3}
+  SholderBack: {fileID: 21300000, guid: 863c18f205242b54fb99a09c2b655436, type: 3}
+  ForearmFront: {fileID: 21300000, guid: 70aa546899183b74e89202af5bf2daeb, type: 3}
+  ForearmBack: {fileID: 21300000, guid: c2ccedbc3fdee694eb1e15139927e457, type: 3}
+  KneeRight: {fileID: 21300000, guid: c52fa28a4f102d5469f9535d6d95bde0, type: 3}
+  KneeLeft: {fileID: 21300000, guid: f4f2d036d29ec9b42a40af477b01cc59, type: 3}
+  AnkleRight: {fileID: 21300000, guid: 6c29daab0c51e10488ad7bb991ed423b, type: 3}
+  AnkleLeft: {fileID: 21300000, guid: a4bbb1d8a5ca29f4786bb016fc607396, type: 3}
+  FootRight: {fileID: 21300000, guid: e9a3f9b27de6a8f4b82763aa4710f62f, type: 3}
+  FootLeft: {fileID: 21300000, guid: 901d4ff7d26a3274b99ecd71e94ea99d, type: 3}
+  _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
+  _firstName: Nancy
+  _lastName: Thomas
+  _gender: 1
+  id: 476297423
+  _dateOfBirth: 09.08.86
+  _department: Science
+  _jobTitle: Data Analyst
+  _keyFeatures: 
+  _isExpectedWorker: 0
+  _buffer: Ignore this, don't delete
+  <IsSpriteWrong>k__BackingField: 0
+  <IsFirstNameWrong>k__BackingField: 0
+  <IsLastNameWrong>k__BackingField: 0
+  <IsDepartmentWrong>k__BackingField: 0
+  <IsPositionWrong>k__BackingField: 0
+  <IsDateOfBirthWrong>k__BackingField: 0

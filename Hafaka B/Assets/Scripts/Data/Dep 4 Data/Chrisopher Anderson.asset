@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
-  m_Name: Gabe Lewis
+  m_Name: Chrisopher Anderson
   m_EditorClassIdentifier: 
   _moveSpeed: 1
   _isAlien: 0
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _material: {fileID: 2100000, guid: b63e00dbeea161e43b9da6ac83ebee30, type: 2}
+  _material: {fileID: 2100000, guid: f4854131cb375e04c8eee2291220d81d, type: 2}
   Head: {fileID: 21300000, guid: 8f98e81ccb562fc47aaabff6c1632c89, type: 3}
   Eyes: {fileID: 21300000, guid: 0852670a83f094c409ac8c92906a0a95, type: 3}
   Nose: {fileID: 21300000, guid: 041fd0b85abc84242ae04fed2d073459, type: 3}
@@ -40,14 +40,14 @@ MonoBehaviour:
   FootRight: {fileID: 21300000, guid: 2386579f8c4f4ba44a6dc05b80b311f7, type: 3}
   FootLeft: {fileID: 21300000, guid: c62c52b6b3d5d5a4d80540d0c8675988, type: 3}
   _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
-  _firstName: Gabe
-  _lastName: Lewis
+  _firstName: Chrisopher
+  _lastName: Anderson
   _gender: 0
-  id: 
-  _dateOfBirth: 14.02.85
-  _department: Management
-  _jobTitle: Branch Manager
-  _keyFeatures: Tall
+  id: 246765367
+  _dateOfBirth: 26.01.87
+  _department: Science
+  _jobTitle: Secretary
+  _keyFeatures: 
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 0

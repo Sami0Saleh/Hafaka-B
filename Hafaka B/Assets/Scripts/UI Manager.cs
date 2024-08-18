@@ -9,7 +9,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject _scannerScreen;
     [SerializeField] GameObject _guardScreen;
     [SerializeField] GameObject _sniperScreen;
-    [SerializeField] List<Button> _buttons; 
+    [SerializeField] List<Button> _buttons;
+
+    [SerializeField] GameObject[] Panels;
 
     public void OpenWorkersList()
     {
@@ -58,6 +60,11 @@ public class UIManager : MonoBehaviour
     public void OpenList(GameObject panel)
     {
         if (GameManager.Instance.IsGameOver) return;
+        foreach (GameObject pan in Panels)
+        {
+            if (pan != panel && pan.active)
+            { pan.SetActive(false); }
+        }
         panel.SetActive(true);
     }
     public void CloseList(GameObject panel)
