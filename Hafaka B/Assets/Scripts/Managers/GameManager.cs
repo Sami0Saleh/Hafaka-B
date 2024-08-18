@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] CharacterSpawner spawner;
     [SerializeField] GoalRecorder goalRecorder;
     [SerializeField] ScoreScreen _scoreScreen;
+    [SerializeField] AudioClip _levelMusic;
+
     public static GameManager Instance { get; private set; }
     public CharacterController LastSelectedCharacter { get => _lastSelectedCharacter; private set => _lastSelectedCharacter = value; }
     public bool IsGameOver { get; private set; } = false;
@@ -26,6 +28,10 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        AudioManager.Instance.PlayMusic(_levelMusic);   
+    }
 
     public void SetSelectedCharacter(CharacterController chr)
     {

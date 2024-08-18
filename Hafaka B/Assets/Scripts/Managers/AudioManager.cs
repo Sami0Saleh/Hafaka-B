@@ -75,6 +75,12 @@ public class AudioManager : MonoBehaviour
         _musicVolume = slider.value;
         SetVoulumes();
     }
+    
+    public void ChangeMusicVolume(float multiplier)
+    {
+        _musicVolume *= multiplier;
+        SetVoulumes();
+    }
 
     public void ChangeSFXVolume(Slider slider)
     {

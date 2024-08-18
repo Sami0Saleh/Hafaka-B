@@ -44,3 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ede11cda0207e94080b5e6bbb12d3fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lastSelectedCharacter: {fileID: 0}
+  spawner: {fileID: 0}
+  goalRecorder: {fileID: 0}
+  _scoreScreen: {fileID: 0}
+  _levelMusic: {fileID: 8300000, guid: dbafd77843f8206469be1ff1d7838e67, type: 3}

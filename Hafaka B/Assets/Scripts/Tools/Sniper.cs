@@ -16,6 +16,7 @@ public class Sniper : MonoBehaviour
         if (GameManager.Instance != null)
             GameManager.Instance.OnCharacterClicked += Shoot;
         _scopeCamera.ZoomIn();
+        AudioManager.Instance.ChangeMusicVolume(0.25f);
     }
 
     private void OnDisable()
@@ -23,6 +24,7 @@ public class Sniper : MonoBehaviour
         if (GameManager.Instance != null)
             GameManager.Instance.OnCharacterClicked -= Shoot;
         _scopeCamera.ZoomOut();
+        AudioManager.Instance.ChangeMusicVolume(4f);
     }
 
     private void Update()
