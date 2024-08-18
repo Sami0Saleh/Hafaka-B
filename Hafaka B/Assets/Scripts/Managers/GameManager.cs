@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.Instance.PlayMusic(_levelMusic);   
+        if(AudioManager.Instance != null)
+            AudioManager.Instance.PlayMusic(_levelMusic);   
     }
 
     public void SetSelectedCharacter(CharacterController chr)

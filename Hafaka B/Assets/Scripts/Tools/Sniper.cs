@@ -5,7 +5,10 @@ public class Sniper : MonoBehaviour
 {
     //[SerializeField] private Image _img;
     [SerializeField] private CameraZoom _scopeCamera;
+
+    [Header("Sound Effects")]
     [SerializeField] private AudioClip _shootClip;
+    [SerializeField] private AudioClip _emptyClip;
     [SerializeField] private AudioClip _reloadClip;
 
     private RectTransform _canvasRectTransform;
@@ -37,7 +40,11 @@ public class Sniper : MonoBehaviour
 
     public void Shoot()
     {
-        if (!_canSnipe) return;
+        if (!_canSnipe)
+        {
+            AudioManager.Instance.PlaySFX(_emptyClip);
+            return;
+        }
         Debug.Log("SHOOT");
         if (GameManager.Instance.LastSelectedCharacter == null)
             return;
