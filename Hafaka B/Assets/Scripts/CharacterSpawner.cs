@@ -19,7 +19,6 @@ public class CharacterSpawner : MonoBehaviour
 
     public int CharacterCount { get; private set; }
     public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
-    public List<CharacterScriptableObject> Workers { get => _allCharacters.Where(x => !x.IsAlien).ToList(); set => _workers = value; }
 
     private void OnValidate()
     {
@@ -37,7 +36,7 @@ public class CharacterSpawner : MonoBehaviour
 
     private void SelectExpectedWorkers(int numberOfExpectedWorkers)
     {
-        List<CharacterScriptableObject> workersPool = new List<CharacterScriptableObject>(Workers);
+        List<CharacterScriptableObject> workersPool = new List<CharacterScriptableObject>(_workers);
 
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
