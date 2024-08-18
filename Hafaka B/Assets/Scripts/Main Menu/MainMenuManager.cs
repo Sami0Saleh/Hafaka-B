@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class MainMenuManager : MonoBehaviour
 {
+    [SerializeField] AudioClip _menuMusic;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        AudioManager.Instance.PlayMusic(_menuMusic);
     }
 
     public void Quit()
