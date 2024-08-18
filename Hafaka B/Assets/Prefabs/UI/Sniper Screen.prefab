@@ -125,7 +125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 510.5, y: 43.2}
+  m_AnchoredPosition: {x: 510.5, y: 110.04}
   m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6899904743842585423
@@ -156,7 +156,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press "ESC" to return
+  m_text: 'Press "ESC" to return
+
+    "R" to reload'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -253,7 +255,7 @@ RectTransform:
   m_GameObject: {fileID: 6893650917206503979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 24.77, y: 24.77, z: 24.77}
+  m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3060522138745834734}
@@ -307,7 +309,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 52
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.009433985, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -364,6 +366,7 @@ GameObject:
   - component: {fileID: 5417200988148392285}
   - component: {fileID: 140587253160405137}
   - component: {fileID: 73973596287842284}
+  - component: {fileID: 7448066161556525477}
   m_Layer: 0
   m_Name: Scope
   m_TagString: Untagged
@@ -458,6 +461,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36820b90d69c60247a0b754da1a7af8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7448066161556525477
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892129762600623016}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c41ef1a245b65cc44916251545c15e2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9077390055702677274
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +636,7 @@ PrefabInstance:
     - target: {fileID: 464544590081220507, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
       propertyPath: ActivateViewScreen.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1968339565576226624, guid: f0f34b21551beec4c98d162440843026, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 464544590081220507, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
       propertyPath: ActivateViewScreen.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -656,6 +681,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1950507263283714309, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950507263283714309, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1234621648, guid: dca62a1425340d648b1513a505557403, type: 3}
     - target: {fileID: 2003028509731034275, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
       propertyPath: m_Name
       value: Sniper Logic
@@ -664,6 +697,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2513555015194633793, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513555015194633793, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1234621648, guid: dca62a1425340d648b1513a505557403, type: 3}
     - target: {fileID: 2778914329435663458, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -753,16 +794,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3490361621878102029, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7339133781853623792}
+    - target: {fileID: 3490361621878102029, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3490361621878102029, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseSniper
+      value: Reload
       objectReference: {fileID: 0}
     - target: {fileID: 3490361621878102029, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UIManager, Assembly-CSharp
+      value: Sniper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3490361621878102029, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -803,6 +848,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc7e0a745d88a243a95d4c457261c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _scopeCamera: {fileID: 0}
+  _shootClip: {fileID: 8300000, guid: 747191ef411465f4d9853e957d5eabc5, type: 3}
+  _emptyClip: {fileID: 8300000, guid: 07839e17a333fec45b3e70fc6ad18940, type: 3}
+  _reloadClip: {fileID: 8300000, guid: e601667410cbeee4baa7a5b1f27ae6c8, type: 3}
 --- !u!1 &1823356241117212843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1618262924687071796, guid: d469268c7401ff246b4fa63cc5966f62, type: 3}
