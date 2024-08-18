@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CharacterSpawner : MonoBehaviour
@@ -18,6 +19,12 @@ public class CharacterSpawner : MonoBehaviour
 
     public int CharacterCount { get; private set; }
     public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
+    public List<CharacterScriptableObject> Workers { get => _allCharacters.Where(x => !x.IsAlien).ToList(); set => _workers = value; }
+
+    private void OnValidate()
+    {
+        _workers = _allCharacters.Where(x => !x.IsAlien).ToList();
+    }
 
     void Start()
     {
@@ -30,7 +37,7 @@ public class CharacterSpawner : MonoBehaviour
 
     private void SelectExpectedWorkers(int numberOfExpectedWorkers)
     {
-        List<CharacterScriptableObject> workersPool = new List<CharacterScriptableObject>(_workers);
+        List<CharacterScriptableObject> workersPool = new List<CharacterScriptableObject>(Workers);
 
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
