@@ -1,7 +1,5 @@
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Database : MonoBehaviour
 {
@@ -9,7 +7,7 @@ public class Database : MonoBehaviour
     [SerializeField] CharacterScriptableObject CharacterSO2;
     [SerializeField] CharacterScriptableObject CharacterSO3;
 
-    [SerializeField] Image image1;
+    [SerializeField] MugshotController image1;
     [SerializeField] TextMeshProUGUI LastName1;
     [SerializeField] TextMeshProUGUI FirstName1;
     [SerializeField] TextMeshProUGUI Gender1;
@@ -18,7 +16,7 @@ public class Database : MonoBehaviour
     [SerializeField] TextMeshProUGUI Position1;
     [SerializeField] TextMeshProUGUI Features1;
 
-    [SerializeField] Image image2;
+    [SerializeField] MugshotController image2;
     [SerializeField] TextMeshProUGUI LastName2;
     [SerializeField] TextMeshProUGUI FirstName2;
     [SerializeField] TextMeshProUGUI Gender2;
@@ -27,7 +25,7 @@ public class Database : MonoBehaviour
     [SerializeField] TextMeshProUGUI Position2;
     [SerializeField] TextMeshProUGUI Features2;
 
-    [SerializeField] Image image3;
+    [SerializeField] MugshotController image3;
     [SerializeField] TextMeshProUGUI LastName3;
     [SerializeField] TextMeshProUGUI FirstName3;
     [SerializeField] TextMeshProUGUI Gender3;
@@ -44,7 +42,9 @@ public class Database : MonoBehaviour
     {
         if (CharacterSO1 != null)
         {
-            image1.sprite = CharacterSO1.IdImage;
+            image1.SetSkin(CharacterSO1._material, CharacterSO1.Head, CharacterSO1.Eyes, CharacterSO1.Nose,
+                CharacterSO1.Hair, CharacterSO1.MouthClosed, CharacterSO1.MouthOpenSmall, CharacterSO1.MouthOpenBig,
+                CharacterSO1.FrontEar, CharacterSO1.BackEar, CharacterSO1.Neck, CharacterSO1.Body);
             LastName1.text = CharacterSO1.LastName;
             FirstName1.text = CharacterSO1.FirstName;
             Gender1.text = $"Gender: {CharacterSO1.Gender.ToString()}";
@@ -56,7 +56,9 @@ public class Database : MonoBehaviour
 
         if (CharacterSO2 != null)
         {
-            image2.sprite = CharacterSO2.IdImage;
+            image2.SetSkin(CharacterSO2._material, CharacterSO2.Head, CharacterSO2.Eyes, CharacterSO2.Nose,
+                CharacterSO2.Hair, CharacterSO2.MouthClosed, CharacterSO2.MouthOpenSmall, CharacterSO2.MouthOpenBig,
+                CharacterSO2.FrontEar, CharacterSO2.BackEar, CharacterSO2.Neck, CharacterSO2.Body);
             LastName2.text = CharacterSO2.LastName;
             FirstName2.text = CharacterSO2.FirstName;
             Gender2.text = $"Gender: {CharacterSO2.Gender.ToString()}";
@@ -68,7 +70,9 @@ public class Database : MonoBehaviour
 
         if (CharacterSO3 != null)
         {
-            image3.sprite = CharacterSO3.IdImage;
+            image3.SetSkin(CharacterSO3._material, CharacterSO3.Head, CharacterSO3.Eyes, CharacterSO3.Nose,
+                CharacterSO3.Hair, CharacterSO3.MouthClosed, CharacterSO3.MouthOpenSmall, CharacterSO3.MouthOpenBig,
+                CharacterSO3.FrontEar, CharacterSO3.BackEar, CharacterSO3.Neck, CharacterSO3.Body);
             LastName3.text = CharacterSO3.LastName;
             FirstName3.text = CharacterSO3.FirstName;
             Gender3.text = $"Gender: {CharacterSO3.Gender.ToString()}";
