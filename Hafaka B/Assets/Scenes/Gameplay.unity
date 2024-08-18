@@ -5818,6 +5818,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811156301}
   m_CullTransparentMesh: 1
+--- !u!1 &1833329115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1419949040857349732, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
+  m_PrefabInstance: {fileID: 3342913536683174780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1849518306 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 483029077657034516, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
@@ -6552,6 +6557,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1261920918}
     - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
+      propertyPath: Panels.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
       propertyPath: _workersListScreen
       value: 
       objectReference: {fileID: 1127027689}
@@ -6559,6 +6568,30 @@ PrefabInstance:
       propertyPath: _buttons.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
+      propertyPath: 'Panels.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3342913536683174802}
+    - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
+      propertyPath: 'Panels.Array.data[1]'
+      value: 
+      objectReference: {fileID: 960191274}
+    - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
+      propertyPath: 'Panels.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1091178093}
+    - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
+      propertyPath: 'Panels.Array.data[3]'
+      value: 
+      objectReference: {fileID: 77176930}
+    - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
+      propertyPath: 'Panels.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1833329115}
+    - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
+      propertyPath: 'Panels.Array.data[5]'
+      value: 
+      objectReference: {fileID: 255375949}
     - target: {fileID: 7124044368864987871, guid: f06ad65763243e6468d1076c733c9d8b, type: 3}
       propertyPath: '_buttons.Array.data[0]'
       value: 
