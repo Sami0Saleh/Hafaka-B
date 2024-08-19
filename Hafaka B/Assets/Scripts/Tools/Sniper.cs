@@ -36,6 +36,16 @@ public class Sniper : MonoBehaviour
         {
             Reload();
         }
+        else if(Input.GetMouseButtonDown(0))
+        {
+            if(_canSnipe)
+            {
+                AudioManager.Instance.PlaySFX(_shootClip);
+                _canSnipe = false;
+            }
+            else
+                AudioManager.Instance.PlaySFX(_emptyClip);
+        }
     }
 
     public void Shoot()
