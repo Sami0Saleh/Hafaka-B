@@ -461,10 +461,6 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 479573467473962083, guid: 6190deff76da7a347ac62b69fffca6fc, type: 3}
-      propertyPath: Body
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 552467016197899279, guid: 6190deff76da7a347ac62b69fffca6fc, type: 3}
       propertyPath: m_fontColor.b
       value: 0

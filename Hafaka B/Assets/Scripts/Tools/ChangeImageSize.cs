@@ -7,13 +7,21 @@ public class ChangeImageSize : MonoBehaviour, IPointerEnterHandler, IPointerExit
 {
     [SerializeField] float _sizeMultiplier = 1.5f;
 
+    private Vector2 originalLocalScale;
+
+
+    private void Start()
+    {
+        originalLocalScale = transform.localScale;
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
-        transform.localScale *= _sizeMultiplier;
+        transform.localScale =  originalLocalScale*_sizeMultiplier;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        transform.localScale /= _sizeMultiplier;
+        transform.localScale = originalLocalScale;
     }
 }

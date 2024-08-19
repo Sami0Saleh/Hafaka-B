@@ -16,29 +16,35 @@ public class UIManager : MonoBehaviour
     public void OpenWorkersList()
     {
         if (GameManager.Instance.IsGameOver) return;
-        _viewScreen.SetActive(false);
         _workersListScreen.SetActive(true);
+        _scannerScreen.SetActive(false);
+        _viewScreen.SetActive(false);
+        _guardScreen.SetActive(false);
+        _sniperScreen.SetActive(false);
     }
     public void CloseWorkersList()
     {
-        _viewScreen.SetActive(true);
         _workersListScreen.SetActive(false);
+        _viewScreen.SetActive(true);
     }
     public void OpenScanner()
     {
         if (GameManager.Instance.IsGameOver) return;
-        _viewScreen.SetActive(false);
         _scannerScreen.SetActive(true);
+        _workersListScreen.SetActive(false);
+        _guardScreen.SetActive(false);
+        _sniperScreen.SetActive(false);
     }
     public void CloseScanner()
     {
-        _viewScreen.SetActive(true);
         _scannerScreen.SetActive(false);
     }
     public void OpenGuard()
     {
         if (GameManager.Instance.IsGameOver) return;
-        _viewScreen.SetActive(false);
+        _workersListScreen.SetActive(false);
+        _scannerScreen.SetActive(false);
+        _sniperScreen.SetActive(false);
         _guardScreen.SetActive(true);
     }
     public void CloseGuard()
@@ -50,6 +56,9 @@ public class UIManager : MonoBehaviour
     {
         if (GameManager.Instance.IsGameOver) return;
         _viewScreen.SetActive(false);
+        _workersListScreen.SetActive(false);
+        _scannerScreen.SetActive(false);
+        _guardScreen.SetActive(false);
         _sniperScreen.SetActive(true);
     }
     public void CloseSniper()

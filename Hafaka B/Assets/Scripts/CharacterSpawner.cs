@@ -58,7 +58,7 @@ public class CharacterSpawner : MonoBehaviour
             CharacterScriptableObject randomCharacter = spawnPool[randomIndex];
             SpawnCharacter(randomCharacter);
             spawnPool.RemoveAt(randomIndex);
-            _secondsToWait = Random.Range(5f, 7f);
+            _secondsToWait = Random.Range(14f, 20f);
             yield return new WaitForSeconds(_secondsToWait);
         }
     }
