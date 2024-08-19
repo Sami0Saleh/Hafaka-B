@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
   m_Name: Chrisopher Anderson
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
+  _moveSpeed: 1.2
   _isAlien: 0
   _characterSprites: []
   _animator: {fileID: 0}
