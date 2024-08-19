@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffd1243d9a084440943b8af92c2bf66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scrollSpeed: 2
+  _scrollSpeed: 8
   _isLeftScroller: 1
   _scrollers:
   - {fileID: 0}
@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffd1243d9a084440943b8af92c2bf66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scrollSpeed: 2
+  _scrollSpeed: 8
   _isLeftScroller: 0
   _scrollers:
   - {fileID: 0}
