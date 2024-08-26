@@ -19,7 +19,7 @@ public class Sniper : MonoBehaviour
         if (GameManager.Instance != null)
             GameManager.Instance.OnCharacterClicked += Shoot;
         _scopeCamera.ZoomIn();
-        AudioManager.Instance.ChangeMusicVolume(0.25f);
+        if (AudioManager.Instance != null) AudioManager.Instance.ChangeMusicVolume(0.25f);
     }
 
     private void OnDisable()
@@ -27,7 +27,7 @@ public class Sniper : MonoBehaviour
         if (GameManager.Instance != null)
             GameManager.Instance.OnCharacterClicked -= Shoot;
         _scopeCamera.ZoomOut();
-        AudioManager.Instance.ChangeMusicVolume(4f);
+        if (AudioManager.Instance != null) AudioManager.Instance.ChangeMusicVolume(4f);
     }
 
     private void Update()
@@ -40,11 +40,11 @@ public class Sniper : MonoBehaviour
         {
             if(_canSnipe)
             {
-                AudioManager.Instance.PlaySFX(_shootClip);
+                if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_shootClip);
                 _canSnipe = false;
             }
             else
-                AudioManager.Instance.PlaySFX(_emptyClip);
+                if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_emptyClip);
         }
     }
 
@@ -52,13 +52,13 @@ public class Sniper : MonoBehaviour
     {
         if (!_canSnipe)
         {
-            AudioManager.Instance.PlaySFX(_emptyClip);
+            if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_emptyClip);
             return;
         }
         Debug.Log("SHOOT");
         if (GameManager.Instance.LastSelectedCharacter == null)
             return;
-        AudioManager.Instance.PlaySFX(_shootClip);        
+        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_shootClip);        
         BloodSpawner.Instance.SpawnBlood(GameManager.Instance.LastSelectedCharacter);
         GameManager.Instance.LastSelectedCharacter.Die();
         _canSnipe = false;
@@ -68,6 +68,6 @@ public class Sniper : MonoBehaviour
     {
         if (_canSnipe) return;
         _canSnipe = true;
-        AudioManager.Instance.PlaySFX(_reloadClip);
+        if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_reloadClip);
     }
 }

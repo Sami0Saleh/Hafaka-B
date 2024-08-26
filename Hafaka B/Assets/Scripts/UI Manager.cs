@@ -13,6 +13,14 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] GameObject[] Panels;
 
+    public bool IsAScreenOpen 
+    { 
+        get
+        {
+            return !_viewScreen.activeSelf;
+        }
+    }
+
     public void OpenWorkersList()
     {
         if (GameManager.Instance.IsGameOver) return;
@@ -81,13 +89,18 @@ public class UIManager : MonoBehaviour
         panel.SetActive(false);
     }
 
-    public void CloseAll()
+    public void CloseAllAndDeactivate()
+    {
+        CloseAll();
+        DeactivateAllButtons();
+    }
+
+    private void CloseAll()
     {
         CloseSniper();
         CloseGuard();
         CloseScanner();
         CloseWorkersList();
-        DeactivateAllButtons();
     }
 
     private void DeactivateAllButtons()
@@ -96,5 +109,20 @@ public class UIManager : MonoBehaviour
         {
             button.interactable = false;
         }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            CloseAll();
+        if (IsAScreenOpen) return; // a screen is already open, can't open another one unless player closes first
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            OpenWorkersList();
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+            OpenScanner();
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+            OpenGuard();
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+            OpenSniper();
     }
 }

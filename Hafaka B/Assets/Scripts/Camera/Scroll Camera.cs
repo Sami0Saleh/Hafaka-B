@@ -9,6 +9,7 @@ public class ScrollCamera : MonoBehaviour
 
     private int _direction = 1;
     private Camera _camera;
+    private bool _canMoveWithMouse = false;
 
     private void OnValidate()
     {
@@ -24,18 +25,23 @@ public class ScrollCamera : MonoBehaviour
             _direction = -1;
     }
 
-    //private void Update()
-    //{
-    //    if (IsMouseNearEdge())
-    //    {
-    //        if (IsAheadOfBoundary()) return;
-    //        foreach (var scroller in _scrollers)
-    //        {
-    //            scroller.transform.position = new Vector2(scroller.transform.position.x + _scrollSpeed * _direction * Time.deltaTime * -1, scroller.transform.position.y);
-    //        }
-    //        _camera.transform.position = new Vector3(_camera.transform.position.x + _scrollSpeed * _direction * Time.deltaTime * -1, _camera.transform.position.y, _camera.transform.position.z);
-    //    }
-    //}
+    private void Update()
+    {
+        if (_canMoveWithMouse) return; // don't "double-move" if already moving with mouse
+        float direction = Input.GetAxis("Horizontal");
+        if (direction != 0)
+        {
+            foreach (var scroller in _scrollers)
+            {
+                scroller.transform.position = new Vector2(scroller.transform.position.x + _scrollSpeed * direction * Time.deltaTime, scroller.transform.position.y);
+            }
+            _camera.transform.position = Vector3.Lerp(
+                _camera.transform.position,
+                new Vector3(_camera.transform.position.x + _scrollSpeed * direction * Time.deltaTime, _camera.transform.position.y, _camera.transform.position.z),
+                0.8f
+            );
+        }
+    }
 
     private bool IsMouseNearEdge()
     {
@@ -53,7 +59,21 @@ public class ScrollCamera : MonoBehaviour
         {
             scroller.transform.position = new Vector2(scroller.transform.position.x + _scrollSpeed * _direction * Time.deltaTime, scroller.transform.position.y);
         }
-        _camera.transform.position = new Vector3(_camera.transform.position.x + _scrollSpeed * _direction * Time.deltaTime, _camera.transform.position.y, _camera.transform.position.z);
+        _camera.transform.position = Vector3.Lerp(
+            _camera.transform.position,
+            new Vector3(_camera.transform.position.x + _scrollSpeed * _direction * Time.deltaTime, _camera.transform.position.y, _camera.transform.position.z),
+            0.8f // smoothing factor
+        );
+    }
+
+    private void OnMouseExit()
+    {
+        _canMoveWithMouse = false;
+    }
+
+    private void OnMouseEnter()
+    {
+        _canMoveWithMouse = true;
     }
 
     private bool IsAheadOfBoundary()

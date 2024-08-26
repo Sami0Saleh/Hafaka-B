@@ -19,7 +19,7 @@ public class ScoreScreen : MonoBehaviour
 
     private void CloseOtherUI()
     {
-        _uiManager.CloseAll();
+        _uiManager.CloseAllAndDeactivate();
     }
 
     private void UdateUITexts()
