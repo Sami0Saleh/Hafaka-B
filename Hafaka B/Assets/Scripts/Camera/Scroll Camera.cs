@@ -6,10 +6,11 @@ public class ScrollCamera : MonoBehaviour
     [SerializeField] bool _isLeftScroller;
     [SerializeField] ScrollCamera[] _scrollers;
     [SerializeField] GameObject _boundary;
+    [SerializeField] Texture2D _mouseTexture;
 
     private int _direction = 1;
     private Camera _camera;
-    private bool _canMoveWithMouse = false;
+    private static bool _canMoveWithMouse = false;
 
     private void OnValidate()
     {
@@ -29,17 +30,25 @@ public class ScrollCamera : MonoBehaviour
     {
         if (_canMoveWithMouse) return; // don't "double-move" if already moving with mouse
         float direction = Input.GetAxis("Horizontal");
+        if (direction > 0)
+        {
+            if (transform.position.x >= _boundary.transform.position.x)
+                return;
+        }
+        else
+        {
+            if (transform.position.x <= _boundary.transform.position.x)
+                return;
+        }
         if (direction != 0)
         {
+            Debug.Log("Moving");
+            Debug.Log(_canMoveWithMouse);
             foreach (var scroller in _scrollers)
             {
                 scroller.transform.position = new Vector2(scroller.transform.position.x + _scrollSpeed * direction * Time.deltaTime, scroller.transform.position.y);
             }
-            _camera.transform.position = Vector3.Lerp(
-                _camera.transform.position,
-                new Vector3(_camera.transform.position.x + _scrollSpeed * direction * Time.deltaTime, _camera.transform.position.y, _camera.transform.position.z),
-                0.8f
-            );
+            _camera.transform.position = new Vector3(_camera.transform.position.x + _scrollSpeed * direction * Time.deltaTime, _camera.transform.position.y, _camera.transform.position.z);
         }
     }
 
@@ -51,29 +60,32 @@ public class ScrollCamera : MonoBehaviour
         else
             return Input.mousePosition.x >= Screen.width - edgeThreshold;
     }
-
-    private void OnMouseOver()
+    
+    private void OnMouseDrag()
     {
+        _canMoveWithMouse = true;
         if (IsAheadOfBoundary()) return;
+        _canMoveWithMouse = true;
         foreach (var scroller in _scrollers)
         {
             scroller.transform.position = new Vector2(scroller.transform.position.x + _scrollSpeed * _direction * Time.deltaTime, scroller.transform.position.y);
         }
-        _camera.transform.position = Vector3.Lerp(
-            _camera.transform.position,
-            new Vector3(_camera.transform.position.x + _scrollSpeed * _direction * Time.deltaTime, _camera.transform.position.y, _camera.transform.position.z),
-            0.8f // smoothing factor
-        );
+        _camera.transform.position = new Vector3(_camera.transform.position.x + _scrollSpeed * _direction * Time.deltaTime, _camera.transform.position.y, _camera.transform.position.z);
     }
 
-    private void OnMouseExit()
+    private void OnMouseUp()
     {
         _canMoveWithMouse = false;
     }
 
     private void OnMouseEnter()
     {
-        _canMoveWithMouse = true;
+        Cursor.SetCursor(_mouseTexture, Vector2.zero, CursorMode.Auto);
+    }
+
+    private void OnMouseExit()
+    {
+        
     }
 
     private bool IsAheadOfBoundary()
