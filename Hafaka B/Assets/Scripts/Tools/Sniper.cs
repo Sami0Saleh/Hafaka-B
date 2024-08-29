@@ -20,6 +20,7 @@ public class Sniper : MonoBehaviour
             GameManager.Instance.OnCharacterClicked += Shoot;
         _scopeCamera.ZoomIn();
         if (AudioManager.Instance != null) AudioManager.Instance.ChangeMusicVolume(0.25f);
+        Cursor.visible = false;
     }
 
     private void OnDisable()
@@ -28,6 +29,7 @@ public class Sniper : MonoBehaviour
             GameManager.Instance.OnCharacterClicked -= Shoot;
         _scopeCamera.ZoomOut();
         if (AudioManager.Instance != null) AudioManager.Instance.ChangeMusicVolume(4f);
+        Cursor.visible = true;
     }
 
     private void Update()
