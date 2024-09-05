@@ -9,10 +9,14 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] List<CharacterScriptableObject> _allCharacters;
     [SerializeField] List<CharacterScriptableObject> _workers;
     [SerializeField] GameObject _characterPrefab;
-    [SerializeField] int _minExpectedWorkers = 2;
-    [SerializeField] int _maxExpectedWorkers = 4;
     [SerializeField] ExpectedListUI _expectedListUI;
     [SerializeField] Transform _lastGoal;
+    
+    [Header("Stats")]
+    [SerializeField] int _minExpectedWorkers = 2;
+    [SerializeField] int _maxExpectedWorkers = 4;
+    [SerializeField] float _minSpawnTime = 20f;
+    [SerializeField] float _maxSpawnTime = 25f;
 
     public List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
     private float _secondsToWait;
@@ -58,7 +62,7 @@ public class CharacterSpawner : MonoBehaviour
             CharacterScriptableObject randomCharacter = spawnPool[randomIndex];
             SpawnCharacter(randomCharacter);
             spawnPool.RemoveAt(randomIndex);
-            _secondsToWait = Random.Range(14f, 20f);
+            _secondsToWait = Random.Range(_minSpawnTime, _maxSpawnTime) - i * 2;
             yield return new WaitForSeconds(_secondsToWait);
         }
     }

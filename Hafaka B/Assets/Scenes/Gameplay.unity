@@ -3437,10 +3437,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3ce982876b7eec745a6b810fc7d50ab6, type: 2}
   - {fileID: 11400000, guid: 5b7c6180d93574b48977d513642fef86, type: 2}
   _characterPrefab: {fileID: 6550850988543019808, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
-  _minExpectedWorkers: 4
-  _maxExpectedWorkers: 8
   _expectedListUI: {fileID: 3176941975282307188}
   _lastGoal: {fileID: 5509048083914431018, guid: 7563d07f9ef84fc47982dec8e76f070f, type: 3}
+  _minExpectedWorkers: 4
+  _maxExpectedWorkers: 8
+  _minSpawnTime: 1
+  _maxSpawnTime: 4
   _expectedWorkers: []
 --- !u!4 &1474631366 stripped
 Transform:
@@ -5199,39 +5201,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[0]'
-      value: 0.055425398
+      value: 0.06446329
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[1]'
-      value: 0.05058479
+      value: 0.06467093
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[2]'
-      value: 0.10826512
+      value: 0.0883817
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[3]'
-      value: 0.060614023
+      value: 0.06917864
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[4]'
-      value: 0.06541008
+      value: 0.09894522
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[5]'
-      value: 0.060729854
+      value: 0.059655745
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[6]'
-      value: 0.108136296
+      value: 0.06951122
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[7]'
-      value: 0.059796557
+      value: 0.08546992
       objectReference: {fileID: 0}
     - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
       propertyPath: '_cloudsAndSpeed.values.Array.data[8]'
-      value: 0.054370135
+      value: 0.0950453
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
+      propertyPath: '_cloudsAndSpeed.values.Array.data[9]'
+      value: 0.08742851
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
+      propertyPath: '_cloudsAndSpeed.values.Array.data[10]'
+      value: 0.09629318
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240436956686695856, guid: 79ff0c105e0572545ae3e6211e53a06a, type: 3}
+      propertyPath: '_cloudsAndSpeed.values.Array.data[11]'
+      value: 0.050524905
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
