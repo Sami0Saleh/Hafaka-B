@@ -1907,7 +1907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1382017083335642327, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.76
+      value: 27.15
       objectReference: {fileID: 0}
     - target: {fileID: 2883315210462569942, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: s
@@ -2011,7 +2011,7 @@ PrefabInstance:
       objectReference: {fileID: 799651168}
     - target: {fileID: 7977352391376737070, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.89
+      value: -8.3
       objectReference: {fileID: 0}
     - target: {fileID: 8748404194808896875, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: m_Size.x
@@ -3441,8 +3441,8 @@ MonoBehaviour:
   _lastGoal: {fileID: 5509048083914431018, guid: 7563d07f9ef84fc47982dec8e76f070f, type: 3}
   _minExpectedWorkers: 4
   _maxExpectedWorkers: 8
-  _minSpawnTime: 1
-  _maxSpawnTime: 4
+  _minSpawnTime: 20
+  _maxSpawnTime: 25
   _expectedWorkers: []
 --- !u!4 &1474631366 stripped
 Transform:
