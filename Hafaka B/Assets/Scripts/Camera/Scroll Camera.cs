@@ -6,8 +6,8 @@ public class ScrollCamera : MonoBehaviour
     [SerializeField] bool _isLeftScroller;
     [SerializeField] ScrollCamera[] _scrollers;
     [SerializeField] GameObject _boundary;
-    [SerializeField] Sprite _mouseRightTexture;
-    [SerializeField] Sprite _mouseLeftTexture;
+    [SerializeField] Texture2D _mouseRightTexture;
+    [SerializeField] Texture2D _mouseLeftTexture;
 
     private int _direction = 1;
     private Camera _camera;
@@ -82,14 +82,14 @@ public class ScrollCamera : MonoBehaviour
     private void OnMouseEnter()
     {
         if (_direction == 1)
-            Cursor.SetCursor(_mouseRightTexture.texture, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(_mouseRightTexture, Vector2.zero, CursorMode.Auto);
         else
-            Cursor.SetCursor(_mouseLeftTexture.texture, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(_mouseLeftTexture, Vector2.zero, CursorMode.Auto);
     }
 
     private void OnMouseExit()
     {
-        //Cursor.SetCursor(s.texture, Vector2.zero, CursorMode.Auto);
+        
     }
 
     private bool IsAheadOfBoundary()
