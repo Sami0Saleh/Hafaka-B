@@ -9,6 +9,7 @@ public class ScrollCamera : MonoBehaviour
     [SerializeField] Texture2D _mouseRightTexture;
     [SerializeField] Texture2D _mouseLeftTexture;
 
+    private UIManager _uiManager;
     private int _direction = 1;
     private Camera _camera;
     private static bool _canMoveWithMouse = false;
@@ -20,6 +21,7 @@ public class ScrollCamera : MonoBehaviour
 
     private void Start()
     {
+        _uiManager = GameObject.Find("UI Manager").GetComponent<UIManager>();
         _camera = Camera.main;
         if (_isLeftScroller)
             _direction = 1;
@@ -64,6 +66,7 @@ public class ScrollCamera : MonoBehaviour
     
     private void OnMouseDrag()
     {
+        if (_uiManager.IsAScreenOpen) return;
         _canMoveWithMouse = true;
         if (IsAheadOfBoundary()) return;
         _canMoveWithMouse = true;
