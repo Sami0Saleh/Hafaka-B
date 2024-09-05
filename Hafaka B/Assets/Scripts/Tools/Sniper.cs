@@ -1,10 +1,15 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
+using System.Collections;
 
 public class Sniper : MonoBehaviour
 {
     //[SerializeField] private Image _img;
     [SerializeField] private CameraZoom _scopeCamera;
+    [SerializeField] private GameObject _reloadObj;
+    [SerializeField] private TMP_Text _realodText;
 
     [Header("Sound Effects")]
     [SerializeField] private AudioClip _shootClip;
@@ -55,6 +60,9 @@ public class Sniper : MonoBehaviour
         if (!_canSnipe)
         {
             if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_emptyClip);
+            _reloadObj.SetActive(true);
+            _realodText.DOFade(0f,1f);
+            StartCoroutine(ReloadTextCoroutine());
             return;
         }
         Debug.Log("SHOOT");
@@ -71,5 +79,12 @@ public class Sniper : MonoBehaviour
         if (_canSnipe) return;
         _canSnipe = true;
         if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_reloadClip);
+    }
+
+    private IEnumerator ReloadTextCoroutine()
+    {
+        yield return new WaitForSeconds(1f);
+        _reloadObj.SetActive(false);
+        _realodText.DOFade(1f, 0.1f);
     }
 }
