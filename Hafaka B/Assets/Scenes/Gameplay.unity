@@ -1914,17 +1914,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 452055842, guid: 20b6ee1a7efc3654bbda6d376637bd10, type: 3}
     - target: {fileID: 2883315210462569942, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
+      propertyPath: _defCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 808630febef19ef4c8fd56abca9d0709, type: 3}
+    - target: {fileID: 2883315210462569942, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: _mouseTexture
       value: 
       objectReference: {fileID: 2800000, guid: e09405f9f1245e34fb45863833e2f924, type: 3}
     - target: {fileID: 2883315210462569942, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: _mouseLeftTexture
       value: 
-      objectReference: {fileID: 1411397822, guid: 20b6ee1a7efc3654bbda6d376637bd10, type: 3}
+      objectReference: {fileID: 2800000, guid: ed589454f27d9634b82c01cddb2a8e96, type: 3}
     - target: {fileID: 2883315210462569942, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: _mouseRightTexture
       value: 
-      objectReference: {fileID: 452055842, guid: 20b6ee1a7efc3654bbda6d376637bd10, type: 3}
+      objectReference: {fileID: 2800000, guid: ba0e036a7af491c4ea6abf7a9a7be128, type: 3}
     - target: {fileID: 2883315210462569942, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: _scrollers.Array.size
       value: 2
@@ -1986,17 +1990,21 @@ PrefabInstance:
       value: 27.04
       objectReference: {fileID: 0}
     - target: {fileID: 7099974375102135849, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
+      propertyPath: _defCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 808630febef19ef4c8fd56abca9d0709, type: 3}
+    - target: {fileID: 7099974375102135849, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: _mouseTexture
       value: 
       objectReference: {fileID: 2800000, guid: e09405f9f1245e34fb45863833e2f924, type: 3}
     - target: {fileID: 7099974375102135849, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: _mouseLeftTexture
       value: 
-      objectReference: {fileID: 1411397822, guid: 20b6ee1a7efc3654bbda6d376637bd10, type: 3}
+      objectReference: {fileID: 2800000, guid: ed589454f27d9634b82c01cddb2a8e96, type: 3}
     - target: {fileID: 7099974375102135849, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: _mouseRightTexture
       value: 
-      objectReference: {fileID: 452055842, guid: 20b6ee1a7efc3654bbda6d376637bd10, type: 3}
+      objectReference: {fileID: 2800000, guid: ba0e036a7af491c4ea6abf7a9a7be128, type: 3}
     - target: {fileID: 7099974375102135849, guid: 8d8cc516e8add134b9a66cd5d0b9376f, type: 3}
       propertyPath: _scrollers.Array.size
       value: 2
