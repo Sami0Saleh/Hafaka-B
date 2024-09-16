@@ -302,7 +302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161, y: 26.5}
+  m_AnchoredPosition: {x: 99.5, y: 54}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &51418115
@@ -325,7 +325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1208040086343421634, guid: 2762d4bbe1fe8db43be8d4720c5a3d6a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b5a0e0de4a6f68448be74c78ef1b9716, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 763d82aa89c1aed49b8e65829c9bcf0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b4c2ffed9493be48bbae5534d218645, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -626,8 +626,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1288418052066537259, guid: 0f47f63ba82870944a404ab400a424e4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1b33cda5114aa944f950a746b8cb9fe4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -889,7 +889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 8.71}
+  m_AnchoredPosition: {x: -151.9, y: 0.14}
   m_SizeDelta: {x: 450, y: 480}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &438514137
@@ -912,10 +912,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Determine which White House employees are aliens, and then shoot them
-    to defend this great nation!\nYou have 4 tools to aid you. Using the tablet will
-    let \nyou access classified information, specifically \nemployees which are expected
-    to arrive today.\n\n\nClick on suspects and then scan them to see their Employee
+  m_text: "Determine which White House employees are aliens\nshoot them to defend
+    this great nation!\nYou have 4 tools to aid you. Using the tablet will let \nyou
+    access classified information, specifically \nemployees which are expected to
+    arrive today.\n\n\n\n\nClick on suspects and then scan them to see their Employee
     Tag. Cross-reference that information with the database\n to see if the suspect
     shouldn't be here. "
   m_isRightToLeft: 0
@@ -1023,14 +1023,14 @@ RectTransform:
   m_GameObject: {fileID: 588439689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalScale: {x: 0.72, y: 0.72, z: 0.72}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 603969511}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.1, y: -93.6}
+  m_AnchoredPosition: {x: 116.4, y: -85.63}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &588439691
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 371296c789a22b44583f3ac3b9e1b1d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f548fb54f5f01a4387a6e2f31f72f0b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1456,9 +1456,9 @@ RectTransform:
   - {fileID: 1694240785}
   m_Father: {fileID: 809407470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 204.1, y: -326.2}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706366929
@@ -1561,8 +1561,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1288418052066537259, guid: 0f47f63ba82870944a404ab400a424e4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1b33cda5114aa944f950a746b8cb9fe4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1742,15 +1742,15 @@ RectTransform:
   m_GameObject: {fileID: 771710949}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 76161437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 169, y: 88.8}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 100.3, y: 68.9}
+  m_SizeDelta: {x: 135, y: 347}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &771710951
 MonoBehaviour:
@@ -1772,7 +1772,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3725898cda55456438ab8f13f62e956b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c1d6c59dddde2e4b8def96c47782581, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1824,7 +1824,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 8.42}
+  m_AnchoredPosition: {x: -153.87, y: -10.7}
   m_SizeDelta: {x: 450, y: 480}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782035962
@@ -1851,7 +1851,7 @@ MonoBehaviour:
     to call the ever dependable \nWH security guard - Bob! Simply send Bob to the
     \nselected target with a question about whatever you find suspicious and check
     the target's answer. If their answer doesn't line up, chances are, they are a
-    slimy alien!\n\nOnce you have found an alien, use your \ntrusty sniper rifle
+    slimy alien!\n\n\n\nOnce you have found an alien, use your \ntrusty sniper rifle
     to shoot them before \nthey reach the White House! Just remember -\ndon't shoot
     fellow Americans!"
   m_isRightToLeft: 0
@@ -2197,7 +2197,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809407469}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
@@ -2236,7 +2236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 763d82aa89c1aed49b8e65829c9bcf0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b4c2ffed9493be48bbae5534d218645, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3110,9 +3110,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 809407470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 399.99997, y: -121.00125}
   m_SizeDelta: {x: 640, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211292435
@@ -3248,9 +3248,9 @@ RectTransform:
   - {fileID: 978371493}
   m_Father: {fileID: 809407470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 597.7, y: -326.2}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286785345
@@ -3341,8 +3341,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1288418052066537259, guid: 0f47f63ba82870944a404ab400a424e4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1b33cda5114aa944f950a746b8cb9fe4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3393,9 +3393,9 @@ RectTransform:
   - {fileID: 376174284}
   m_Father: {fileID: 809407470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 399.99997, y: -326.2}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288318474
@@ -3498,8 +3498,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1288418052066537259, guid: 0f47f63ba82870944a404ab400a424e4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1b33cda5114aa944f950a746b8cb9fe4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3701,15 +3701,15 @@ RectTransform:
   m_GameObject: {fileID: 1488145025}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 76161437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 134, y: -57}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -24.6, y: -96.9}
+  m_SizeDelta: {x: 428, y: 380}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1488145027
 MonoBehaviour:
@@ -3731,7 +3731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3369390543426049443, guid: af4f21c79390d1d43a15ecf800af7a3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0dbda5136fc63c64eb90b44b06fc3f56, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3812,7 +3812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 763d82aa89c1aed49b8e65829c9bcf0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b4c2ffed9493be48bbae5534d218645, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4130,8 +4130,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1288418052066537259, guid: 0f47f63ba82870944a404ab400a424e4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1b33cda5114aa944f950a746b8cb9fe4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4287,8 +4287,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1288418052066537259, guid: 0f47f63ba82870944a404ab400a424e4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1b33cda5114aa944f950a746b8cb9fe4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4529,8 +4529,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1288418052066537259, guid: 0f47f63ba82870944a404ab400a424e4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1b33cda5114aa944f950a746b8cb9fe4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4863,8 +4863,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1288418052066537259, guid: 0f47f63ba82870944a404ab400a424e4, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1b33cda5114aa944f950a746b8cb9fe4, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4915,7 +4915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -127.5, y: -100}
+  m_AnchoredPosition: {x: -221.8, y: -55.75}
   m_SizeDelta: {x: 640, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2069105447

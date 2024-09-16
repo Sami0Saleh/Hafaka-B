@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 20b6ee1a7efc3654bbda6d376637bd10
+guid: 4b4c2ffed9493be48bbae5534d218645
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4868593244447513523
-    second: doubleArrows-removebg-preview_0
+      213: -3615830962058330767
+    second: 1-96dd9b02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,45 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: doubleArrows-removebg-preview_0
+      name: 1-96dd9b02_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 158
-        width: 187
-        height: 180
+        x: 0
+        y: 0
+        width: 1200
+        height: 800
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f6dfa0c8d99129a4cb80e655ce2c12ed
-      internalID: 1411397822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: doubleArrows-removebg-preview_1
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 158
-        width: 188
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfa52e672ccb51343ac8a89e3b29ca2f
-      internalID: 452055842
+      spriteID: 17d77a2c5ecf1ddc0800000000000000
+      internalID: -3615830962058330767
       vertices: []
       indices: 
       edges: []
@@ -160,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d814c1f408f93cf4f83bf6a3085ea39a
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -168,8 +146,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      doubleArrows-removebg-preview_0: 1411397822
-      doubleArrows-removebg-preview_1: 452055842
+      1-96dd9b02_0: -3615830962058330767
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
