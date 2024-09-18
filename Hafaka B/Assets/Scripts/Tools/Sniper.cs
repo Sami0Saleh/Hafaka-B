@@ -20,6 +20,11 @@ public class Sniper : MonoBehaviour
     private bool _canSnipe = true;
     private Coroutine _currentCoroutine;
 
+    [Header("Camera Shake")]
+    [SerializeField] float _duration = 0.1f;
+    [SerializeField] float _xPower = 0.1f;
+    [SerializeField] float _yPower = 0.2f;
+
     private void OnEnable()
     {
         if (GameManager.Instance != null)
@@ -49,6 +54,7 @@ public class Sniper : MonoBehaviour
             if (_canSnipe)
             {
                 if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_shootClip);
+                StartCoroutine(CameraShake());
                 _canSnipe = false;
             }
             else
@@ -73,7 +79,26 @@ public class Sniper : MonoBehaviour
         if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_shootClip);        
         BloodSpawner.Instance.SpawnBlood(GameManager.Instance.LastSelectedCharacter);
         GameManager.Instance.LastSelectedCharacter.Die();
+        StartCoroutine(CameraShake());
         _canSnipe = false;
+    }
+
+    private IEnumerator CameraShake()
+    {
+        float elapsed = 0;
+        float x;
+        float y;
+        Camera camera = Camera.main;
+        Vector3 originalCameraPosition = camera.transform.localPosition;
+        while (elapsed < _duration)
+        {
+            x = UnityEngine.Random.Range(-0.1f, 0.1f) * _xPower;
+            y = UnityEngine.Random.Range(-0.1f, 0.2f) * _yPower;
+            camera.transform.localPosition += new Vector3(x, y, 0);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        camera.transform.localPosition = originalCameraPosition;
     }
 
     private void ShowReloadText()

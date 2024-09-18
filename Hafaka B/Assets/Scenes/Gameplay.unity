@@ -6615,6 +6615,14 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7339133781853623792, guid: 1217424b32e1ca244a9b9a74a45d8fa4, type: 3}
+      propertyPath: _xPower
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339133781853623792, guid: 1217424b32e1ca244a9b9a74a45d8fa4, type: 3}
+      propertyPath: _yPower
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7339133781853623792, guid: 1217424b32e1ca244a9b9a74a45d8fa4, type: 3}
       propertyPath: _scopeCamera
       value: 
       objectReference: {fileID: 519420033}
