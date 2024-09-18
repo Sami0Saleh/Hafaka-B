@@ -14,8 +14,6 @@ public class ScanID : MonoBehaviour
     [SerializeField] GameObject _viewPort;
     [SerializeField] TMP_Text _dateOfBirth;
 
-    [SerializeField] GameObject _scanFailedObj;
-    [SerializeField] TMP_Text _scanFailedText;
     private CharacterController _character;
     private UIManager _uiManager;
 
@@ -38,7 +36,6 @@ public class ScanID : MonoBehaviour
         {
             if(_uiManager == null)
                 SetUIManager();
-            Debug.Log("calling UI manager to display text");
             _uiManager.DisplayScannerFailedText();
             HideScanner();
             return;
@@ -75,11 +72,5 @@ public class ScanID : MonoBehaviour
         Image.SetSkin(SO._material, SO.Head, SO.Eyes, SO.Nose,
                 SO.Hair, SO.MouthClosed, SO.FrontEar, SO.BackEar, SO.Neck, SO.Body,
                 SO.SholderBack, SO.SholderFront, SO.ForearmBack, SO.ForearmFront);
-    }
-    private IEnumerator ScanFailedTextCoroutine()
-    {
-        yield return new WaitForSeconds(1f);
-        _scanFailedObj.SetActive(false);
-        _scanFailedText.DOFade(1f, 0.1f);
     }
 }
