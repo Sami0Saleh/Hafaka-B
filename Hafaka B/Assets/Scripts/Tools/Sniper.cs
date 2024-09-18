@@ -18,6 +18,7 @@ public class Sniper : MonoBehaviour
 
     private RectTransform _canvasRectTransform;
     private bool _canSnipe = true;
+    private Coroutine _currentCoroutine;
 
     private void OnEnable()
     {
@@ -45,13 +46,16 @@ public class Sniper : MonoBehaviour
         }
         else if(Input.GetMouseButtonDown(0))
         {
-            if(_canSnipe)
+            if (_canSnipe)
             {
                 if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_shootClip);
                 _canSnipe = false;
             }
             else
+            {
                 if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_emptyClip);
+                if(_currentCoroutine == null) ShowReloadText();
+            }
         }
     }
 
@@ -60,9 +64,7 @@ public class Sniper : MonoBehaviour
         if (!_canSnipe)
         {
             if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_emptyClip);
-            _reloadObj.SetActive(true);
-            _realodText.DOFade(0f,1f);
-            StartCoroutine(ReloadTextCoroutine());
+            ShowReloadText();
             return;
         }
         Debug.Log("SHOOT");
@@ -72,6 +74,13 @@ public class Sniper : MonoBehaviour
         BloodSpawner.Instance.SpawnBlood(GameManager.Instance.LastSelectedCharacter);
         GameManager.Instance.LastSelectedCharacter.Die();
         _canSnipe = false;
+    }
+
+    private void ShowReloadText()
+    {
+        _reloadObj.SetActive(true);
+        _realodText.DOFade(0f, 1f);
+        _currentCoroutine = StartCoroutine(ReloadTextCoroutine());
     }
 
     public void Reload()
@@ -86,5 +95,6 @@ public class Sniper : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _reloadObj.SetActive(false);
         _realodText.DOFade(1f, 0.1f);
+        _currentCoroutine = null;
     }
 }
