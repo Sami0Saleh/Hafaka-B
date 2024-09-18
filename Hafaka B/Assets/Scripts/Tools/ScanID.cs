@@ -5,7 +5,7 @@ using System;
 
 public class ScanID : MonoBehaviour
 {
-    [SerializeField] Image _idImage;
+    [SerializeField] MugshotController _idImage;
     [SerializeField] TMP_Text _name;
     [SerializeField] TMP_Text _department;
     [SerializeField] TMP_Text _position;
@@ -38,7 +38,7 @@ public class ScanID : MonoBehaviour
     {
         if (_character == null)
             return;
-        _idImage.sprite = _character.IdImage;
+        UpdateSkin(_character.CharacterSO, _idImage);
         _name.text = $"{_character.FirstName} {_character.LastName}";
         _department.text = _character.Department;
         _position.text = _character.JobTitle;
@@ -49,5 +49,12 @@ public class ScanID : MonoBehaviour
     {
         gameObject.SetActive(false);
         _viewPort.SetActive(true);
+    }
+    private void UpdateSkin(CharacterScriptableObject SO, MugshotController Image)
+    {
+        Debug.Log("Should Be Updating the hell out of this skin");
+        Image.SetSkin(SO._material, SO.Head, SO.Eyes, SO.Nose,
+                SO.Hair, SO.MouthClosed, SO.FrontEar, SO.BackEar, SO.Neck, SO.Body,
+                SO.SholderBack, SO.SholderFront, SO.ForearmBack, SO.ForearmFront);
     }
 }

@@ -52,6 +52,7 @@ public class CharacterController : MonoBehaviour
     public string JobTitle { get => _jobTitle; private set => _jobTitle = value; }
     public string FullName { get => $"{FirstName} {LastName}"; }
     public string DateOfBirth { get => _dateOfBirth; private set => _dateOfBirth = value; }
+    public CharacterScriptableObject CharacterSO { get => _characterSO; set => _characterSO = value; }
 
     private void OnValidate()
     {
@@ -101,17 +102,17 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
-        _speed = _characterSO.MoveSpeed;
-        _isAlien = _characterSO.IsAlien;
-        _characterSprites = _characterSO.CharacterSprites;
-        _bloodPool = _characterSO.BloodPool;
+        _speed = CharacterSO.MoveSpeed;
+        _isAlien = CharacterSO.IsAlien;
+        _characterSprites = CharacterSO.CharacterSprites;
+        _bloodPool = CharacterSO.BloodPool;
 
-        IdImage = _characterSO.IdImage;
-        FirstName = _characterSO.FirstName;
-        LastName = _characterSO.LastName;
-        Department = _characterSO.Department;
-        JobTitle = _characterSO.JobTitle;
-        DateOfBirth = _characterSO.DateOfBirth;
+        IdImage = CharacterSO.IdImage;
+        FirstName = CharacterSO.FirstName;
+        LastName = CharacterSO.LastName;
+        Department = CharacterSO.Department;
+        JobTitle = CharacterSO.JobTitle;
+        DateOfBirth = CharacterSO.DateOfBirth;
         
     }
 
@@ -189,22 +190,22 @@ public class CharacterController : MonoBehaviour
         switch (_question)
         {
             case Questions.Appearance:
-                if (!_characterSO.IsSpriteWrong) return _defaultText.text;
+                if (!CharacterSO.IsSpriteWrong) return _defaultText.text;
                 return _appearanceTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.Department:
-                if (!_characterSO.IsDepartmentWrong) return _defaultText.text;
+                if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
                 return _departmentTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.Position:
-                if (!_characterSO.IsPositionWrong) return _defaultText.text;
+                if (!CharacterSO.IsPositionWrong) return _defaultText.text;
                 return _positionTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.FirstName:
-                if (!_characterSO.IsFirstNameWrong) return _defaultText.text;
+                if (!CharacterSO.IsFirstNameWrong) return _defaultText.text;
                 return _firstNameTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.LastName:
-                if (!_characterSO.IsLastNameWrong) return _defaultText.text;
+                if (!CharacterSO.IsLastNameWrong) return _defaultText.text;
                 return _lastNameTexts.GetValueOrDefault(AnswerType.Bad).text;
             case Questions.DateOfBirth:
-                if (!_characterSO.IsDepartmentWrong) return _defaultText.text;
+                if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
                 return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Bad).text;
             default:
                 return "Bad Answer";
@@ -274,24 +275,24 @@ public class CharacterController : MonoBehaviour
     [ContextMenu("init")]
     public void Init(CharacterScriptableObject characterSO)
     {
-        _characterSO = characterSO;
-        _skin.SetSkin(_characterSO._material, _characterSO.Head, _characterSO.Eyes, _characterSO.Nose, _characterSO.Hair, _characterSO.MouthClosed, _characterSO.MouthOpenSmall, _characterSO.MouthOpenBig, _characterSO.FrontEar, _characterSO.BackEar, _characterSO.Neck, _characterSO.Body, _characterSO.SholderFront, _characterSO.SholderBack, _characterSO.ForearmFront, _characterSO.ForearmBack, _characterSO.KneeRight, _characterSO.KneeLeft, _characterSO.AnkleRight, _characterSO.AnkleLeft, _characterSO.FootRight, _characterSO.FootLeft); ;
+        CharacterSO = characterSO;
+        _skin.SetSkin(CharacterSO._material, CharacterSO.Head, CharacterSO.Eyes, CharacterSO.Nose, CharacterSO.Hair, CharacterSO.MouthClosed, CharacterSO.MouthOpenSmall, CharacterSO.MouthOpenBig, CharacterSO.FrontEar, CharacterSO.BackEar, CharacterSO.Neck, CharacterSO.Body, CharacterSO.SholderFront, CharacterSO.SholderBack, CharacterSO.ForearmFront, CharacterSO.ForearmBack, CharacterSO.KneeRight, CharacterSO.KneeLeft, CharacterSO.AnkleRight, CharacterSO.AnkleLeft, CharacterSO.FootRight, CharacterSO.FootLeft); ;
         // Initialize movement and visual fields
-        _speed = _characterSO.MoveSpeed;
-        _characterSprites = _characterSO.CharacterSprites;
-        _animator = _characterSO.Animator;
-        _bloodPool = _characterSO.BloodPool;
+        _speed = CharacterSO.MoveSpeed;
+        _characterSprites = CharacterSO.CharacterSprites;
+        _animator = CharacterSO.Animator;
+        _bloodPool = CharacterSO.BloodPool;
 
         // Initialize identity fields
-        _idImage = _characterSO.IdImage;
-        _firstName = _characterSO.FirstName;
-        _lastName = _characterSO.LastName;
-        _gender = _characterSO.Gender.ToString();
-        _department = _characterSO.Department;
-        _jobTitle = _characterSO.JobTitle;
+        _idImage = CharacterSO.IdImage;
+        _firstName = CharacterSO.FirstName;
+        _lastName = CharacterSO.LastName;
+        _gender = CharacterSO.Gender.ToString();
+        _department = CharacterSO.Department;
+        _jobTitle = CharacterSO.JobTitle;
 
         // Initialize alien-specific fields
-        _isAlien = _characterSO.IsAlien;
+        _isAlien = CharacterSO.IsAlien;
 
         // You can also initialize alien defects if needed:
         // _isSpriteWrong = _characterSO.IsSpriteWrong;
