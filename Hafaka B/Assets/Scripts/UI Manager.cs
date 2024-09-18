@@ -17,7 +17,10 @@ public class UIManager : MonoBehaviour
     { 
         get
         {
-            return !_viewScreen.activeSelf;
+            return _workersListScreen.activeSelf ||
+                   _scannerScreen.activeSelf ||
+                   _guardScreen.activeSelf ||
+                   _sniperScreen.activeSelf;
         }
     }
 

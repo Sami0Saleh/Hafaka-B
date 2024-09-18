@@ -56,6 +56,8 @@ public class GameManager : MonoBehaviour
     {
         if (LastSelectedCharacter == null) return;
         LastSelectedCharacter.SetQuestionStr(button.name.Split()[0]);
+        Debug.Log(button.name.Split()[0]);
+        Debug.Log(LastSelectedCharacter);
     }
 
     public void EndGame()
