@@ -1066,6 +1066,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407596839}
   m_CullTransparentMesh: 1
+--- !u!114 &414500911 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3180279315817749889, guid: abf75e1db64ed2d4596027c38a748604, type: 3}
+  m_PrefabInstance: {fileID: 1449022716}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 584aa0a955aef1a4abf4ef213f9be8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &418288738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2807,13 +2818,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2031906968}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SetQuestionOnSelectedCharacter
+      - m_Target: {fileID: 414500911}
+        m_TargetAssemblyTypeName: BobCharacterController, Assembly-CSharp
+        m_MethodName: DeployBob
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 986506937}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1598661167}
+          m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457499258}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: CloseGuard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3094,13 +3117,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2031906968}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SetQuestionOnSelectedCharacter
+      - m_Target: {fileID: 414500911}
+        m_TargetAssemblyTypeName: BobCharacterController, Assembly-CSharp
+        m_MethodName: DeployBob
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1039346182}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1036754400}
+          m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457499258}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: CloseGuard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3603,13 +3638,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2031906968}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SetQuestionOnSelectedCharacter
+      - m_Target: {fileID: 414500911}
+        m_TargetAssemblyTypeName: BobCharacterController, Assembly-CSharp
+        m_MethodName: DeployBob
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1182241255}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 15874869}
+          m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457499258}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: CloseGuard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4558,13 +4605,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2031906968}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SetQuestionOnSelectedCharacter
+      - m_Target: {fileID: 414500911}
+        m_TargetAssemblyTypeName: BobCharacterController, Assembly-CSharp
+        m_MethodName: DeployBob
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1348884418}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 405490108}
+          m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457499258}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: CloseGuard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5273,13 +5332,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2031906968}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SetQuestionOnSelectedCharacter
+      - m_Target: {fileID: 414500911}
+        m_TargetAssemblyTypeName: BobCharacterController, Assembly-CSharp
+        m_MethodName: DeployBob
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1574344546}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 516643042}
+          m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457499258}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: CloseGuard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5647,13 +5718,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2031906968}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: SetQuestionOnSelectedCharacter
+      - m_Target: {fileID: 414500911}
+        m_TargetAssemblyTypeName: BobCharacterController, Assembly-CSharp
+        m_MethodName: DeployBob
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1765838868}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 842407572}
+          m_ObjectArgumentAssemblyTypeName: TextFileHolder, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457499258}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: CloseGuard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6595,11 +6678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 881416264252803554, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 176.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 881416264252803554, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -200.90668
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1485748129077609402, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6623,7 +6706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1485748129077609402, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 176.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1485748129077609402, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6899,11 +6982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4685989086581167721, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 176.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4685989086581167721, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -265.86002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5119608449560091170, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_Colors.m_NormalColor.b
@@ -7003,11 +7086,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5373511062493765169, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 176.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5373511062493765169, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -395.7667
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5451420659439387589, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_IsActive
@@ -7147,11 +7230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6665441027934131457, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 176.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6665441027934131457, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -135.95334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7529394952522230441, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -7175,11 +7258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7529394952522230441, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 176.45
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7529394952522230441, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -330.81335
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7876937923050433276, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_fontSize
