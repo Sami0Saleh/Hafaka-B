@@ -17,6 +17,17 @@ public class ScanID : MonoBehaviour
     [SerializeField] GameObject _scanFailedObj;
     [SerializeField] TMP_Text _scanFailedText;
     private CharacterController _character;
+    private UIManager _uiManager;
+
+    private void Start()
+    {
+        SetUIManager();
+    }
+
+    private void SetUIManager()
+    {
+        _uiManager = GameObject.Find("UI Manager").GetComponent<UIManager>();
+    }
 
     private void OnEnable()
     {
@@ -25,10 +36,10 @@ public class ScanID : MonoBehaviour
         // don't display ID if there is no selected character
         if (GameManager.Instance.LastSelectedCharacter == null)
         {
-            Debug.Log("Please Select a character");
-            _scanFailedObj.SetActive(true);
-            _scanFailedText.DOFade(0f, 1f);
-            StartCoroutine(ScanFailedTextCoroutine());
+            if(_uiManager == null)
+                SetUIManager();
+            Debug.Log("calling UI manager to display text");
+            _uiManager.DisplayScannerFailedText();
             HideScanner();
             return;
         }
@@ -55,8 +66,8 @@ public class ScanID : MonoBehaviour
 
     public void HideScanner()
     {
-        gameObject.SetActive(false);
         _viewPort.SetActive(true);
+        gameObject.SetActive(false);
     }
     private void UpdateSkin(CharacterScriptableObject SO, MugshotController Image)
     {

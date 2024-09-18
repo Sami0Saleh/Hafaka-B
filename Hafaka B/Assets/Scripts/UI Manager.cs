@@ -1,17 +1,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using DG.Tweening;
+using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Screens")]
     [SerializeField] GameObject _viewScreen;
     [SerializeField] GameObject _workersListScreen;
     [SerializeField] GameObject _scannerScreen;
     [SerializeField] GameObject _guardScreen;
     [SerializeField] GameObject _sniperScreen;
     [SerializeField] List<Button> _buttons;
-
     [SerializeField] GameObject[] Panels;
+
+    [Header("Texts")]
+    [SerializeField] GameObject _scanFailedObj;
+    [SerializeField] TMP_Text _scanFailedText;
+
+    private Coroutine _currentCoroutine;
 
     public bool IsAScreenOpen 
     { 
@@ -96,6 +105,27 @@ public class UIManager : MonoBehaviour
     {
         CloseAll();
         DeactivateAllButtons();
+    }
+
+    public void DisplayScannerFailedText()
+    {
+        if (_currentCoroutine != null)
+        {
+            StopCoroutine(_currentCoroutine);
+            _currentCoroutine = null;
+            _scanFailedText.DOFade(1f, 0.01f);
+        }
+        _scanFailedObj.SetActive(true);
+        _scanFailedText.DOFade(0.1f, 2f);
+        _currentCoroutine = StartCoroutine(ScanFailedTextCoroutine());
+    }
+
+    private IEnumerator ScanFailedTextCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
+        _scanFailedObj.SetActive(false);
+        _scanFailedText.DOFade(1f, 0.01f);
+        _currentCoroutine = null;
     }
 
     private void CloseAll()
