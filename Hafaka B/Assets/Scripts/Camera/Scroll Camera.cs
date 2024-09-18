@@ -85,6 +85,7 @@ public class ScrollCamera : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        if (_uiManager.IsAScreenOpen) return;
         if (_direction == 1)
             Cursor.SetCursor(_mouseRightTexture, Vector2.zero, CursorMode.Auto);
         else
@@ -93,7 +94,20 @@ public class ScrollCamera : MonoBehaviour
 
     private void OnMouseExit()
     {
-            Cursor.SetCursor(_defCursor, Vector2.zero, CursorMode.Auto);  
+        SetCursorToDefault();
+    }
+
+    private void SetCursorToDefault()
+    {
+        Cursor.SetCursor(_defCursor, Vector2.zero, CursorMode.Auto);
+    }
+
+    private void OnMouseOver()
+    {
+        if (_uiManager.IsAScreenOpen)
+        {
+            SetCursorToDefault();
+        }
     }
 
     private bool IsAheadOfBoundary()
