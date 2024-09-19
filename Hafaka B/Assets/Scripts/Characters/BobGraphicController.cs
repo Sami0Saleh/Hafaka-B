@@ -12,7 +12,6 @@ public class BobGraphicController : MonoBehaviour
         {
             _animator.SetBool("IsDeployed", true);
             _animator.SetBool("IsAtStart", false);
-            _animator.SetBool("HasReachedTarget", false);
         }
         if (BobCharacterController.IsAtStart)
         {
@@ -23,6 +22,11 @@ public class BobGraphicController : MonoBehaviour
         {
             _animator.SetBool("IsDeployed", false);
             _animator.SetBool("HasReachedTarget", true);
+        }
+        if (_bob.IsReturning)
+        {
+            _animator.SetBool("IsReturning", false);
+            _animator.SetBool("HasReachedTarget", false);
         }
     }
 
