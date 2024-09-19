@@ -22,6 +22,8 @@ public class BobCharacterController : MonoBehaviour
     private Vector3 _bobScale;
 
     public static bool IsDeployed { get => _isDeployed; set => _isDeployed = value; }
+    public bool HasReachedTarget { get => _hasReachedTarget; private set => _hasReachedTarget = value; }
+    public static bool IsAtStart { get => _isAtStart; private set => _isAtStart = value; }
 
     private void OnValidate()
     {
@@ -50,13 +52,13 @@ public class BobCharacterController : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, _startingSpot.position, _moveSpeed * Time.deltaTime);
         IsDeployed = false;
-        _hasReachedTarget = false;
+        HasReachedTarget = false;
         HaveCharacterResumeWalking();
-        if (!_isAtStart && MathF.Abs(_startingSpot.position.x - transform.position.x) <= 0.1f)
+        if (!IsAtStart && MathF.Abs(_startingSpot.position.x - transform.position.x) <= 0.1f)
         {
             //FlipCharacter();
             transform.localScale = _bobScale;
-            _isAtStart = true;
+            IsAtStart = true;
         }
     }
 
@@ -84,7 +86,7 @@ public class BobCharacterController : MonoBehaviour
         {
             FlipCharacter();
             DisplayText();
-            _hasReachedTarget = true;
+            HasReachedTarget = true;
         }
     }
 
@@ -96,8 +98,8 @@ public class BobCharacterController : MonoBehaviour
 
     public void MoveToCharacter()
     {
-        if (_hasReachedTarget) return;
-        _isAtStart = false;
+        if (HasReachedTarget) return;
+        IsAtStart = false;
         _targetPosition = new Vector3(_targetCharacter.transform.position.x + _positionOffsetXAxis, transform.position.y, 0);
         transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
         CalculateDistanceToTarget();

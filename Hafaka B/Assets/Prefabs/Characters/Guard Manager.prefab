@@ -534,6 +534,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4286838269736656563}
     m_Modifications:
+    - target: {fileID: 350205379127447033, guid: 4b510261b094ff342bae259bd4032d62, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dd43053a9b81c8a4d86ffc83fe188bda, type: 2}
     - target: {fileID: 393203539695372634, guid: 4b510261b094ff342bae259bd4032d62, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -601,8 +605,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1816926233033817421, guid: 4b510261b094ff342bae259bd4032d62, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7190658648005417148}
   m_SourcePrefab: {fileID: 100100000, guid: 4b510261b094ff342bae259bd4032d62, type: 3}
+--- !u!1 &710485727530206625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1816926233033817421, guid: 4b510261b094ff342bae259bd4032d62, type: 3}
+  m_PrefabInstance: {fileID: 1219107472216553708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7190658648005417148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710485727530206625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3421eb13b5a8dc41a2aaf15c6964013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1456648563620541717}
+  _bob: {fileID: 3180279315817749889}
+--- !u!95 &1456648563620541717 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 350205379127447033, guid: 4b510261b094ff342bae259bd4032d62, type: 3}
+  m_PrefabInstance: {fileID: 1219107472216553708}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4306632390056051856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3111732935142046844, guid: 4b510261b094ff342bae259bd4032d62, type: 3}
