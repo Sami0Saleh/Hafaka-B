@@ -84,31 +84,45 @@ public class BobCharacterController : MonoBehaviour
     {
         if (MathF.Abs(_targetPosition.x - transform.position.x) <= 0.1f)
         {
-            FlipCharacter();
+            FlipBob();
             DisplayText();
             HasReachedTarget = true;
         }
     }
 
-    [ContextMenu("Flip")]
-    private void FlipCharacter()
+    private void FlipBob()
     {
-        Graphics.localScale = new Vector3(Graphics.localScale.x * -1, Graphics.localScale.y, Graphics.localScale.z);
+        Vector3 tempScale = _bobScale;
+        tempScale.x *= -1;
+        transform.localScale = tempScale;
     }
+
+    //[ContextMenu("Flip")]
+    //private void FlipCharacter()
+    //{
+    //    Graphics.localScale = new Vector3(Graphics.localScale.x * -1, Graphics.localScale.y, Graphics.localScale.z);
+    //}
 
     public void MoveToCharacter()
     {
         if (HasReachedTarget) return;
-        IsAtStart = false;
         _targetPosition = new Vector3(_targetCharacter.transform.position.x + _positionOffsetXAxis, transform.position.y, 0);
+        if(IsAtStart)
+        {
+            Vector3 tempScale = _bobScale;
+            if (_targetPosition.x > transform.position.x)
+                tempScale.x *= -1;      
+            transform.localScale = tempScale;
+        }
         transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
+        IsAtStart = false;
         CalculateDistanceToTarget();
     }
 
     public void DeployBob(TextFileHolder textFile) //call from unity events on question buttons
     {
         if (IsDeployed) return;
-        transform.localScale = _bobScale;
+        //FlipBob();
         IsDeployed = true;
         _textFile = textFile.TextFile.text;
         if (GameManager.Instance.LastSelectedCharacter != null)
