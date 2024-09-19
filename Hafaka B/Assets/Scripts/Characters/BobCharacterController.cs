@@ -17,6 +17,7 @@ public class BobCharacterController : MonoBehaviour
     private static bool _isDeployed = false;
     private static bool _isAtStart = true;
     private bool _hasReachedTarget = false;
+    private bool _isReturning = false;
     private Vector3 _targetPosition;
     private string _textFile;
     private Vector3 _bobScale;
@@ -24,6 +25,7 @@ public class BobCharacterController : MonoBehaviour
     public static bool IsDeployed { get => _isDeployed; set => _isDeployed = value; }
     public bool HasReachedTarget { get => _hasReachedTarget; private set => _hasReachedTarget = value; }
     public static bool IsAtStart { get => _isAtStart; private set => _isAtStart = value; }
+    public bool IsReturning { get => _isReturning; set => _isReturning = value; }
 
     private void OnValidate()
     {
@@ -50,6 +52,7 @@ public class BobCharacterController : MonoBehaviour
 
     private void ReturnToStartingSpot()
     {
+        _isReturning = true;
         transform.position = Vector2.MoveTowards(transform.position, _startingSpot.position, _moveSpeed * Time.deltaTime);
         IsDeployed = false;
         HasReachedTarget = false;
