@@ -5100,6 +5100,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3183834476581931240, guid: abf75e1db64ed2d4596027c38a748604, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3204325087654965170, guid: abf75e1db64ed2d4596027c38a748604, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -5315,33 +5319,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649baaf011e0ece448907c4a88b04996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allCharacters:
+  _workers:
   - {fileID: 11400000, guid: 68d2687b1195c494394e464147ceda75, type: 2}
-  - {fileID: 11400000, guid: a3f8c9a5bddf9094cbbdd2760053ef63, type: 2}
-  - {fileID: 11400000, guid: 1a6068e9f3c0cf343b9639635932c7c5, type: 2}
   - {fileID: 11400000, guid: 1ede6bd0b055e184a87f9e8276c5484f, type: 2}
+  - {fileID: 11400000, guid: 1a6068e9f3c0cf343b9639635932c7c5, type: 2}
+  _workersAlias:
+  - {fileID: 11400000, guid: a3f8c9a5bddf9094cbbdd2760053ef63, type: 2}
   - {fileID: 11400000, guid: 10a23e212ddf2bd4a90975512a7a6a8d, type: 2}
   - {fileID: 11400000, guid: 17d01c173dfe4dc419dfc7ea24c74d7e, type: 2}
+  _workersAlian:
   - {fileID: 11400000, guid: 616dfd9aa4dd2dd4fb70b04d05ddd7cd, type: 2}
   - {fileID: 11400000, guid: b9357d7dfb83eca40be419f25c87d68d, type: 2}
   - {fileID: 11400000, guid: 8c1fbb948aac8a145997ede97b385868, type: 2}
-  - {fileID: 11400000, guid: 421e0009fd6201a419bbc6b256c452cb, type: 2}
+  _workersAlianAlias:
   - {fileID: 11400000, guid: 3ce982876b7eec745a6b810fc7d50ab6, type: 2}
-  - {fileID: 11400000, guid: 5b7c6180d93574b48977d513642fef86, type: 2}
-  _workers:
-  - {fileID: 11400000, guid: a3f8c9a5bddf9094cbbdd2760053ef63, type: 2}
-  - {fileID: 11400000, guid: 1ede6bd0b055e184a87f9e8276c5484f, type: 2}
-  - {fileID: 11400000, guid: 10a23e212ddf2bd4a90975512a7a6a8d, type: 2}
-  - {fileID: 11400000, guid: 17d01c173dfe4dc419dfc7ea24c74d7e, type: 2}
-  - {fileID: 11400000, guid: 8c1fbb948aac8a145997ede97b385868, type: 2}
   - {fileID: 11400000, guid: 421e0009fd6201a419bbc6b256c452cb, type: 2}
-  - {fileID: 11400000, guid: 3ce982876b7eec745a6b810fc7d50ab6, type: 2}
   - {fileID: 11400000, guid: 5b7c6180d93574b48977d513642fef86, type: 2}
   _characterPrefab: {fileID: 6550850988543019808, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
   _expectedListUI: {fileID: 3176941975282307188}
   _lastGoal: {fileID: 5509048083914431018, guid: 7563d07f9ef84fc47982dec8e76f070f, type: 3}
-  _minExpectedWorkers: 4
-  _maxExpectedWorkers: 8
+  _minExpectedWorkers: 1
+  _maxExpectedWorkers: 3
   _minSpawnTime: 20
   _maxSpawnTime: 25
   _expectedWorkers: []
