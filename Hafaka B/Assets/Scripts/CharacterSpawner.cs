@@ -6,12 +6,14 @@ using UnityEngine;
 public class CharacterSpawner : MonoBehaviour
 {
     private int _spawnCount = 0;
-    [SerializeField] List<CharacterScriptableObject> _allCharacters;
     [SerializeField] List<CharacterScriptableObject> _workers;
+    [SerializeField] List<CharacterScriptableObject> _workersSus;
+    [SerializeField] List<CharacterScriptableObject> _workersAlian;
+    [SerializeField] List<CharacterScriptableObject> _workersSubtleAlian;
     [SerializeField] GameObject _characterPrefab;
     [SerializeField] ExpectedListUI _expectedListUI;
     [SerializeField] Transform _lastGoal;
-    
+
     [Header("Stats")]
     [SerializeField] int _minExpectedWorkers = 2;
     [SerializeField] int _maxExpectedWorkers = 4;
@@ -23,11 +25,6 @@ public class CharacterSpawner : MonoBehaviour
 
     public int CharacterCount { get; private set; }
     public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
-
-    private void OnValidate()
-    {
-        _workers = _allCharacters.Where(x => !x.IsAlien).ToList();
-    }
 
     void Start()
     {
@@ -54,14 +51,46 @@ public class CharacterSpawner : MonoBehaviour
 
     private IEnumerator SpawnCharactersCoroutine(int numberOfExpectedWorkers)
     {
-        List<CharacterScriptableObject> spawnPool = new List<CharacterScriptableObject>(_allCharacters);
+        List<CharacterScriptableObject> spawnWorkerPool = new List<CharacterScriptableObject>(_workers);
+        List<CharacterScriptableObject> spawnWorkerSusPool = new List<CharacterScriptableObject>(_workersSus);
+        List<CharacterScriptableObject> spawnWorkerAlianPool = new List<CharacterScriptableObject>(_workersAlian);
+        List<CharacterScriptableObject> spawnWorkerSubtleAlianPool = new List<CharacterScriptableObject>(_workersSubtleAlian);
 
+        CharacterScriptableObject randomCharacter;
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
-            int randomIndex = Random.Range(0, spawnPool.Count);
-            CharacterScriptableObject randomCharacter = spawnPool[randomIndex];
-            SpawnCharacter(randomCharacter);
-            spawnPool.RemoveAt(randomIndex);
+            int randomIndex = Random.Range(0, spawnWorkerPool.Count);
+            int randomNum = Random.Range(0, 4);
+            switch (randomNum)
+            {
+                case 0:
+                    randomCharacter = spawnWorkerPool[randomIndex];
+                    SpawnCharacter(randomCharacter);
+                    spawnWorkerPool.RemoveAt(randomIndex);
+                    spawnWorkerSusPool.RemoveAt(randomIndex);
+                    break;
+                case 1:
+                    randomCharacter = spawnWorkerSusPool[randomIndex];
+                    SpawnCharacter(randomCharacter);
+                    spawnWorkerPool.RemoveAt(randomIndex);
+                    spawnWorkerSusPool.RemoveAt(randomIndex);
+                    break;
+                case 2:
+                    randomCharacter = spawnWorkerAlianPool[randomIndex];
+                    SpawnCharacter(randomCharacter);
+                    spawnWorkerAlianPool.RemoveAt(randomIndex);
+                    spawnWorkerSubtleAlianPool.RemoveAt(randomIndex);
+                    break;
+                case 3:
+                    randomCharacter = spawnWorkerSubtleAlianPool[randomIndex];
+                    SpawnCharacter(randomCharacter);
+                    spawnWorkerAlianPool.RemoveAt(randomIndex);
+                    spawnWorkerSubtleAlianPool.RemoveAt(randomIndex);
+                    break;
+                default:
+                    break;
+            }
+
             _secondsToWait = Random.Range(_minSpawnTime, _maxSpawnTime) - i * 2;
             yield return new WaitForSeconds(_secondsToWait);
         }
