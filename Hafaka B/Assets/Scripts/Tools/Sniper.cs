@@ -41,6 +41,7 @@ public class Sniper : MonoBehaviour
         _scopeCamera.ZoomOut();
         if (AudioManager.Instance != null) AudioManager.Instance.ChangeMusicVolume(4f);
         Cursor.visible = true;
+        StopAllCoroutines();
     }
 
     private void Update()
@@ -76,10 +77,10 @@ public class Sniper : MonoBehaviour
         Debug.Log("SHOOT");
         if (GameManager.Instance.LastSelectedCharacter == null)
             return;
+        StartCoroutine(CameraShake());
         if (AudioManager.Instance != null) AudioManager.Instance.PlaySFX(_shootClip);        
         BloodSpawner.Instance.SpawnBlood(GameManager.Instance.LastSelectedCharacter);
         GameManager.Instance.LastSelectedCharacter.Die();
-        StartCoroutine(CameraShake());
         _canSnipe = false;
     }
 
@@ -92,6 +93,8 @@ public class Sniper : MonoBehaviour
         Vector3 originalCameraPosition = camera.transform.localPosition;
         while (elapsed < _duration)
         {
+            if (!gameObject.activeInHierarchy)
+                break;
             x = UnityEngine.Random.Range(-0.1f, 0.1f) * _xPower;
             y = UnityEngine.Random.Range(-0.1f, 0.2f) * _yPower;
             camera.transform.localPosition += new Vector3(x, y, 0);
