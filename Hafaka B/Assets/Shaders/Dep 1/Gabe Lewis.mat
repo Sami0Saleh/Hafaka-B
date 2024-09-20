@@ -92,13 +92,17 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     m_Colors:
+    - _Collar_Lips_Tie: {r: 0, g: 0.22173211, b: 0.827451, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Hair: {r: 0.5849056, g: 0.27983722, b: 0, a: 1}
+    - _Jacket_Dress_Pants: {r: 0.4792453, g: 0.4792453, b: 0.4792453, a: 0}
     - _Outfit_Color_1: {r: 0.42988762, g: 0.62352943, b: 0.32156864, a: 1}
     - _Outfit_Color_2: {r: 0.63529414, g: 0.090348594, b: 0.035294097, a: 0}
     - _Outfit_Color_3: {r: 0.34509805, g: 0.09411764, b: 0.26395312, a: 0}
     - _Outfit_Color_4: {r: 1, g: 0, b: 0.60640574, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Skin: {r: 1, g: 0.81457776, b: 0.5235849, a: 1}
+    - _Shoes_Belt: {r: 0.5924529, g: 0.14002733, b: 0, a: 0}
+    - _Skin: {r: 0.7735849, g: 0.5655143, b: 0.23791379, a: 1}
+    - _Undershirt_earrings: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
