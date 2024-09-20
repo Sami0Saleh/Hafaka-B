@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 49e8e8fbc44fb984bbbc2a02694f5759
+guid: c922d47b9cd1dd644b7e077f774451ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5038292248076437536
-    second: Tentacle Nose 1 Shade_0
+      213: 621129037048779753
+    second: Pimple Nose 1 Shade_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tentacle Nose 1 Shade_0
+      name: Pimple Nose 1 Shade_0
       rect:
         serializedVersion: 2
-        x: 479
-        y: 1185
-        width: 146
-        height: 253
+        x: 484
+        y: 1199
+        width: 179
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e7bcc6f4e3641ab0800000000000000
-      internalID: -5038292248076437536
+      spriteID: 9e319fc7191be9800800000000000000
+      internalID: 621129037048779753
       vertices: []
       indices: 
       edges: []
@@ -133,7 +146,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tentacle Nose 1 Shade_0: -5038292248076437536
+      Pimple Nose 1 Shade_0: 621129037048779753
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

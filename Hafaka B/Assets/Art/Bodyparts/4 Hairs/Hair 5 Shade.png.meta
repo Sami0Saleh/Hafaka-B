@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ce89e0c2c1cacd0498af19c4afebf0ed
+guid: 8771ad3af37022d47aecf60bc91e1c0d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2769334201642639521
-    second: Pimple Nose 2 Shade_0
+      213: -4641634550717111887
+    second: Hair 5 Shade_0
+  - first:
+      213: 7230030281982682394
+    second: Hair 5 Shade_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +99,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pimple Nose 2 Shade_0
+      name: Hair 5 Shade_0
       rect:
         serializedVersion: 2
-        x: 474
-        y: 1185
-        width: 195
-        height: 214
+        x: 260
+        y: 970
+        width: 729
+        height: 816
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5f10c657395199d0800000000000000
-      internalID: -2769334201642639521
+      spriteID: 1b1a353f7f9959fb0800000000000000
+      internalID: -4641634550717111887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hair 5 Shade_1
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1768
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1525e03c3a365460800000000000000
+      internalID: 7230030281982682394
       vertices: []
       indices: 
       edges: []
@@ -133,7 +171,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pimple Nose 2 Shade_0: -2769334201642639521
+      Hair 5 Shade_0: -4641634550717111887
+      Hair 5 Shade_1: 7230030281982682394
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

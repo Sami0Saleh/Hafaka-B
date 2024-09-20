@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Martinez
+  m_Name: Carol Garcia
   m_Shader: {fileID: -6465566751694194690, guid: 4beb2060114b2e44daa768a9e6a58367, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -93,10 +93,10 @@ Material:
     - _EnableExternalAlpha: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Hair: {r: 1, g: 0.47817147, b: 0, a: 1}
-    - _Outfit_Color_1: {r: 0.6226415, g: 0.5413607, b: 0.32306865, a: 0}
-    - _Outfit_Color_2: {r: 0.63522005, g: 0.03395826, b: 0.09272827, a: 0}
-    - _Outfit_Color_3: {r: 0.34591186, g: 0.092460655, b: 0.0966913, a: 0}
+    - _Hair: {r: 0.5999999, g: 0, b: 0.32470575, a: 1}
+    - _Outfit_Color_1: {r: 0, g: 0.23690897, b: 0.7735849, a: 0}
+    - _Outfit_Color_2: {r: 0.63529414, g: 0.035294097, b: 0.03844094, a: 0}
+    - _Outfit_Color_3: {r: 0.34509805, g: 0.09411764, b: 0.1871247, a: 1}
     - _Outfit_Color_4: {r: 0.8113208, g: 0.6914349, b: 0.17604119, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Skin: {r: 1, g: 0.81457776, b: 0.5235849, a: 1}

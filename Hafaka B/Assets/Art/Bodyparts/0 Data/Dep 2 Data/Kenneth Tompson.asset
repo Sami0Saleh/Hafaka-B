@@ -17,28 +17,28 @@ MonoBehaviour:
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _material: {fileID: 2100000, guid: febc5a9245d69074ca6999d3f1d26542, type: 2}
-  Head: {fileID: 21300000, guid: 8f98e81ccb562fc47aaabff6c1632c89, type: 3}
-  Eyes: {fileID: 21300000, guid: 0852670a83f094c409ac8c92906a0a95, type: 3}
-  Nose: {fileID: 21300000, guid: e760255199b54d445b5248397b024bfa, type: 3}
-  Hair: {fileID: 21300000, guid: 235fd1c936d4b304c83d96f73a12f3f5, type: 3}
-  MouthClosed: {fileID: 21300000, guid: 5bc827153f8508f4192ab48e29f5e15b, type: 3}
-  MouthOpenSmall: {fileID: 21300000, guid: 013b205fda10c334382416d49cf7592d, type: 3}
-  MouthOpenBig: {fileID: 21300000, guid: 17b92b8a15a79a946a5f0786e9ef7a3e, type: 3}
-  FrontEar: {fileID: 21300000, guid: 840373ab4347d8848a41b4bae5802226, type: 3}
-  BackEar: {fileID: 21300000, guid: b959b7ba5d3737844a130699b88efb2c, type: 3}
-  Neck: {fileID: 21300000, guid: 2a9330743dea317458313bc0511fc95b, type: 3}
-  Body: {fileID: 21300000, guid: 3064b8f0bc1c7cf489be5d35eff39591, type: 3}
-  SholderFront: {fileID: 21300000, guid: 8adc03ea4db2e6c4e98dafe02ce8d3c4, type: 3}
-  SholderBack: {fileID: 21300000, guid: bd4e09f624185f44098c3207a0a353d4, type: 3}
-  ForearmFront: {fileID: 21300000, guid: 70aa546899183b74e89202af5bf2daeb, type: 3}
-  ForearmBack: {fileID: 21300000, guid: c2ccedbc3fdee694eb1e15139927e457, type: 3}
-  KneeRight: {fileID: 21300000, guid: 56552606cd6521942b23eab4da46d7a5, type: 3}
-  KneeLeft: {fileID: 21300000, guid: 5f7bef237638f9d4ca16de6dc29af223, type: 3}
-  AnkleRight: {fileID: 21300000, guid: 6c29daab0c51e10488ad7bb991ed423b, type: 3}
-  AnkleLeft: {fileID: 21300000, guid: a4bbb1d8a5ca29f4786bb016fc607396, type: 3}
-  FootRight: {fileID: 21300000, guid: 2386579f8c4f4ba44a6dc05b80b311f7, type: 3}
-  FootLeft: {fileID: 21300000, guid: c62c52b6b3d5d5a4d80540d0c8675988, type: 3}
+  _material: {fileID: 2100000, guid: 30c4e325c3d211f41842f1255dce5016, type: 2}
+  Head: {fileID: 21300000, guid: 26b251bb752ef214ea74b54b65d96c98, type: 3}
+  Eyes: {fileID: 21300000, guid: 94c362c1cf224e145ba9e132d4d18121, type: 3}
+  Nose: {fileID: 21300000, guid: f93e98beeaabf704291a15b57d46197b, type: 3}
+  Hair: {fileID: 21300000, guid: d925044ada3c176478ff7c85fcd3d392, type: 3}
+  MouthClosed: {fileID: 21300000, guid: f5376f9899aeaf642ab896f4008e2290, type: 3}
+  MouthOpenSmall: {fileID: 21300000, guid: a729c345839307c419acc63888be5e44, type: 3}
+  MouthOpenBig: {fileID: 21300000, guid: 3805b9dd275ec9a4ead5828eae70ff16, type: 3}
+  FrontEar: {fileID: 21300000, guid: 5b5366adde217b840928f90175f069c0, type: 3}
+  BackEar: {fileID: 21300000, guid: 53ec5bce285c0be4f93cb078fcd0ae45, type: 3}
+  Neck: {fileID: 21300000, guid: ac5e584a7073b4f48a5bfb657c6ec35c, type: 3}
+  Body: {fileID: 21300000, guid: d184eeaaae861314d8120b6f1467c4e2, type: 3}
+  SholderFront: {fileID: 21300000, guid: e603f206dc717c34d96e81de456a3ce1, type: 3}
+  SholderBack: {fileID: 21300000, guid: 407f509910aefdf488e7e7241b4fc028, type: 3}
+  ForearmFront: {fileID: 21300000, guid: 52c80eaed16372f4d89d57f2151dcc84, type: 3}
+  ForearmBack: {fileID: 21300000, guid: 5286fe2c16eb35148bb89d58bb7bde32, type: 3}
+  KneeRight: {fileID: 21300000, guid: 4986fddbaa6bb2d4da22e0219d91725a, type: 3}
+  KneeLeft: {fileID: 21300000, guid: 3172619a63169b54fa8d541c3ce95f03, type: 3}
+  AnkleRight: {fileID: 21300000, guid: f59f45ac9e38c0349b2bfc0e087dd919, type: 3}
+  AnkleLeft: {fileID: 21300000, guid: c254b090c209faf438be5c3685005653, type: 3}
+  FootRight: {fileID: 21300000, guid: e9e5725a728aefb49a7adc3aa81bf961, type: 3}
+  FootLeft: {fileID: 21300000, guid: 5e9a93ec585b49d4cba4df8098e64a50, type: 3}
   _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
   _firstName: Kenneth
   _lastName: Tompson

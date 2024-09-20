@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Edward Martinez
   m_EditorClassIdentifier: 
   _moveSpeed: 0.5
-  _isAlien: 1
+  _isAlien: 0
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   _dateOfBirth: 11.04.95
   _department: Education
   _jobTitle: Spokesmen
-  _keyFeatures: Insane
+  _keyFeatures: 
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 0
@@ -55,4 +55,4 @@ MonoBehaviour:
   <IsLastNameWrong>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 0
-  <IsDateOfBirthWrong>k__BackingField: 1
+  <IsDateOfBirthWrong>k__BackingField: 0

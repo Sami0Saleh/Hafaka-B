@@ -17,28 +17,28 @@ MonoBehaviour:
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _material: {fileID: 2100000, guid: ea46778145d203945bf0b7801ba2ecbc, type: 2}
-  Head: {fileID: 21300000, guid: 00770fb38cfea3e49a1f281fb840d947, type: 3}
-  Eyes: {fileID: 21300000, guid: e2fa7cd00e9817f41a4e121ba62d8acb, type: 3}
-  Nose: {fileID: 21300000, guid: e760255199b54d445b5248397b024bfa, type: 3}
-  Hair: {fileID: 21300000, guid: 235fd1c936d4b304c83d96f73a12f3f5, type: 3}
-  MouthClosed: {fileID: 21300000, guid: 28d420100ce6c73419fdd7f9d8e3dfad, type: 3}
-  MouthOpenSmall: {fileID: 21300000, guid: 013b205fda10c334382416d49cf7592d, type: 3}
-  MouthOpenBig: {fileID: 21300000, guid: d9529cba5a39df1499335b0b882064f4, type: 3}
-  FrontEar: {fileID: 21300000, guid: 5a23bcafad9f988459a699eba1becf3e, type: 3}
-  BackEar: {fileID: 21300000, guid: fb30e2229c82eda499e90176287ef8b8, type: 3}
-  Neck: {fileID: 21300000, guid: 2a9330743dea317458313bc0511fc95b, type: 3}
-  Body: {fileID: 21300000, guid: 4f212b24538e00442b5884978f0b87e1, type: 3}
-  SholderFront: {fileID: 21300000, guid: 600141b451f297440b2b75875795e670, type: 3}
-  SholderBack: {fileID: 21300000, guid: 863c18f205242b54fb99a09c2b655436, type: 3}
-  ForearmFront: {fileID: 21300000, guid: 70aa546899183b74e89202af5bf2daeb, type: 3}
-  ForearmBack: {fileID: 21300000, guid: c2ccedbc3fdee694eb1e15139927e457, type: 3}
-  KneeRight: {fileID: 21300000, guid: c52fa28a4f102d5469f9535d6d95bde0, type: 3}
-  KneeLeft: {fileID: 21300000, guid: f4f2d036d29ec9b42a40af477b01cc59, type: 3}
-  AnkleRight: {fileID: 21300000, guid: 6c29daab0c51e10488ad7bb991ed423b, type: 3}
-  AnkleLeft: {fileID: 21300000, guid: a4bbb1d8a5ca29f4786bb016fc607396, type: 3}
-  FootRight: {fileID: 21300000, guid: e9a3f9b27de6a8f4b82763aa4710f62f, type: 3}
-  FootLeft: {fileID: 21300000, guid: 901d4ff7d26a3274b99ecd71e94ea99d, type: 3}
+  _material: {fileID: 2100000, guid: ce5bd62c80253a9458ef09c400281610, type: 2}
+  Head: {fileID: 21300000, guid: 71732476343b34444976d276ff9e7ec1, type: 3}
+  Eyes: {fileID: 21300000, guid: cbc01ca38924b7149a1e4119dc89cfd4, type: 3}
+  Nose: {fileID: 21300000, guid: d7f56d218b63bce44a292fe89cce1900, type: 3}
+  Hair: {fileID: 21300000, guid: 169cfd77c9c94234890314c76986796e, type: 3}
+  MouthClosed: {fileID: 21300000, guid: f03ec65def163314aa45d67183f9353c, type: 3}
+  MouthOpenSmall: {fileID: 21300000, guid: 4aa7840df59c69f4f806adbaa33f3055, type: 3}
+  MouthOpenBig: {fileID: 21300000, guid: ae0e0d78aac539147a9506a7c120fbeb, type: 3}
+  FrontEar: {fileID: 21300000, guid: c05f99f4dacdb8348b3fd4f8785bd7bc, type: 3}
+  BackEar: {fileID: 21300000, guid: 734e8dcc830204b41b8025cbfdc92245, type: 3}
+  Neck: {fileID: 21300000, guid: ac5e584a7073b4f48a5bfb657c6ec35c, type: 3}
+  Body: {fileID: 21300000, guid: c198c2d52c6d05c4eb3e486beffbc589, type: 3}
+  SholderFront: {fileID: 21300000, guid: e603f206dc717c34d96e81de456a3ce1, type: 3}
+  SholderBack: {fileID: 21300000, guid: 407f509910aefdf488e7e7241b4fc028, type: 3}
+  ForearmFront: {fileID: 21300000, guid: 1c8b4018159d22844bf13204117d7070, type: 3}
+  ForearmBack: {fileID: 21300000, guid: 801e4454e8dcb6c41a494446b072ba6f, type: 3}
+  KneeRight: {fileID: 21300000, guid: 8570a4667d7e2fe4bb890b89b4848e5a, type: 3}
+  KneeLeft: {fileID: 21300000, guid: eee6e3eff4ffb0a4f8beb4037a06c289, type: 3}
+  AnkleRight: {fileID: 21300000, guid: 44f5142bbdc057541972b4508814c647, type: 3}
+  AnkleLeft: {fileID: 21300000, guid: 756bdb642250bce41bafc0e4875f85ac, type: 3}
+  FootRight: {fileID: 21300000, guid: 370246e31b619df428ab494edef94ddd, type: 3}
+  FootLeft: {fileID: 21300000, guid: 2cb66abcfc95f1c46b00c44c7059857d, type: 3}
   _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
   _firstName: Carol
   _lastName: Garcia
