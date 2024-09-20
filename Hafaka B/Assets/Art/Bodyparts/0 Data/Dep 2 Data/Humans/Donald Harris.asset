@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
+  m_Name: Donald Harris
+  m_EditorClassIdentifier: 
+  _moveSpeed: 0.5
+  _isAlien: 0
+  _characterSprites: []
+  _animator: {fileID: 0}
+  _bloodPool: {fileID: 0}
+  _material: {fileID: 2100000, guid: 8af18cec06c5f6f49984e966d2a2493e, type: 2}
+  Head: {fileID: 21300000, guid: 26b251bb752ef214ea74b54b65d96c98, type: 3}
+  Eyes: {fileID: 21300000, guid: 94c362c1cf224e145ba9e132d4d18121, type: 3}
+  Nose: {fileID: 21300000, guid: 8bb13922f97bf8549bcb46bc997b8104, type: 3}
+  Hair: {fileID: 21300000, guid: c5498e33c35616d4cbb2be8dcc0a0296, type: 3}
+  MouthClosed: {fileID: 21300000, guid: f5376f9899aeaf642ab896f4008e2290, type: 3}
+  MouthOpenSmall: {fileID: 21300000, guid: a729c345839307c419acc63888be5e44, type: 3}
+  MouthOpenBig: {fileID: 21300000, guid: 3805b9dd275ec9a4ead5828eae70ff16, type: 3}
+  FrontEar: {fileID: 21300000, guid: 5b5366adde217b840928f90175f069c0, type: 3}
+  BackEar: {fileID: 21300000, guid: 53ec5bce285c0be4f93cb078fcd0ae45, type: 3}
+  Neck: {fileID: 21300000, guid: ac5e584a7073b4f48a5bfb657c6ec35c, type: 3}
+  Body: {fileID: 21300000, guid: d184eeaaae861314d8120b6f1467c4e2, type: 3}
+  SholderFront: {fileID: 21300000, guid: e603f206dc717c34d96e81de456a3ce1, type: 3}
+  SholderBack: {fileID: 21300000, guid: 407f509910aefdf488e7e7241b4fc028, type: 3}
+  ForearmFront: {fileID: 21300000, guid: 52c80eaed16372f4d89d57f2151dcc84, type: 3}
+  ForearmBack: {fileID: 21300000, guid: 5286fe2c16eb35148bb89d58bb7bde32, type: 3}
+  KneeRight: {fileID: 21300000, guid: 4986fddbaa6bb2d4da22e0219d91725a, type: 3}
+  KneeLeft: {fileID: 21300000, guid: 3172619a63169b54fa8d541c3ce95f03, type: 3}
+  AnkleRight: {fileID: 21300000, guid: f59f45ac9e38c0349b2bfc0e087dd919, type: 3}
+  AnkleLeft: {fileID: 21300000, guid: c254b090c209faf438be5c3685005653, type: 3}
+  FootRight: {fileID: 21300000, guid: e9e5725a728aefb49a7adc3aa81bf961, type: 3}
+  FootLeft: {fileID: 21300000, guid: 5e9a93ec585b49d4cba4df8098e64a50, type: 3}
+  _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
+  _firstName: 'Donald '
+  _lastName: Harris
+  _gender: 0
+  id: 462865332
+  _dateOfBirth: 07.11.87
+  _department: National Security
+  _jobTitle: Project Manager
+  _keyFeatures: 
+  _isExpectedWorker: 0
+  _buffer: Ignore this, don't delete
+  <IsSpriteWrong>k__BackingField: 0
+  <IsFirstNameWrong>k__BackingField: 0
+  <IsLastNameWrong>k__BackingField: 0
+  <IsDepartmentWrong>k__BackingField: 0
+  <IsPositionWrong>k__BackingField: 0
+  <IsDateOfBirthWrong>k__BackingField: 0
