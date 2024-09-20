@@ -17,6 +17,7 @@ public class BobCharacterController : MonoBehaviour
     private static bool _isDeployed = false;
     private static bool _isAtStart = true;
     private bool _hasReachedTarget = false;
+    private bool _isReturning = false;
     private Vector3 _targetPosition;
     private string _textFile;
     private Vector3 _bobScale;
@@ -24,6 +25,7 @@ public class BobCharacterController : MonoBehaviour
     public static bool IsDeployed { get => _isDeployed; set => _isDeployed = value; }
     public bool HasReachedTarget { get => _hasReachedTarget; private set => _hasReachedTarget = value; }
     public static bool IsAtStart { get => _isAtStart; private set => _isAtStart = value; }
+    public bool IsReturning { get => _isReturning; set => _isReturning = value; }
 
     private void OnValidate()
     {
@@ -50,6 +52,7 @@ public class BobCharacterController : MonoBehaviour
 
     private void ReturnToStartingSpot()
     {
+        _isReturning = true;
         transform.position = Vector2.MoveTowards(transform.position, _startingSpot.position, _moveSpeed * Time.deltaTime);
         IsDeployed = false;
         HasReachedTarget = false;
@@ -80,42 +83,85 @@ public class BobCharacterController : MonoBehaviour
         _textBubble.TextToDisplay = _textFile;
         _textBubble.gameObject.SetActive(true);
     }
+
     private void CalculateDistanceToTarget()
     {
-        if (MathF.Abs(_targetPosition.x - transform.position.x) <= 0.1f)
+        float dist = _targetPosition.x - transform.position.x;
+        if (MathF.Abs(dist) <= 0.1f)
         {
-            FlipCharacter();
+            FlipBob();
             DisplayText();
             HasReachedTarget = true;
         }
     }
 
-    [ContextMenu("Flip")]
-    private void FlipCharacter()
+    private void FlipBob()
     {
-        Graphics.localScale = new Vector3(Graphics.localScale.x * -1, Graphics.localScale.y, Graphics.localScale.z);
+        Vector3 tempScale = _bobScale;
+        tempScale.x *= -1;
+        transform.localScale = tempScale;
     }
+
+    //[ContextMenu("Flip")]
+    //private void FlipCharacter()
+    //{
+    //    Graphics.localScale = new Vector3(Graphics.localScale.x * -1, Graphics.localScale.y, Graphics.localScale.z);
+    //}
 
     public void MoveToCharacter()
     {
         if (HasReachedTarget) return;
-        IsAtStart = false;
         _targetPosition = new Vector3(_targetCharacter.transform.position.x + _positionOffsetXAxis, transform.position.y, 0);
+        if(IsAtStart)
+        {
+            Vector3 tempScale = _bobScale;
+            if (_targetPosition.x > transform.position.x)
+                tempScale.x *= -1;      
+            transform.localScale = tempScale;
+        }
         transform.position = Vector2.MoveTowards(transform.position, _targetPosition, _moveSpeed * Time.deltaTime);
+        IsAtStart = false;
         CalculateDistanceToTarget();
     }
 
     public void DeployBob(TextFileHolder textFile) //call from unity events on question buttons
     {
-        if (IsDeployed) return;
-        transform.localScale = _bobScale;
+        if (IsDeployed)
+        {
+            if (_targetCharacter != null && _targetCharacter == GameManager.Instance.LastSelectedCharacter)
+                return;
+            ChangeTarget();
+        }
+        //FlipBob();
         IsDeployed = true;
         _textFile = textFile.TextFile.text;
         if (GameManager.Instance.LastSelectedCharacter != null)
         {
             _targetCharacter = GameManager.Instance.LastSelectedCharacter;
+            if (_targetCharacter.transform.position.x > transform.position.x)
+                FlipBob();
+            else
+                transform.localScale = _bobScale;
             StopSelectedCharacter();
         }
+    }
+
+    private  void ChangeTarget()
+    {
+        ForcefullyResumeTargetCharacter();
+        _textBubble.gameObject.SetActive(false);
+        HasReachedTarget = false;
+        if (_targetCharacter.transform.position.x < transform.position.x)
+            transform.localScale = _bobScale;
+        else
+            FlipBob();
+    }
+
+    private static void ForcefullyResumeTargetCharacter()
+    {
+        HaveCharacterResumeWalking();
+        _targetCharacter.ContinueToGoal();
+        _targetCharacter.TextBubble.gameObject.SetActive(false);
     }
 
     public static void TargetStartTalking()

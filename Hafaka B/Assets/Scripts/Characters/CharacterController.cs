@@ -8,7 +8,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] SkinController _skin;
     [SerializeField] private float _speed;
     [SerializeField] TextBubble _textBubble;
-    [SerializeField]private Transform _goal;
+    [SerializeField] private Transform _goal;
 
 
     [Header("Text Files")]
@@ -53,6 +53,9 @@ public class CharacterController : MonoBehaviour
     public string FullName { get => $"{FirstName} {LastName}"; }
     public string DateOfBirth { get => _dateOfBirth; private set => _dateOfBirth = value; }
     public CharacterScriptableObject CharacterSO { get => _characterSO; set => _characterSO = value; }
+    public TextBubble TextBubble { get => _textBubble; }
+
+
 
     private void OnValidate()
     {
@@ -113,7 +116,7 @@ public class CharacterController : MonoBehaviour
         Department = CharacterSO.Department;
         JobTitle = CharacterSO.JobTitle;
         DateOfBirth = CharacterSO.DateOfBirth;
-        
+        _skin.SetSkin(CharacterSO._material, CharacterSO.Head, CharacterSO.Eyes, CharacterSO.Nose, CharacterSO.Hair, CharacterSO.MouthClosed, CharacterSO.MouthOpenSmall, CharacterSO.MouthOpenBig, CharacterSO.FrontEar, CharacterSO.BackEar, CharacterSO.Neck, CharacterSO.Body, CharacterSO.SholderFront, CharacterSO.SholderBack, CharacterSO.ForearmFront, CharacterSO.ForearmBack, CharacterSO.KneeRight, CharacterSO.KneeLeft, CharacterSO.AnkleRight, CharacterSO.AnkleLeft, CharacterSO.FootRight, CharacterSO.FootLeft);
     }
 
     void Update()
