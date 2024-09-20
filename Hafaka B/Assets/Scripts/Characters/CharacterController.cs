@@ -194,25 +194,26 @@ public class CharacterController : MonoBehaviour
         {
             case Questions.Appearance:
                 if (!CharacterSO.IsSpriteWrong) return _defaultText.text;
-                return _appearanceTexts.GetValueOrDefault(AnswerType.Bad).text;
+                break;
             case Questions.Department:
                 if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
-                return _departmentTexts.GetValueOrDefault(AnswerType.Bad).text;
+                break;
             case Questions.Position:
                 if (!CharacterSO.IsPositionWrong) return _defaultText.text;
-                return _positionTexts.GetValueOrDefault(AnswerType.Bad).text;
+                break;
             case Questions.FirstName:
                 if (!CharacterSO.IsFirstNameWrong) return _defaultText.text;
-                return _firstNameTexts.GetValueOrDefault(AnswerType.Bad).text;
+                break;
             case Questions.LastName:
                 if (!CharacterSO.IsLastNameWrong) return _defaultText.text;
-                return _lastNameTexts.GetValueOrDefault(AnswerType.Bad).text;
+                break;
             case Questions.DateOfBirth:
                 if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
-                return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Bad).text;
+                break;
             default:
                 return "Bad Answer";
         }
+        return _characterSO.SpecificAnswer;
     }
 
     private string AmbiguousAnswer()

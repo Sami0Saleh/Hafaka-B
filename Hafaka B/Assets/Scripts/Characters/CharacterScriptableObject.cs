@@ -76,6 +76,7 @@ public class CharacterScriptableObject : ScriptableObject
     [field: SerializeField] public bool IsDepartmentWrong { get; set; } = false;
     [field: SerializeField] public bool IsPositionWrong { get; set; } = false;
     [field: SerializeField] public bool IsDateOfBirthWrong { get; set; } = false;
+    [field: SerializeField] public string SpecificAnswer { get; private set; }
     public string ID { get => id; set => id = value; }
     public string KeyFeatures { get => _keyFeatures; set => _keyFeatures = value; }
     #endregion
