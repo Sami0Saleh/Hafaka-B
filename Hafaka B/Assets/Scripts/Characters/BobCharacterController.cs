@@ -80,9 +80,11 @@ public class BobCharacterController : MonoBehaviour
         _textBubble.TextToDisplay = _textFile;
         _textBubble.gameObject.SetActive(true);
     }
+
     private void CalculateDistanceToTarget()
     {
-        if (MathF.Abs(_targetPosition.x - transform.position.x) <= 0.1f)
+        float dist = _targetPosition.x - transform.position.x;
+        if (MathF.Abs(dist) <= 0.1f)
         {
             FlipBob();
             DisplayText();
@@ -121,15 +123,42 @@ public class BobCharacterController : MonoBehaviour
 
     public void DeployBob(TextFileHolder textFile) //call from unity events on question buttons
     {
-        if (IsDeployed) return;
+        if (IsDeployed)
+        {
+            if (_targetCharacter != null && _targetCharacter == GameManager.Instance.LastSelectedCharacter)
+                return;
+            ChangeTarget();
+        }
         //FlipBob();
         IsDeployed = true;
         _textFile = textFile.TextFile.text;
         if (GameManager.Instance.LastSelectedCharacter != null)
         {
             _targetCharacter = GameManager.Instance.LastSelectedCharacter;
+            if (_targetCharacter.transform.position.x > transform.position.x)
+                FlipBob();
+            else
+                transform.localScale = _bobScale;
             StopSelectedCharacter();
         }
+    }
+
+    private  void ChangeTarget()
+    {
+        ForcefullyResumeTargetCharacter();
+        _textBubble.gameObject.SetActive(false);
+        HasReachedTarget = false;
+        if (_targetCharacter.transform.position.x < transform.position.x)
+            transform.localScale = _bobScale;
+        else
+            FlipBob();
+    }
+
+    private static void ForcefullyResumeTargetCharacter()
+    {
+        HaveCharacterResumeWalking();
+        _targetCharacter.ContinueToGoal();
+        _targetCharacter.TextBubble.gameObject.SetActive(false);
     }
 
     public static void TargetStartTalking()
