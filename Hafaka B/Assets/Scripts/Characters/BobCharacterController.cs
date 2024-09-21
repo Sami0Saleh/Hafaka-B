@@ -11,7 +11,6 @@ public class BobCharacterController : MonoBehaviour
     [SerializeField] Transform _startingSpot;
     [SerializeField] TextBubble _textBubble;
     [SerializeField] Transform Graphics;
-
     private static CharacterController _targetCharacter;
 
     private static bool _isDeployed = false;
@@ -21,11 +20,14 @@ public class BobCharacterController : MonoBehaviour
     private Vector3 _targetPosition;
     private string _textFile;
     private Vector3 _bobScale;
+    private static bool _isTalking;
 
     public static bool IsDeployed { get => _isDeployed; set => _isDeployed = value; }
     public bool HasReachedTarget { get => _hasReachedTarget; private set => _hasReachedTarget = value; }
     public static bool IsAtStart { get => _isAtStart; private set => _isAtStart = value; }
     public bool IsReturning { get => _isReturning; set => _isReturning = value; }
+
+    public static bool IsTalking { get => _isTalking; set => _isTalking = value; }
 
     private void OnValidate()
     {
@@ -80,6 +82,7 @@ public class BobCharacterController : MonoBehaviour
 
     private void DisplayText()
     {
+        IsTalking = true;
         _textBubble.TextToDisplay = _textFile;
         _textBubble.gameObject.SetActive(true);
     }
@@ -166,6 +169,7 @@ public class BobCharacterController : MonoBehaviour
 
     public static void TargetStartTalking()
     {
+        IsTalking = false;
         if (_targetCharacter == null) return;
         _targetCharacter.DisplayText();
     }

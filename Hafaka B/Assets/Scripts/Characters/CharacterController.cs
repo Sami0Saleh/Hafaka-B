@@ -9,7 +9,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] TextBubble _textBubble;
     [SerializeField] private Transform _goal;
-
+    [SerializeField] private Animator _animator;
 
     [Header("Text Files")]
     [SerializeField] TextAsset _defaultText;
@@ -28,7 +28,7 @@ public class CharacterController : MonoBehaviour
     // visual 
     private List<GameObject> _characterSprites;
     private Sprite _bloodPool;
-    private Animator _animator;
+    //private Animator _animator;
 
 
     // ID info
@@ -140,11 +140,14 @@ public class CharacterController : MonoBehaviour
 
     public void Stop()
     {
+        _animator.SetFloat("Speed", 0);
         _isStopped = true;
     }
 
     public void ContinueToGoal()
     {
+        _animator.SetBool("IsSpeaking", false);
+        _animator.SetFloat("Speed", 1);
         _isStopped = false;
     }
 
@@ -179,6 +182,7 @@ public class CharacterController : MonoBehaviour
 
     public void DisplayText()
     {
+        _animator.SetBool("IsSpeaking", true);
         if (!_isAlien)
             _textBubble.TextToDisplay = ProvideGoodAnswer();
         else
@@ -293,7 +297,7 @@ public class CharacterController : MonoBehaviour
         // Initialize movement and visual fields
         _speed = CharacterSO.MoveSpeed;
         _characterSprites = CharacterSO.CharacterSprites;
-        _animator = CharacterSO.Animator;
+       // _animator = CharacterSO.Animator;
         _bloodPool = CharacterSO.BloodPool;
 
         // Initialize identity fields
