@@ -38,7 +38,7 @@ public class UIManager : MonoBehaviour
         if (GameManager.Instance.IsGameOver) return;
         _workersListScreen.SetActive(true);
         _scannerScreen.SetActive(false);
-        _viewScreen.SetActive(false);
+      //  _viewScreen.SetActive(false);
         _guardScreen.SetActive(false);
         _sniperScreen.SetActive(false);
     }

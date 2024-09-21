@@ -165,11 +165,11 @@ public class CharacterController : MonoBehaviour
             case "Position":
                 _question = Questions.Position;
                 break;
-            case "First":
-                _question = Questions.FirstName;
+            case "Name":
+                _question = Questions.Name;
                 break;
-            case "Last":
-                _question = Questions.LastName;
+            case "Expected":
+                _question = Questions.Expected;
                 break;
             case "Date":
                 _question = Questions.DateOfBirth;
@@ -183,7 +183,7 @@ public class CharacterController : MonoBehaviour
     public void DisplayText()
     {
         _animator.SetBool("IsSpeaking", true);
-        if (!_isAlien)
+        if (!_isAlien && !CharacterSO.IsSpriteWrong)
             _textBubble.TextToDisplay = ProvideGoodAnswer();
         else
             _textBubble.TextToDisplay = ProvideBadAnswer();
@@ -210,17 +210,17 @@ public class CharacterController : MonoBehaviour
                 Debug.Log("broke");
                 if (!CharacterSO.IsPositionWrong) return _defaultText.text;
                 break;
-            case Questions.FirstName:
+            case Questions.Name:
                 Debug.Log("broke");
                 if (!CharacterSO.IsFirstNameWrong) return _defaultText.text;
                 break;
-            case Questions.LastName:
+            case Questions.Expected:
                 Debug.Log("broke");
                 if (!CharacterSO.IsLastNameWrong) return _defaultText.text;
                 break;
             case Questions.DateOfBirth:
                 Debug.Log("broke");
-                if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
+                if (!CharacterSO.IsDateOfBirthWrong) return _defaultText.text;
                 break;
             default:
                 return "Bad Answer";
@@ -239,9 +239,9 @@ public class CharacterController : MonoBehaviour
                 return _departmentTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
             case Questions.Position:
                 return _positionTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
-            case Questions.FirstName:
+            case Questions.Name:
                 return _firstNameTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
-            case Questions.LastName:
+            case Questions.Expected:
                 return _lastNameTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
             case Questions.DateOfBirth:
                 return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
@@ -264,9 +264,9 @@ public class CharacterController : MonoBehaviour
                 return _departmentTexts.GetValueOrDefault(AnswerType.Good).text;
             case Questions.Position:
                 return _positionTexts.GetValueOrDefault(AnswerType.Good).text;
-            case Questions.FirstName:
+            case Questions.Name:
                 return _firstNameTexts.GetValueOrDefault(AnswerType.Good).text;
-            case Questions.LastName:
+            case Questions.Expected:
                 return _lastNameTexts.GetValueOrDefault(AnswerType.Good).text;
             case Questions.DateOfBirth:
                 return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Good).text;
@@ -326,8 +326,8 @@ enum Questions
     Appearance,
     Department,
     Position,
-    FirstName,
-    LastName,
+    Name,
+    Expected,
     DateOfBirth
 }
 
