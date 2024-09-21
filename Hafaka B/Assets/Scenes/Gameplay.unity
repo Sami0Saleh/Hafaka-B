@@ -5655,6 +5655,7 @@ MonoBehaviour:
   _minSpawnTime: 20
   _maxSpawnTime: 25
   _expectedWorkers: []
+  count: 15
 --- !u!1 &1506589184
 GameObject:
   m_ObjectHideFlags: 0
@@ -8110,15 +8111,15 @@ PrefabInstance:
     - target: {fileID: 6583563908569678213, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: CharacterSO1
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 82b8ed9b04ad2dc42bd6cb05875a1a97, type: 2}
     - target: {fileID: 6583563908569678213, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: CharacterSO2
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: c6b67795adf5bad43a4afe73714ce988, type: 2}
     - target: {fileID: 6583563908569678213, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: CharacterSO3
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 7f387166a0a9a8b478ff6f0b0dc5d267, type: 2}
     - target: {fileID: 6665441027934131457, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
