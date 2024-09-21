@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +24,14 @@ public class CharacterSpawner : MonoBehaviour
     public List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
     private float _secondsToWait;
 
+    public event Action OnCharacterSpawn;
+
     public int CharacterCount { get; private set; }
     public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
     public int count = 15;
     void Start()
     {
-        CharacterCount = Random.Range(_minExpectedWorkers, _maxExpectedWorkers + 1);
+        CharacterCount = UnityEngine.Random.Range(_minExpectedWorkers, _maxExpectedWorkers + 1);
         Debug.Log("will spawn " + CharacterCount);
         SelectExpectedWorkers(CharacterCount);
         _expectedListUI.UpdateExpectedList(_expectedWorkers); // Update the UI
@@ -41,7 +44,7 @@ public class CharacterSpawner : MonoBehaviour
 
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
-            int randomIndex = Random.Range(0, workersPool.Count);
+            int randomIndex = UnityEngine.Random.Range(0, workersPool.Count);
             CharacterScriptableObject selectedWorker = workersPool[randomIndex];
             _expectedWorkers.Add(selectedWorker);
             workersPool.RemoveAt(randomIndex);
@@ -60,8 +63,8 @@ public class CharacterSpawner : MonoBehaviour
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
             
-            int randomIndex = Random.Range(0, count);
-            int randomNum = Random.Range(0, 4);
+            int randomIndex = UnityEngine.Random.Range(0, count);
+            int randomNum = UnityEngine.Random.Range(0, 4);
             switch (randomNum)
             {
                 case 0:
@@ -91,8 +94,9 @@ public class CharacterSpawner : MonoBehaviour
                 default:
                     break;
             }
+            OnCharacterSpawn?.Invoke();
             count--;
-            _secondsToWait = Random.Range(_minSpawnTime, _maxSpawnTime) - i * 2;
+            _secondsToWait = UnityEngine.Random.Range(_minSpawnTime, _maxSpawnTime) - i * 2;
             yield return new WaitForSeconds(_secondsToWait);
         }
     }
