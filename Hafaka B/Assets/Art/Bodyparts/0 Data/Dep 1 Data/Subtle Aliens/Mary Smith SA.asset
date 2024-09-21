@@ -46,7 +46,7 @@ MonoBehaviour:
   id: 234983245
   _dateOfBirth: 3.07.82
   _department: Education
-  _jobTitle: Alien Subtle
+  _jobTitle: 'Subtle Alien '
   _keyFeatures: 
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
@@ -56,3 +56,4 @@ MonoBehaviour:
   <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 1
   <IsDateOfBirthWrong>k__BackingField: 0
+  <SpecificAnswer>k__BackingField: i tried to be honest, Im proud of my work
