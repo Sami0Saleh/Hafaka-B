@@ -3807,7 +3807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 562a5b647fc77c74cbfae3ace101fba2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _menuMusic: {fileID: 8300000, guid: b11e05e70be13d04bb342bb6e28dc383, type: 3}
+  _menuMusic: {fileID: 8300000, guid: 3cf6105f3b4efd2488a8893c0e7338b9, type: 3}
 --- !u!114 &1139467147 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1703916212548092651, guid: 8aaa17798213a14498f8675a34799371, type: 3}
