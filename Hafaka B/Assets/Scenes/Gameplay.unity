@@ -5635,11 +5635,23 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 21c66d884b725284fb494c1aa33e45b3, type: 2}
   - {fileID: 11400000, guid: 8de0153a8e2b9bf48a402dfe597b2808, type: 2}
   - {fileID: 11400000, guid: 5e5d01e6716242648b36445a5c224a19, type: 2}
+  - {fileID: 11400000, guid: 1f10ab47726425e45b118f2162e342f2, type: 2}
+  - {fileID: 11400000, guid: d22101d44c5b52746b174929129f9fa8, type: 2}
+  - {fileID: 11400000, guid: 58d4b02c4dd4c3140a029fbb09a8ef80, type: 2}
+  - {fileID: 11400000, guid: 616dfd9aa4dd2dd4fb70b04d05ddd7cd, type: 2}
+  - {fileID: 11400000, guid: b9357d7dfb83eca40be419f25c87d68d, type: 2}
+  - {fileID: 11400000, guid: 8c1fbb948aac8a145997ede97b385868, type: 2}
+  - {fileID: 11400000, guid: f58edc7a3523f66469fa6679717d87a9, type: 2}
+  - {fileID: 11400000, guid: 711e2ff88ab98b3429256a9b4828efb9, type: 2}
+  - {fileID: 11400000, guid: a6104ee8b0040794785585f0a7f1e089, type: 2}
+  - {fileID: 11400000, guid: 02e18255944cb3c4ea00af4790f8578f, type: 2}
+  - {fileID: 11400000, guid: 9df38d5f03ac1bb4eab61c3cfa70ceac, type: 2}
+  - {fileID: 11400000, guid: a3503b00c386ad943aa64b01729112ec, type: 2}
   _characterPrefab: {fileID: 6550850988543019808, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
   _expectedListUI: {fileID: 3176941975282307188}
   _lastGoal: {fileID: 5509048083914431018, guid: 7563d07f9ef84fc47982dec8e76f070f, type: 3}
-  _minExpectedWorkers: 2
-  _maxExpectedWorkers: 3
+  _minExpectedWorkers: 4
+  _maxExpectedWorkers: 8
   _minSpawnTime: 20
   _maxSpawnTime: 25
   _expectedWorkers: []
