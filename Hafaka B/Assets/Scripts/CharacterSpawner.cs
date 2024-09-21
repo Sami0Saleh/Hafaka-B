@@ -25,7 +25,7 @@ public class CharacterSpawner : MonoBehaviour
 
     public int CharacterCount { get; private set; }
     public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
-
+    public int count = 15;
     void Start()
     {
         CharacterCount = Random.Range(_minExpectedWorkers, _maxExpectedWorkers + 1);
@@ -59,7 +59,8 @@ public class CharacterSpawner : MonoBehaviour
         CharacterScriptableObject randomCharacter;
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
-            int randomIndex = Random.Range(0, spawnWorkerPool.Count);
+            
+            int randomIndex = Random.Range(0, count);
             int randomNum = Random.Range(0, 4);
             switch (randomNum)
             {
@@ -90,7 +91,7 @@ public class CharacterSpawner : MonoBehaviour
                 default:
                     break;
             }
-
+            count--;
             _secondsToWait = Random.Range(_minSpawnTime, _maxSpawnTime) - i * 2;
             yield return new WaitForSeconds(_secondsToWait);
         }
