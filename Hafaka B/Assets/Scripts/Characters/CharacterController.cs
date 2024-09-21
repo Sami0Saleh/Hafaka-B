@@ -150,6 +150,7 @@ public class CharacterController : MonoBehaviour
 
     public void SetQuestionStr(string questionStr)
     {
+        Debug.Log(questionStr);
         switch (questionStr)
         {
             case "Appearance":
@@ -173,6 +174,7 @@ public class CharacterController : MonoBehaviour
             default:
                 break;
         }
+        Debug.Log(_question);
     }
 
     public void DisplayText()
@@ -186,33 +188,40 @@ public class CharacterController : MonoBehaviour
 
     private string ProvideBadAnswer()
     {
-        if (UnityEngine.Random.Range(0, 1) > 0.75f)
+        if (UnityEngine.Random.Range(0f, 1f) > 0.9f)
         {
             return AmbiguousAnswer();
         }
         switch (_question)
         {
             case Questions.Appearance:
+                Debug.Log("broke");
                 if (!CharacterSO.IsSpriteWrong) return _defaultText.text;
                 break;
             case Questions.Department:
+                Debug.Log("broke");
                 if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
                 break;
             case Questions.Position:
+                Debug.Log("broke");
                 if (!CharacterSO.IsPositionWrong) return _defaultText.text;
                 break;
             case Questions.FirstName:
+                Debug.Log("broke");
                 if (!CharacterSO.IsFirstNameWrong) return _defaultText.text;
                 break;
             case Questions.LastName:
+                Debug.Log("broke");
                 if (!CharacterSO.IsLastNameWrong) return _defaultText.text;
                 break;
             case Questions.DateOfBirth:
+                Debug.Log("broke");
                 if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
                 break;
             default:
                 return "Bad Answer";
         }
+        Debug.Log("specific answer");
         return _characterSO.SpecificAnswer;
     }
 
@@ -239,7 +248,7 @@ public class CharacterController : MonoBehaviour
 
     private string ProvideGoodAnswer()
     {
-        if (UnityEngine.Random.Range(0, 1) > 0.9f)
+        if (UnityEngine.Random.Range(0f, 1f) > 0.9f)
         {
             return AmbiguousAnswer();
         }
