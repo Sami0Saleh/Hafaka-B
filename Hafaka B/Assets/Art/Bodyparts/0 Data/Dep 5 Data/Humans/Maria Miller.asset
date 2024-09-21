@@ -40,8 +40,8 @@ MonoBehaviour:
   FootRight: {fileID: 21300000, guid: 370246e31b619df428ab494edef94ddd, type: 3}
   FootLeft: {fileID: 21300000, guid: 2cb66abcfc95f1c46b00c44c7059857d, type: 3}
   _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
-  _firstName: Maria Miller
-  _lastName: The Destroyer
+  _firstName: Maria
+  _lastName: Miller
   _gender: 1
   id: 485692456
   _dateOfBirth: 01.04.90
@@ -56,3 +56,4 @@ MonoBehaviour:
   <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 0
   <IsDateOfBirthWrong>k__BackingField: 0
+  <SpecificAnswer>k__BackingField: 

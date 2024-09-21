@@ -3109,6 +3109,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 9078905566223212050, guid: a9b00821b3062ba45bc771acb4f38076, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8172019770194117264, guid: a9b00821b3062ba45bc771acb4f38076, type: 3}
@@ -7380,15 +7384,15 @@ PrefabInstance:
     - target: {fileID: 5759255412073201420, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: CharacterSO1
       value: 
-      objectReference: {fileID: 11400000, guid: 616dfd9aa4dd2dd4fb70b04d05ddd7cd, type: 2}
+      objectReference: {fileID: 11400000, guid: 9f765ea2754e98d4eaf92a87a0fe5dcd, type: 2}
     - target: {fileID: 5759255412073201420, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: CharacterSO2
       value: 
-      objectReference: {fileID: 11400000, guid: b9357d7dfb83eca40be419f25c87d68d, type: 2}
+      objectReference: {fileID: 11400000, guid: 2665932492561b74dbdee6062f412bad, type: 2}
     - target: {fileID: 5759255412073201420, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: CharacterSO3
       value: 
-      objectReference: {fileID: 11400000, guid: 8c1fbb948aac8a145997ede97b385868, type: 2}
+      objectReference: {fileID: 11400000, guid: f0bd92d54301148469d14ce8327b4918, type: 2}
     - target: {fileID: 5842049122312809339, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8085,6 +8089,22 @@ PrefabInstance:
     - target: {fileID: 7500656923933623436, guid: f0f34b21551beec4c98d162440843026, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213510763321325437, guid: f0f34b21551beec4c98d162440843026, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8213510763321325437, guid: f0f34b21551beec4c98d162440843026, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213510763321325437, guid: f0f34b21551beec4c98d162440843026, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8213510763321325437, guid: f0f34b21551beec4c98d162440843026, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
