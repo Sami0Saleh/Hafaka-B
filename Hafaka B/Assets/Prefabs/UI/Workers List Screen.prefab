@@ -3230,15 +3230,15 @@ PrefabInstance:
     - target: {fileID: 3742236593989698588, guid: d6d9d506cc63a0943a4167f0219baf35, type: 3}
       propertyPath: CharacterSO1
       value: 
-      objectReference: {fileID: 11400000, guid: 3ce982876b7eec745a6b810fc7d50ab6, type: 2}
+      objectReference: {fileID: 11400000, guid: 82b8ed9b04ad2dc42bd6cb05875a1a97, type: 2}
     - target: {fileID: 3742236593989698588, guid: d6d9d506cc63a0943a4167f0219baf35, type: 3}
       propertyPath: CharacterSO2
       value: 
-      objectReference: {fileID: 11400000, guid: 421e0009fd6201a419bbc6b256c452cb, type: 2}
+      objectReference: {fileID: 11400000, guid: c6b67795adf5bad43a4afe73714ce988, type: 2}
     - target: {fileID: 3742236593989698588, guid: d6d9d506cc63a0943a4167f0219baf35, type: 3}
       propertyPath: CharacterSO3
       value: 
-      objectReference: {fileID: 11400000, guid: 5b7c6180d93574b48977d513642fef86, type: 2}
+      objectReference: {fileID: 11400000, guid: 7f387166a0a9a8b478ff6f0b0dc5d267, type: 2}
     - target: {fileID: 4012804813657788999, guid: d6d9d506cc63a0943a4167f0219baf35, type: 3}
       propertyPath: m_SortingLayer
       value: 0
