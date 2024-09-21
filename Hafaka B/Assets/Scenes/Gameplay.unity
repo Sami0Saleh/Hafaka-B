@@ -3954,7 +3954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b56bde87ea2141740977b259fc9497a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _colorChangeRate: 2
+  _colorChangeRate: 3
   _increment: 0.1
   _spawner: {fileID: 1464942411}
   _volume: {fileID: 986537417}
