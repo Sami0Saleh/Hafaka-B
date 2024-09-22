@@ -72,7 +72,7 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] string _buffer = "Ignore this, don't delete";
     [field: SerializeField] public bool IsSpriteWrong { get; set; } = false;
     [field: SerializeField] public bool IsFirstNameWrong { get; set; } = false;
-    [field: SerializeField] public bool IsLastNameWrong { get; set; } = false;
+    [field: SerializeField] public bool IsNotOnExpectedList { get; set; } = false;
     [field: SerializeField] public bool IsDepartmentWrong { get; set; } = false;
     [field: SerializeField] public bool IsPositionWrong { get; set; } = false;
     [field: SerializeField] public bool IsDateOfBirthWrong { get; set; } = false;

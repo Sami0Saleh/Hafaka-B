@@ -145,7 +145,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Knee 3 Right Shade_0: -5441226420706800467
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -55,7 +55,7 @@ public class ScoreScreen : MonoBehaviour
                     law = "We will start to think about gun control. Promise.";
                 break;
             case "D":
-                law = "";
+                law = "We are officially SCREWED";
                 break;
             case "F":
                 law = "Nuclear launch control is passed onto Lord Zorg!";

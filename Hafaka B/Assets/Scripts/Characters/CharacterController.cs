@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] TextBubble _textBubble;
     [SerializeField] private Transform _goal;
-
+    [SerializeField] private Animator _animator;
 
     [Header("Text Files")]
     [SerializeField] TextAsset _defaultText;
@@ -24,11 +25,11 @@ public class CharacterController : MonoBehaviour
     private bool _isStopped = false;
     private bool _isAlien;
     private Questions _question;
-
+    private bool _isDead = false;
     // visual 
     private List<GameObject> _characterSprites;
     private Sprite _bloodPool;
-    private Animator _animator;
+    //private Animator _animator;
 
 
     // ID info
@@ -54,8 +55,7 @@ public class CharacterController : MonoBehaviour
     public string DateOfBirth { get => _dateOfBirth; private set => _dateOfBirth = value; }
     public CharacterScriptableObject CharacterSO { get => _characterSO; set => _characterSO = value; }
     public TextBubble TextBubble { get => _textBubble; }
-
-
+    public bool IsDead { get => _isDead; set => _isDead = value; }
 
     private void OnValidate()
     {
@@ -140,16 +140,23 @@ public class CharacterController : MonoBehaviour
 
     public void Stop()
     {
+        _animator.SetFloat("Speed", 0);
         _isStopped = true;
     }
 
     public void ContinueToGoal()
     {
-        _isStopped = false;
+        if (!_isDead)
+        {
+            _animator.SetBool("IsSpeaking", false);
+            _animator.SetFloat("Speed", 1);
+            _isStopped = false;
+        }
     }
 
     public void SetQuestionStr(string questionStr)
     {
+        Debug.Log(questionStr);
         switch (questionStr)
         {
             case "Appearance":
@@ -161,11 +168,11 @@ public class CharacterController : MonoBehaviour
             case "Position":
                 _question = Questions.Position;
                 break;
-            case "First":
-                _question = Questions.FirstName;
+            case "Name":
+                _question = Questions.Name;
                 break;
-            case "Last":
-                _question = Questions.LastName;
+            case "Expected":
+                _question = Questions.Expected;
                 break;
             case "Date":
                 _question = Questions.DateOfBirth;
@@ -173,11 +180,13 @@ public class CharacterController : MonoBehaviour
             default:
                 break;
         }
+        Debug.Log(_question);
     }
 
     public void DisplayText()
     {
-        if (!_isAlien)
+        _animator.SetBool("IsSpeaking", true);
+        if (!_isAlien && !CharacterSO.IsSpriteWrong && !CharacterSO.IsNotOnExpectedList)
             _textBubble.TextToDisplay = ProvideGoodAnswer();
         else
             _textBubble.TextToDisplay = ProvideBadAnswer();
@@ -186,33 +195,40 @@ public class CharacterController : MonoBehaviour
 
     private string ProvideBadAnswer()
     {
-        if (UnityEngine.Random.Range(0, 1) > 0.75f)
+        if (UnityEngine.Random.Range(0f, 1f) > 0.9f)
         {
             return AmbiguousAnswer();
         }
         switch (_question)
         {
             case Questions.Appearance:
+                Debug.Log("broke");
                 if (!CharacterSO.IsSpriteWrong) return _defaultText.text;
                 break;
             case Questions.Department:
+                Debug.Log("broke");
                 if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
                 break;
             case Questions.Position:
+                Debug.Log("broke");
                 if (!CharacterSO.IsPositionWrong) return _defaultText.text;
                 break;
-            case Questions.FirstName:
+            case Questions.Name:
+                Debug.Log("broke");
                 if (!CharacterSO.IsFirstNameWrong) return _defaultText.text;
                 break;
-            case Questions.LastName:
-                if (!CharacterSO.IsLastNameWrong) return _defaultText.text;
+            case Questions.Expected:
+                Debug.Log("broke");
+                if (!CharacterSO.IsNotOnExpectedList) return _defaultText.text;
                 break;
             case Questions.DateOfBirth:
-                if (!CharacterSO.IsDepartmentWrong) return _defaultText.text;
+                Debug.Log("broke");
+                if (!CharacterSO.IsDateOfBirthWrong) return _defaultText.text;
                 break;
             default:
                 return "Bad Answer";
         }
+        Debug.Log("specific answer");
         return _characterSO.SpecificAnswer;
     }
 
@@ -226,9 +242,9 @@ public class CharacterController : MonoBehaviour
                 return _departmentTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
             case Questions.Position:
                 return _positionTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
-            case Questions.FirstName:
+            case Questions.Name:
                 return _firstNameTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
-            case Questions.LastName:
+            case Questions.Expected:
                 return _lastNameTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
             case Questions.DateOfBirth:
                 return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Ambiguous).text;
@@ -239,7 +255,7 @@ public class CharacterController : MonoBehaviour
 
     private string ProvideGoodAnswer()
     {
-        if (UnityEngine.Random.Range(0, 1) > 0.9f)
+        if (UnityEngine.Random.Range(0f, 1f) > 0.9f)
         {
             return AmbiguousAnswer();
         }
@@ -251,9 +267,9 @@ public class CharacterController : MonoBehaviour
                 return _departmentTexts.GetValueOrDefault(AnswerType.Good).text;
             case Questions.Position:
                 return _positionTexts.GetValueOrDefault(AnswerType.Good).text;
-            case Questions.FirstName:
+            case Questions.Name:
                 return _firstNameTexts.GetValueOrDefault(AnswerType.Good).text;
-            case Questions.LastName:
+            case Questions.Expected:
                 return _lastNameTexts.GetValueOrDefault(AnswerType.Good).text;
             case Questions.DateOfBirth:
                 return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Good).text;
@@ -269,22 +285,34 @@ public class CharacterController : MonoBehaviour
 
     public void Die()
     {
+        _animator.SetBool("IsDead", true);
+        _isDead = true;
         _isStopped = true;
         Debug.Log("Character " + FullName + " has died!");
         GoalRecorder.Instance.AddCharacterToListOfDead(this);
         Debug.Log(GoalRecorder.Instance.GetDeadCharacters()[0].FullName);
+        StartCoroutine(KillCharacterCoroutine());
+
+    }
+
+    private IEnumerator KillCharacterCoroutine()
+    {
+
+        yield return new WaitForSeconds(4);
         Destroy(gameObject);
     }
 
-    [ContextMenu("init")]
+
+   [ContextMenu("init")]
     public void Init(CharacterScriptableObject characterSO)
     {
+        _animator.SetBool("Reset", true);
         CharacterSO = characterSO;
         _skin.SetSkin(CharacterSO._material, CharacterSO.Head, CharacterSO.Eyes, CharacterSO.Nose, CharacterSO.Hair, CharacterSO.MouthClosed, CharacterSO.MouthOpenSmall, CharacterSO.MouthOpenBig, CharacterSO.FrontEar, CharacterSO.BackEar, CharacterSO.Neck, CharacterSO.Body, CharacterSO.SholderFront, CharacterSO.SholderBack, CharacterSO.ForearmFront, CharacterSO.ForearmBack, CharacterSO.KneeRight, CharacterSO.KneeLeft, CharacterSO.AnkleRight, CharacterSO.AnkleLeft, CharacterSO.FootRight, CharacterSO.FootLeft); ;
         // Initialize movement and visual fields
         _speed = CharacterSO.MoveSpeed;
         _characterSprites = CharacterSO.CharacterSprites;
-        _animator = CharacterSO.Animator;
+       // _animator = CharacterSO.Animator;
         _bloodPool = CharacterSO.BloodPool;
 
         // Initialize identity fields
@@ -313,8 +341,8 @@ enum Questions
     Appearance,
     Department,
     Position,
-    FirstName,
-    LastName,
+    Name,
+    Expected,
     DateOfBirth
 }
 
