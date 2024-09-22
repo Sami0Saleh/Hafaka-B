@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class CharacterSpawner : MonoBehaviour
 {
-    private int _spawnCount = 0;
     [SerializeField] List<CharacterScriptableObject> _workers;
     [SerializeField] List<CharacterScriptableObject> _workersSus;
     [SerializeField] List<CharacterScriptableObject> _workersSuperSus;
@@ -45,8 +44,6 @@ public class CharacterSpawner : MonoBehaviour
 
     public int CharacterCount { get { return _characterCount; } private set { _characterCount = value; } }
 
-    public int SpawnCount { get => _spawnCount; set => _spawnCount = value; }
-    public int count = 15;
     void Start()
     {
         ExpectedWorkersLeft = Random.Range(_minExpectedWorkers, _maxExpectedWorkers + 1);
@@ -116,7 +113,6 @@ public class CharacterSpawner : MonoBehaviour
 
         // Set the last goal for the character
         characterController.SetGoal(_lastGoal);
-        SpawnCount++;
     }
 
     private isExpectedSO GetNextCharacter()
