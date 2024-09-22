@@ -8,8 +8,10 @@ public class CharacterSpawner : MonoBehaviour
     private int _spawnCount = 0;
     [SerializeField] List<CharacterScriptableObject> _workers;
     [SerializeField] List<CharacterScriptableObject> _workersSus;
+    [SerializeField] List<CharacterScriptableObject> _workersSuperSus;
     [SerializeField] List<CharacterScriptableObject> _workersAlien;
     [SerializeField] List<CharacterScriptableObject> _workersSubtleAlien;
+    [SerializeField] List<CharacterScriptableObject> _workersSuperSubtleAlien;
     [SerializeField] GameObject _characterPrefab;
     [SerializeField] ExpectedListUI _expectedListUI;
     [SerializeField] Transform _lastGoal;
@@ -21,14 +23,18 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] int _MaxUnexpectedworkers = 5;
     [SerializeField] int _MinAlienArrivals = 4;
     [SerializeField] int _MaxAlienArrivals = 8;
+    [SerializeField, Range(0, 1)] float _HumanSuperSusChance = 0;
     [SerializeField,Range(0,1)] float _HumanSusChance = 0.3f;
+    [SerializeField, Range(0, 1)] float _AlienSuperSubtleChance = 0;
     [SerializeField, Range(0,1)] float _AlienObvChance = 0.3f;
+    
+    [SerializeField, Range(0.75f, 1)] float _SpawnAccelerationRate = 0.9f;
     [SerializeField] float _minSpawnTime = 20f;
     [SerializeField] float _maxSpawnTime = 25f;
 
     public List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
     public List<int> _ExpectedWorkersIndexes = new List<int>();
-    private List<int> _SpawnedHumans;
+    private List<int> _SpawnedHumans = new List<int>();
     private float _secondsToWait;
 
     private int ExpectedWorkersLeft;
@@ -60,17 +66,24 @@ public class CharacterSpawner : MonoBehaviour
 
     private void SelectExpectedWorkers(int numberOfExpectedWorkers)
     {
-        List<CharacterScriptableObject> workersPool = new List<CharacterScriptableObject>(_workers);
-
+        bool run = true;
         for (int i = 0; i < numberOfExpectedWorkers; i++)
         {
-            int randomIndex = Random.Range(0, workersPool.Count);
-            while (!_ExpectedWorkersIndexes.Contains(randomIndex)) {
-                randomIndex = Random.Range(0, workersPool.Count);
+            run = true;
+            int randomIndex = Random.Range(0, _workers.Count);
+            while (run) {
+                if (!_ExpectedWorkersIndexes.Contains(randomIndex))
+                {
+                    _ExpectedWorkersIndexes.Add(randomIndex);
+                    run = false;
+                }
+                else
+                {
+                    randomIndex = Random.Range(0, _workers.Count);
+                }
             }
-            CharacterScriptableObject selectedWorker = workersPool[randomIndex];
+            CharacterScriptableObject selectedWorker = _workers[randomIndex];
             _expectedWorkers.Add(selectedWorker);
-            _ExpectedWorkersIndexes.Add(randomIndex);
         }
     }
 
@@ -85,8 +98,8 @@ public class CharacterSpawner : MonoBehaviour
 
             SpawnCharacter(Character._CharacterScriptableObject, Character._IsExpected);
             _secondsToWait = Random.Range(_minSpawnTime, _maxSpawnTime);
-            _minSpawnTime = Mathf.Max(_minSpawnTime * 0.9f, 3);
-            _maxSpawnTime = Mathf.Max(_maxSpawnTime * 0.9f, 5);
+            _minSpawnTime = Mathf.Max(_minSpawnTime * _SpawnAccelerationRate, 3);
+            _maxSpawnTime = Mathf.Max(_maxSpawnTime * _SpawnAccelerationRate, 5);
             yield return new WaitForSeconds(_secondsToWait);
         }
     }
@@ -119,6 +132,7 @@ public class CharacterSpawner : MonoBehaviour
                 case 0:
                     if (AliensLeft > 0)
                     {
+                        
                         output = AddAliens();
                         run = false;
                     }
@@ -146,16 +160,27 @@ public class CharacterSpawner : MonoBehaviour
     {
         int randomIndex;
         float Chance;
+        bool run = true;
         randomIndex = Random.Range(0, _ExpectedWorkersIndexes.Count);
-        while (!_SpawnedHumans.Contains(_ExpectedWorkersIndexes[randomIndex]))
+        while (run)
         {
-            randomIndex = Random.Range(0, _ExpectedWorkersIndexes.Count);
+            if (!_SpawnedHumans.Contains(_ExpectedWorkersIndexes[randomIndex]))
+            {
+                run = false;
+                _SpawnedHumans.Add(_ExpectedWorkersIndexes[randomIndex]);
+            }
+            else
+            {
+                randomIndex = Random.Range(0, _ExpectedWorkersIndexes.Count);
+            }
         }
-        _SpawnedHumans.Add(_ExpectedWorkersIndexes[randomIndex]);
         Chance = Random.Range(0, 1);
         CharacterCount--;
+        Debug.Log("Summoning Expected Human no." + _ExpectedWorkersIndexes[randomIndex]);
         if (Chance < _HumanSusChance)
         {
+            Chance = Random.Range(0, 1);
+            if (Chance < _HumanSuperSusChance && _workersSuperSus.Count > randomIndex) return new(_workersSuperSus[randomIndex], true);
             return new(_workersSus[randomIndex], true);
         }
         else
@@ -169,17 +194,29 @@ public class CharacterSpawner : MonoBehaviour
     {
         int randomIndex;
         float Chance;
+        bool run = true;
         
         randomIndex = Random.Range(0, _workers.Count);
-        while (!_SpawnedHumans.Contains(randomIndex) && !_ExpectedWorkersIndexes.Contains(randomIndex))
+        while (run)
         {
-            randomIndex = Random.Range(0, _workers.Count);
+            if (!_SpawnedHumans.Contains(randomIndex) && !_ExpectedWorkersIndexes.Contains(randomIndex))
+            { 
+                _SpawnedHumans.Add(randomIndex);
+                run = false;
+            }
+            else
+            {
+                randomIndex = Random.Range(0, _workers.Count);
+            }
         }
-        _SpawnedHumans.Add(randomIndex);
         Chance = Random.Range(0, 1);
         UnexpectedLeft--;
+
+        Debug.Log("Summoning Unexpected Human no." + randomIndex);
         if (Chance < _HumanSusChance)
         {
+            Chance = Random.Range(0, 1);
+            if (Chance < _HumanSuperSusChance && _workersSuperSus.Count > randomIndex) return new(_workersSuperSus[randomIndex], false);
             return new(_workersSus[randomIndex], false);
         }
         else
@@ -207,12 +244,16 @@ public class CharacterSpawner : MonoBehaviour
         }
         Chance = Random.Range(0, 1);
         AliensLeft--;
+
+        Debug.Log("Summoning Alien no." + randomIndex);
         if (Chance < _AlienObvChance)
         {
             return new(_workersAlien[randomIndex], isExpected);
         }
         else
         {
+            Chance = Random.Range(0, 1);
+            if (Chance < _AlienSuperSubtleChance && _workersSuperSubtleAlien.Count >randomIndex) return new(_workersSuperSubtleAlien[randomIndex], isExpected);
             return new(_workersSubtleAlien[randomIndex], isExpected);
         }
         
