@@ -31,7 +31,7 @@ public class CharacterSpawner : MonoBehaviour
         CharacterCount = Random.Range(_minExpectedWorkers, _maxExpectedWorkers + 1);
         Debug.Log("will spawn " + CharacterCount);
         SelectExpectedWorkers(CharacterCount);
-        _expectedListUI.UpdateExpectedList(_expectedWorkers); // Update the UI
+        _expectedListUI.NewUpdateExpectedList(_expectedWorkers); // Update the UI
         StartCoroutine(SpawnCharactersCoroutine(CharacterCount));
     }
 
