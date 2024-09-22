@@ -122,31 +122,21 @@ public class CharacterSpawner : MonoBehaviour
         isExpectedSO output = new();
         while (run)
         {
-            rnd = Random.Range(0, 3);
-            switch (rnd)
+            rnd = Random.Range(0, 4);
+            if (rnd < 2)
             {
-                case 0:
-                    if (AliensLeft > 0)
-                    {
-                        
-                        output = AddAliens();
-                        run = false;
-                    }
-                    break;
-                case 1:
-                    if (CharacterCount > 0)
-                    {
-                        output = AddExpectedHumans();
-                        run = false;
-                    }
-                    break;  
-                case 2:
-                    if (UnexpectedLeft > 0)
-                    {
-                        output = AddUnexpectedHumans();
-                        run = false;
-                    }
-                    break;
+                output = AddAliens();
+                run = false;
+            }
+            else if (rnd == 2)
+            {
+                output = AddExpectedHumans();
+                run = false;
+            }
+            else if (rnd == 3)
+            {
+                output = AddUnexpectedHumans();
+                run = false;
             }
         }
         return output;
