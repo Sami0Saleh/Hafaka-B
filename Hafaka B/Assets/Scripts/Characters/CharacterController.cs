@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -282,16 +283,27 @@ public class CharacterController : MonoBehaviour
 
     public void Die()
     {
+        _animator.SetBool("IsDead", true);
         _isStopped = true;
         Debug.Log("Character " + FullName + " has died!");
         GoalRecorder.Instance.AddCharacterToListOfDead(this);
         Debug.Log(GoalRecorder.Instance.GetDeadCharacters()[0].FullName);
+        StartCoroutine(KillCharacterCoroutine());
+
+    }
+
+    private IEnumerator KillCharacterCoroutine()
+    {
+
+        yield return new WaitForSeconds(4);
         Destroy(gameObject);
     }
 
-    [ContextMenu("init")]
+
+   [ContextMenu("init")]
     public void Init(CharacterScriptableObject characterSO)
     {
+        _animator.SetBool("Reset", true);
         CharacterSO = characterSO;
         _skin.SetSkin(CharacterSO._material, CharacterSO.Head, CharacterSO.Eyes, CharacterSO.Nose, CharacterSO.Hair, CharacterSO.MouthClosed, CharacterSO.MouthOpenSmall, CharacterSO.MouthOpenBig, CharacterSO.FrontEar, CharacterSO.BackEar, CharacterSO.Neck, CharacterSO.Body, CharacterSO.SholderFront, CharacterSO.SholderBack, CharacterSO.ForearmFront, CharacterSO.ForearmBack, CharacterSO.KneeRight, CharacterSO.KneeLeft, CharacterSO.AnkleRight, CharacterSO.AnkleLeft, CharacterSO.FootRight, CharacterSO.FootLeft); ;
         // Initialize movement and visual fields

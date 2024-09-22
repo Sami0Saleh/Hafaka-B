@@ -9896,11 +9896,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 881416264252803554, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 176.45
       objectReference: {fileID: 0}
     - target: {fileID: 881416264252803554, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -200.90668
       objectReference: {fileID: 0}
     - target: {fileID: 1485748129077609402, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -9924,7 +9924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1485748129077609402, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 176.45
       objectReference: {fileID: 0}
     - target: {fileID: 1485748129077609402, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10224,11 +10224,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4685989086581167721, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 176.45
       objectReference: {fileID: 0}
     - target: {fileID: 4685989086581167721, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -265.86002
       objectReference: {fileID: 0}
     - target: {fileID: 4784803309544965292, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_LocalScale.x
@@ -10324,7 +10324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5174807853757826542, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5373511062493765169, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10348,15 +10348,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5373511062493765169, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 176.45
       objectReference: {fileID: 0}
     - target: {fileID: 5373511062493765169, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -395.7667
       objectReference: {fileID: 0}
     - target: {fileID: 5451420659439387589, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5759255412073201420, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: CharacterSO1
@@ -10520,11 +10520,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6665441027934131457, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 176.45
       objectReference: {fileID: 0}
     - target: {fileID: 6665441027934131457, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -135.95334
       objectReference: {fileID: 0}
     - target: {fileID: 7529394952522230441, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10548,11 +10548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7529394952522230441, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 176.45
       objectReference: {fileID: 0}
     - target: {fileID: 7529394952522230441, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -330.81335
       objectReference: {fileID: 0}
     - target: {fileID: 7876937923050433276, guid: 6d9b8c0059c3f204f91021b0af24726f, type: 3}
       propertyPath: m_fontSize

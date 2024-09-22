@@ -32,7 +32,7 @@ public class BloodSpawner : MonoBehaviour
     public void SpawnBlood(CharacterController character)
     {
         GameObject bloodSplatter = Instantiate(_sprite);
-        bloodSplatter.transform.position = new Vector3(character.transform.position.x, _spawnYPosition, 0);
+        bloodSplatter.transform.position = new Vector3(character.transform.position.x, _spawnYPosition, 5);
         SpriteRenderer sr = bloodSplatter.GetComponent<SpriteRenderer>();
         sr.sprite = _bloodImages[Random.Range(0, _bloodImages.Count - 1)];
         if(!character.IsAlien)

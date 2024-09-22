@@ -16,7 +16,7 @@ public class CharacterSpawner : MonoBehaviour
 
     [Header("Stats")]
     [SerializeField] int _minExpectedWorkers = 2;
-    [SerializeField] int _maxExpectedWorkers = 4;
+    [SerializeField] int _maxExpectedWorkers = 5;
     [SerializeField] float _minSpawnTime = 20f;
     [SerializeField] float _maxSpawnTime = 25f;
 
