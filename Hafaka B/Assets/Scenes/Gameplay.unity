@@ -7569,7 +7569,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cdff42e6811c48f43a3253bf81d0cb07, type: 2}
   - {fileID: 11400000, guid: 03de02e1df1f7084a91ae79c55287221, type: 2}
   - {fileID: 11400000, guid: 49b8c0b32194961458484ed5fb14e459, type: 2}
-  _workersAlian:
+  _workersSuperSus: []
+  _workersAlien:
   - {fileID: 11400000, guid: 95493bc323cd65943aa7e6bd3a7c4569, type: 2}
   - {fileID: 11400000, guid: 015795fd34226de4282acf680d33b16a, type: 2}
   - {fileID: 11400000, guid: 8692ef586766f524cb819dbc75cb1b63, type: 2}
@@ -7585,7 +7586,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1ad110f888acab4468b04c46d0ee12dc, type: 2}
   - {fileID: 11400000, guid: 6a958863090c5934089ff016695bb051, type: 2}
   - {fileID: 11400000, guid: 25f165358f0abb340a180516057b1b48, type: 2}
-  _workersSubtleAlian:
+  _workersSubtleAlien:
   - {fileID: 11400000, guid: 21c66d884b725284fb494c1aa33e45b3, type: 2}
   - {fileID: 11400000, guid: 8de0153a8e2b9bf48a402dfe597b2808, type: 2}
   - {fileID: 11400000, guid: 5e5d01e6716242648b36445a5c224a19, type: 2}
@@ -7601,14 +7602,25 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 02e18255944cb3c4ea00af4790f8578f, type: 2}
   - {fileID: 11400000, guid: 9df38d5f03ac1bb4eab61c3cfa70ceac, type: 2}
   - {fileID: 11400000, guid: a3503b00c386ad943aa64b01729112ec, type: 2}
+  _workersSuperSubtleAlien: []
   _characterPrefab: {fileID: 6550850988543019808, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
   _expectedListUI: {fileID: 3176941975282307188}
   _lastGoal: {fileID: 5509048083914431018, guid: 7563d07f9ef84fc47982dec8e76f070f, type: 3}
   _minExpectedWorkers: 4
-  _maxExpectedWorkers: 8
+  _maxExpectedWorkers: 6
+  _MinUnexpectedWorkers: 2
+  _MaxUnexpectedworkers: 5
+  _MinAlienArrivals: 4
+  _MaxAlienArrivals: 8
+  _HumanSuperSusChance: 0
+  _HumanSusChance: 0.3
+  _AlienSuperSubtleChance: 0
+  _AlienObvChance: 0.3
+  _SpawnAccelerationRate: 0.95
   _minSpawnTime: 20
   _maxSpawnTime: 25
   _expectedWorkers: []
+  _ExpectedWorkersIndexes: 
   count: 15
 --- !u!1 &1506589184
 GameObject:

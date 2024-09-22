@@ -41,6 +41,7 @@ public class CharacterController : MonoBehaviour
     private string _department;
     private string _jobTitle;
     private string _dateOfBirth;
+    private bool _isExpected;
 
     private Vector2 MovePos;
 
@@ -56,6 +57,7 @@ public class CharacterController : MonoBehaviour
     public CharacterScriptableObject CharacterSO { get => _characterSO; set => _characterSO = value; }
     public TextBubble TextBubble { get => _textBubble; }
     public bool IsDead { get => _isDead; set => _isDead = value; }
+    public bool IsExpected { get => _isExpected; private set => _isExpected = value; }
 
     private void OnValidate()
     {
@@ -304,10 +306,11 @@ public class CharacterController : MonoBehaviour
 
 
    [ContextMenu("init")]
-    public void Init(CharacterScriptableObject characterSO)
+    public void Init(CharacterScriptableObject characterSO,bool isexpected)
     {
         _animator.SetBool("Reset", true);
         CharacterSO = characterSO;
+        IsExpected = isexpected;
         _skin.SetSkin(CharacterSO._material, CharacterSO.Head, CharacterSO.Eyes, CharacterSO.Nose, CharacterSO.Hair, CharacterSO.MouthClosed, CharacterSO.MouthOpenSmall, CharacterSO.MouthOpenBig, CharacterSO.FrontEar, CharacterSO.BackEar, CharacterSO.Neck, CharacterSO.Body, CharacterSO.SholderFront, CharacterSO.SholderBack, CharacterSO.ForearmFront, CharacterSO.ForearmBack, CharacterSO.KneeRight, CharacterSO.KneeLeft, CharacterSO.AnkleRight, CharacterSO.AnkleLeft, CharacterSO.FootRight, CharacterSO.FootLeft); ;
         // Initialize movement and visual fields
         _speed = CharacterSO.MoveSpeed;
