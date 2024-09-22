@@ -43,8 +43,9 @@ public class CharacterSpawner : MonoBehaviour
         {
             int randomIndex = Random.Range(0, workersPool.Count);
             CharacterScriptableObject selectedWorker = workersPool[randomIndex];
-            _expectedWorkers.Add(selectedWorker);
-            workersPool.RemoveAt(randomIndex);
+                _expectedWorkers.Add(selectedWorker);
+                workersPool.RemoveAt(randomIndex);
+            
         }
     }
 

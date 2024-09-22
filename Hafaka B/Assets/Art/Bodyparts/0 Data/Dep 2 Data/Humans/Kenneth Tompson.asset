@@ -52,7 +52,8 @@ MonoBehaviour:
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 0
   <IsFirstNameWrong>k__BackingField: 0
-  <IsLastNameWrong>k__BackingField: 0
+  <IsNotOnExpectedList>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 0
   <IsDateOfBirthWrong>k__BackingField: 0
+  <SpecificAnswer>k__BackingField: 

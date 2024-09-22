@@ -25,7 +25,7 @@ public class CharacterController : MonoBehaviour
     private bool _isStopped = false;
     private bool _isAlien;
     private Questions _question;
-
+    private bool _isDead = false;
     // visual 
     private List<GameObject> _characterSprites;
     private Sprite _bloodPool;
@@ -55,8 +55,7 @@ public class CharacterController : MonoBehaviour
     public string DateOfBirth { get => _dateOfBirth; private set => _dateOfBirth = value; }
     public CharacterScriptableObject CharacterSO { get => _characterSO; set => _characterSO = value; }
     public TextBubble TextBubble { get => _textBubble; }
-
-
+    public bool IsDead { get => _isDead; set => _isDead = value; }
 
     private void OnValidate()
     {
@@ -147,9 +146,12 @@ public class CharacterController : MonoBehaviour
 
     public void ContinueToGoal()
     {
-        _animator.SetBool("IsSpeaking", false);
-        _animator.SetFloat("Speed", 1);
-        _isStopped = false;
+        if (!_isDead)
+        {
+            _animator.SetBool("IsSpeaking", false);
+            _animator.SetFloat("Speed", 1);
+            _isStopped = false;
+        }
     }
 
     public void SetQuestionStr(string questionStr)
@@ -184,7 +186,7 @@ public class CharacterController : MonoBehaviour
     public void DisplayText()
     {
         _animator.SetBool("IsSpeaking", true);
-        if (!_isAlien && !CharacterSO.IsSpriteWrong)
+        if (!_isAlien && !CharacterSO.IsSpriteWrong && !CharacterSO.IsNotOnExpectedList)
             _textBubble.TextToDisplay = ProvideGoodAnswer();
         else
             _textBubble.TextToDisplay = ProvideBadAnswer();
@@ -217,7 +219,7 @@ public class CharacterController : MonoBehaviour
                 break;
             case Questions.Expected:
                 Debug.Log("broke");
-                if (!CharacterSO.IsLastNameWrong) return _defaultText.text;
+                if (!CharacterSO.IsNotOnExpectedList) return _defaultText.text;
                 break;
             case Questions.DateOfBirth:
                 Debug.Log("broke");
@@ -284,6 +286,7 @@ public class CharacterController : MonoBehaviour
     public void Die()
     {
         _animator.SetBool("IsDead", true);
+        _isDead = true;
         _isStopped = true;
         Debug.Log("Character " + FullName + " has died!");
         GoalRecorder.Instance.AddCharacterToListOfDead(this);
