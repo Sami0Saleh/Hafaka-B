@@ -36,9 +36,9 @@ public class CharacterSpawner : MonoBehaviour
     private List<int> _SpawnedHumans = new List<int>();
     private float _secondsToWait;
 
-    private int ExpectedWorkersLeft;
-    private int UnexpectedLeft;
-    private int AliensLeft;
+    public int ExpectedWorkersLeft;
+    public int UnexpectedLeft;
+    public int AliensLeft;
 
     private int _characterCount;
 
@@ -89,7 +89,7 @@ public class CharacterSpawner : MonoBehaviour
     {
         
 
-        while(CharacterCount > 0 && UnexpectedLeft>0 && AliensLeft>0)
+        while(ExpectedWorkersLeft > 0 || UnexpectedLeft>0 || AliensLeft>0)
         {
             isExpectedSO Character = GetNextCharacter(); 
 
@@ -123,17 +123,17 @@ public class CharacterSpawner : MonoBehaviour
         while (run)
         {
             rnd = Random.Range(0, 4);
-            if (rnd < 2)
+            if (rnd < 2 && AliensLeft >0)
             {
                 output = AddAliens();
                 run = false;
             }
-            else if (rnd == 2)
+            else if (rnd == 2 && ExpectedWorkersLeft > 0)
             {
                 output = AddExpectedHumans();
                 run = false;
             }
-            else if (rnd == 3)
+            else if (rnd == 3 && UnexpectedLeft > 0)
             {
                 output = AddUnexpectedHumans();
                 run = false;
@@ -161,7 +161,7 @@ public class CharacterSpawner : MonoBehaviour
             }
         }
         Chance = Random.Range(0, 1);
-        CharacterCount--;
+        ExpectedWorkersLeft--;
         Debug.Log("Summoning Expected Human no." + _ExpectedWorkersIndexes[randomIndex]);
         if (Chance < _HumanSusChance)
         {

@@ -7615,13 +7615,15 @@ MonoBehaviour:
   _HumanSuperSusChance: 0
   _HumanSusChance: 0.3
   _AlienSuperSubtleChance: 0
-  _AlienObvChance: 0.3
-  _SpawnAccelerationRate: 0.95
+  _AlienObvChance: 0.211
+  _SpawnAccelerationRate: 0.936
   _minSpawnTime: 20
   _maxSpawnTime: 25
   _expectedWorkers: []
   _ExpectedWorkersIndexes: 
-  count: 15
+  ExpectedWorkersLeft: 0
+  UnexpectedLeft: 0
+  AliensLeft: 0
 --- !u!1 &1506589184
 GameObject:
   m_ObjectHideFlags: 0
