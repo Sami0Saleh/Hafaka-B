@@ -23,6 +23,11 @@ public class CharacterSwitching : MonoBehaviour
           , skinControllers[i].Hair, skinControllers[i].MouthClosed, skinControllers[i].MouthOpenSmall, skinControllers[i].MouthOpenBig
           , skinControllers[i].FrontEar, skinControllers[i].BackEar, skinControllers[i].Neck, skinControllers[i].Body, skinControllers[i].SholderFront
           , skinControllers[i].SholderBack, skinControllers[i].ForearmFront, skinControllers[i].ForearmBack, skinControllers[i].KneeRight
-          , skinControllers[i].KneeLeft, skinControllers[i].AnkleRight, skinControllers[i].AnkleLeft, skinControllers[i].FootRight, skinControllers[i].FootLeft); ;
+          , skinControllers[i].KneeLeft, skinControllers[i].AnkleRight, skinControllers[i].AnkleLeft, skinControllers[i].FootRight, skinControllers[i].FootLeft);
+
+
+        i++;
+
+        i = i%skinControllers.Length;
     }
 }
