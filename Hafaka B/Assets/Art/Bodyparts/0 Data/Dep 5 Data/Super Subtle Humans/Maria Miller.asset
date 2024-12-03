@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
-  m_Name: Nancy Thomas
+  m_Name: Maria Miller
   m_EditorClassIdentifier: 
   _moveSpeed: 0.5
   _isAlien: 0
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _material: {fileID: 2100000, guid: c0af4e0e29e065e45a14e7d10f639729, type: 2}
+  _material: {fileID: 2100000, guid: 75f7a0e703b6c654283e5187fdca29b1, type: 2}
   Head: {fileID: 21300000, guid: 71732476343b34444976d276ff9e7ec1, type: 3}
   Eyes: {fileID: 21300000, guid: cbc01ca38924b7149a1e4119dc89cfd4, type: 3}
   Nose: {fileID: 21300000, guid: d7f56d218b63bce44a292fe89cce1900, type: 3}
-  Hair: {fileID: 21300000, guid: 767bd5b0aa856ea4f8a08cf04cfdbf53, type: 3}
+  Hair: {fileID: 21300000, guid: 169cfd77c9c94234890314c76986796e, type: 3}
   MouthClosed: {fileID: 21300000, guid: f03ec65def163314aa45d67183f9353c, type: 3}
   MouthOpenSmall: {fileID: 21300000, guid: 4aa7840df59c69f4f806adbaa33f3055, type: 3}
   MouthOpenBig: {fileID: 21300000, guid: ae0e0d78aac539147a9506a7c120fbeb, type: 3}
@@ -40,21 +40,21 @@ MonoBehaviour:
   FootRight: {fileID: 21300000, guid: 370246e31b619df428ab494edef94ddd, type: 3}
   FootLeft: {fileID: 21300000, guid: 2cb66abcfc95f1c46b00c44c7059857d, type: 3}
   _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
-  _firstName: Nancy
-  _lastName: Taylor
+  _firstName: Maria
+  _lastName: Miller
   _gender: 1
-  id: 476297423
-  _dateOfBirth: 09.08.86
-  _department: Science
-  _jobTitle: Data Analyst
+  id: 485692456
+  _dateOfBirth: 01.04.90
+  _department: Military
+  _jobTitle: Stratigic Consultant
   _keyFeatures: 
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 0
-  <IsFirstNameWrong>k__BackingField: 1
+  <IsFirstNameWrong>k__BackingField: 0
   <IsNotOnExpectedList>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
-  <IsPositionWrong>k__BackingField: 0
+  <IsPositionWrong>k__BackingField: 1
   <IsDateOfBirthWrong>k__BackingField: 0
-  <SpecificAnswer>k__BackingField: Married thomas and took he's last name because
-    thomas thomas seems dumb
+  <SpecificAnswer>k__BackingField: Thought it sounded better. the database should
+    be upadated tommrrow

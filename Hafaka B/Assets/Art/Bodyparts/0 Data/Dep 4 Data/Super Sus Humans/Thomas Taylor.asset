@@ -44,9 +44,9 @@ MonoBehaviour:
   _lastName: Taylor
   _gender: 0
   id: 247932765
-  _dateOfBirth: 06.16.83
+  _dateOfBirth: 06.07.83
   _department: Science
-  _jobTitle: Lab Supplier
+  _jobTitle: Chief Lab Supplier
   _keyFeatures: 
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
@@ -54,6 +54,7 @@ MonoBehaviour:
   <IsFirstNameWrong>k__BackingField: 0
   <IsNotOnExpectedList>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
-  <IsPositionWrong>k__BackingField: 0
+  <IsPositionWrong>k__BackingField: 1
   <IsDateOfBirthWrong>k__BackingField: 0
-  <SpecificAnswer>k__BackingField: 
+  <SpecificAnswer>k__BackingField: Got promoted yesterday, must have not been updated
+    in the database

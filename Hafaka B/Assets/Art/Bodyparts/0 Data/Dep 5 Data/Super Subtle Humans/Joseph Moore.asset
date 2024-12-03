@@ -10,25 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
-  m_Name: Thomas Taylor SA
+  m_Name: Joseph Moore
   m_EditorClassIdentifier: 
   _moveSpeed: 0.5
-  _isAlien: 1
+  _isAlien: 0
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _material: {fileID: 2100000, guid: 2577ceca9352dad48be543521a991e1d, type: 2}
+  _material: {fileID: 2100000, guid: f22f062b8c2fa7a40b967225c8d9d876, type: 2}
   Head: {fileID: 21300000, guid: 26b251bb752ef214ea74b54b65d96c98, type: 3}
   Eyes: {fileID: 21300000, guid: 94c362c1cf224e145ba9e132d4d18121, type: 3}
-  Nose: {fileID: 21300000, guid: a1497ede133e1f841bc23ee64bce58fb, type: 3}
-  Hair: {fileID: 21300000, guid: 0de99c9ff948be84d8adb0ead6485ee2, type: 3}
+  Nose: {fileID: 21300000, guid: 87925426a081e6c44bec0d3ab1cf5fa0, type: 3}
+  Hair: {fileID: 21300000, guid: c5498e33c35616d4cbb2be8dcc0a0296, type: 3}
   MouthClosed: {fileID: 21300000, guid: f5376f9899aeaf642ab896f4008e2290, type: 3}
   MouthOpenSmall: {fileID: 21300000, guid: a729c345839307c419acc63888be5e44, type: 3}
   MouthOpenBig: {fileID: 21300000, guid: 3805b9dd275ec9a4ead5828eae70ff16, type: 3}
   FrontEar: {fileID: 21300000, guid: 5b5366adde217b840928f90175f069c0, type: 3}
   BackEar: {fileID: 21300000, guid: 53ec5bce285c0be4f93cb078fcd0ae45, type: 3}
   Neck: {fileID: 21300000, guid: ac5e584a7073b4f48a5bfb657c6ec35c, type: 3}
-  Body: {fileID: 21300000, guid: d184eeaaae861314d8120b6f1467c4e2, type: 3}
+  Body: {fileID: 21300000, guid: c3412809f9f5d0c4990ece904464309e, type: 3}
   SholderFront: {fileID: 21300000, guid: 7d8ca00749d68d5448c4fffe6821163f, type: 3}
   SholderBack: {fileID: 21300000, guid: c19ed226b90cbe948b1828cf68e66ae4, type: 3}
   ForearmFront: {fileID: 21300000, guid: c986ff51adb05ff429128b71163c7135, type: 3}
@@ -40,13 +40,13 @@ MonoBehaviour:
   FootRight: {fileID: 21300000, guid: e9e5725a728aefb49a7adc3aa81bf961, type: 3}
   FootLeft: {fileID: 21300000, guid: 5e9a93ec585b49d4cba4df8098e64a50, type: 3}
   _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
-  _firstName: Thomas
-  _lastName: Taylor
+  _firstName: Joseph
+  _lastName: Moore
   _gender: 0
-  id: 247932765
-  _dateOfBirth: 06.07.83
-  _department: Human Studies
-  _jobTitle: Probe Director
+  id: 478532985
+  _dateOfBirth: 18.05.84
+  _department: Education
+  _jobTitle: Head Of Logistic
   _keyFeatures: 
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
@@ -54,6 +54,7 @@ MonoBehaviour:
   <IsFirstNameWrong>k__BackingField: 0
   <IsNotOnExpectedList>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 1
-  <IsPositionWrong>k__BackingField: 1
+  <IsPositionWrong>k__BackingField: 0
   <IsDateOfBirthWrong>k__BackingField: 0
-  <SpecificAnswer>k__BackingField: I work with alot of A-holes in my office
+  <SpecificAnswer>k__BackingField: Switched from guns to books. I need the peace
+    of mind

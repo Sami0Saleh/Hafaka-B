@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
-  m_Name: Thomas Taylor SA
+  m_Name: Thomas Taylor
   m_EditorClassIdentifier: 
   _moveSpeed: 0.5
   _isAlien: 1
@@ -45,15 +45,15 @@ MonoBehaviour:
   _gender: 0
   id: 247932765
   _dateOfBirth: 06.07.83
-  _department: Human Studies
-  _jobTitle: Probe Director
+  _department: Science
+  _jobTitle: Chief Lab Supplier
   _keyFeatures: 
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 0
   <IsFirstNameWrong>k__BackingField: 0
   <IsNotOnExpectedList>k__BackingField: 0
-  <IsDepartmentWrong>k__BackingField: 1
+  <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 1
   <IsDateOfBirthWrong>k__BackingField: 0
-  <SpecificAnswer>k__BackingField: I work with alot of A-holes in my office
+  <SpecificAnswer>k__BackingField: THE SUPPLISED ARE NOT POISON.....

@@ -7585,7 +7585,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cdff42e6811c48f43a3253bf81d0cb07, type: 2}
   - {fileID: 11400000, guid: 03de02e1df1f7084a91ae79c55287221, type: 2}
   - {fileID: 11400000, guid: 49b8c0b32194961458484ed5fb14e459, type: 2}
-  _workersSuperSus: []
+  _workersSuperSus:
+  - {fileID: 11400000, guid: 50747dd794a440749bcdce50fb309573, type: 2}
+  - {fileID: 11400000, guid: 59387cd5b78dda74cb62aacff277cb55, type: 2}
+  - {fileID: 11400000, guid: 1eec1bf1a56770247bd5d64e8064ec52, type: 2}
+  - {fileID: 11400000, guid: df70d6d708f66f84c9f2febaff5f9fc5, type: 2}
+  - {fileID: 11400000, guid: 8ecddac9cecc5704ebc2eec4dc8c7f72, type: 2}
+  - {fileID: 11400000, guid: 296c05e978be9ed428907f4aa3d8313b, type: 2}
+  - {fileID: 11400000, guid: 67eb65727475583498b8eec53460cef6, type: 2}
+  - {fileID: 11400000, guid: 427cbcab41a092a4587ea15f0a6ebbf2, type: 2}
+  - {fileID: 11400000, guid: 040156181a3c2cf4890c5fc03c055123, type: 2}
+  - {fileID: 11400000, guid: 0a4dfedf4da664e4781a25b8fc3e6c44, type: 2}
+  - {fileID: 11400000, guid: 002f1c54c3df8114f82dc8497c02726a, type: 2}
+  - {fileID: 11400000, guid: 03aa9460dd53d6c49aa84f226329fcfb, type: 2}
+  - {fileID: 11400000, guid: a59f6bee35a9e1c44b6de0dd0efff708, type: 2}
+  - {fileID: 11400000, guid: 8303cf44965fa364ba368f55fda653bf, type: 2}
+  - {fileID: 11400000, guid: a64d344ad65ee124ca905bf834f859cd, type: 2}
   _workersAlien:
   - {fileID: 11400000, guid: 95493bc323cd65943aa7e6bd3a7c4569, type: 2}
   - {fileID: 11400000, guid: 015795fd34226de4282acf680d33b16a, type: 2}
@@ -7618,7 +7633,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 02e18255944cb3c4ea00af4790f8578f, type: 2}
   - {fileID: 11400000, guid: 9df38d5f03ac1bb4eab61c3cfa70ceac, type: 2}
   - {fileID: 11400000, guid: a3503b00c386ad943aa64b01729112ec, type: 2}
-  _workersSuperSubtleAlien: []
+  _workersSuperSubtleAlien:
+  - {fileID: 11400000, guid: ff203a4a75fc50d4da4baf05b833fba8, type: 2}
+  - {fileID: 11400000, guid: 352855a919c771248b5500dcda0f0ced, type: 2}
+  - {fileID: 11400000, guid: a18c12478f2f6274aab3324fb326be29, type: 2}
+  - {fileID: 11400000, guid: b269529f95fd69d4cb07a320ef15253d, type: 2}
+  - {fileID: 11400000, guid: c46d1df6c485c0a4589c8c605d24c8fe, type: 2}
+  - {fileID: 11400000, guid: 5ba3b09d70538d041bf813d0903c52fa, type: 2}
+  - {fileID: 11400000, guid: 7e192e9e830d0534981a8dc124936edd, type: 2}
+  - {fileID: 11400000, guid: 33056331f0833eb40b50655fb40de97d, type: 2}
+  - {fileID: 11400000, guid: 15dad3372d48d5044ab272237e8b831b, type: 2}
+  - {fileID: 11400000, guid: 0d52bdd5585330745967361dc668110e, type: 2}
+  - {fileID: 11400000, guid: 81470c33d0f5e024c8361b1314ab013e, type: 2}
+  - {fileID: 11400000, guid: 87ae4007fec9ad9409d27d68614f0222, type: 2}
+  - {fileID: 11400000, guid: 5f3b0e1dc5effdf4cbfb398cee5536f3, type: 2}
+  - {fileID: 11400000, guid: e07bb6b047db07048b1b37bf87564315, type: 2}
+  - {fileID: 11400000, guid: ac1041d8b5d15ec4cb8209b3c05c2367, type: 2}
   _characterPrefab: {fileID: 6550850988543019808, guid: 3a10dac6d69b9fc45b1cfaa22558490e, type: 3}
   _expectedListUI: {fileID: 3176941975282307188}
   _lastGoal: {fileID: 5509048083914431018, guid: 7563d07f9ef84fc47982dec8e76f070f, type: 3}
@@ -7628,9 +7658,9 @@ MonoBehaviour:
   _MaxUnexpectedworkers: 5
   _MinAlienArrivals: 4
   _MaxAlienArrivals: 8
-  _HumanSuperSusChance: 0
+  _HumanSuperSusChance: 0.179
   _HumanSusChance: 0.3
-  _AlienSuperSubtleChance: 0
+  _AlienSuperSubtleChance: 0.198
   _AlienObvChance: 0.211
   _SpawnAccelerationRate: 0.936
   _minSpawnTime: 20

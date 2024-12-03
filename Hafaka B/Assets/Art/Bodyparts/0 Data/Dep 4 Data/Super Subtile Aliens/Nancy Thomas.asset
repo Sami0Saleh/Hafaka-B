@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Nancy Thomas
   m_EditorClassIdentifier: 
   _moveSpeed: 0.5
-  _isAlien: 0
+  _isAlien: 1
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
@@ -56,5 +56,5 @@ MonoBehaviour:
   <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 0
   <IsDateOfBirthWrong>k__BackingField: 0
-  <SpecificAnswer>k__BackingField: Married thomas and took he's last name because
-    thomas thomas seems dumb
+  <SpecificAnswer>k__BackingField: I aim to kill all of the swifites. IN THE NAME
+    OF ZORG

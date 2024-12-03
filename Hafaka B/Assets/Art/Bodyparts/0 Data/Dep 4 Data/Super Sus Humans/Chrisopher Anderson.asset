@@ -45,7 +45,7 @@ MonoBehaviour:
   _gender: 0
   id: 246765367
   _dateOfBirth: 26.01.87
-  _department: Science
+  _department: Military
   _jobTitle: Chief Scientist
   _keyFeatures: 
   _isExpectedWorker: 0
@@ -53,7 +53,8 @@ MonoBehaviour:
   <IsSpriteWrong>k__BackingField: 0
   <IsFirstNameWrong>k__BackingField: 0
   <IsNotOnExpectedList>k__BackingField: 0
-  <IsDepartmentWrong>k__BackingField: 0
+  <IsDepartmentWrong>k__BackingField: 1
   <IsPositionWrong>k__BackingField: 0
   <IsDateOfBirthWrong>k__BackingField: 0
-  <SpecificAnswer>k__BackingField: 
+  <SpecificAnswer>k__BackingField: Due to the current alien problem, the miliitary
+    department needed my help
