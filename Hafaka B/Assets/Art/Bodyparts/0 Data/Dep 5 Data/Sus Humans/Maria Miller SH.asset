@@ -40,8 +40,8 @@ MonoBehaviour:
   FootRight: {fileID: 21300000, guid: 30a08d39a7c684f40a57b69cd1d3ef84, type: 3}
   FootLeft: {fileID: 21300000, guid: 2f57620529da5f04eb2b027b7a9879b3, type: 3}
   _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
-  _firstName: Maria Miller
-  _lastName: The Destroyer
+  _firstName: 'Maria '
+  _lastName: Miller
   _gender: 1
   id: 485692456
   _dateOfBirth: 01.04.90
@@ -52,7 +52,7 @@ MonoBehaviour:
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 1
   <IsFirstNameWrong>k__BackingField: 0
-  <IsLastNameWrong>k__BackingField: 0
+  <IsNotOnExpectedList>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 0
   <IsDateOfBirthWrong>k__BackingField: 0

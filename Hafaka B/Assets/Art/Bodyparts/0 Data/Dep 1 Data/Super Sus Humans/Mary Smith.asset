@@ -10,51 +10,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
-  m_Name: Karen Jackson OA
+  m_Name: Mary Smith
   m_EditorClassIdentifier: 
   _moveSpeed: 0.5
-  _isAlien: 1
+  _isAlien: 0
   _characterSprites: []
   _animator: {fileID: 0}
   _bloodPool: {fileID: 0}
-  _material: {fileID: 2100000, guid: 409d8105b9cdb514d9051d225f73abc7, type: 2}
+  _material: {fileID: 2100000, guid: d71d6c2ae3afcc246b83edf45661b0e7, type: 2}
   Head: {fileID: 21300000, guid: 26b251bb752ef214ea74b54b65d96c98, type: 3}
   Eyes: {fileID: 21300000, guid: cbc01ca38924b7149a1e4119dc89cfd4, type: 3}
   Nose: {fileID: 21300000, guid: d7f56d218b63bce44a292fe89cce1900, type: 3}
-  Hair: {fileID: 21300000, guid: 39cd1ce55439ea343ac66d853c79fdf4, type: 3}
+  Hair: {fileID: 21300000, guid: 9a4a618b7ef66a3429d230421c3897e8, type: 3}
   MouthClosed: {fileID: 21300000, guid: f03ec65def163314aa45d67183f9353c, type: 3}
   MouthOpenSmall: {fileID: 21300000, guid: 4aa7840df59c69f4f806adbaa33f3055, type: 3}
   MouthOpenBig: {fileID: 21300000, guid: ae0e0d78aac539147a9506a7c120fbeb, type: 3}
   FrontEar: {fileID: 21300000, guid: c05f99f4dacdb8348b3fd4f8785bd7bc, type: 3}
   BackEar: {fileID: 21300000, guid: 734e8dcc830204b41b8025cbfdc92245, type: 3}
   Neck: {fileID: 21300000, guid: ac5e584a7073b4f48a5bfb657c6ec35c, type: 3}
-  Body: {fileID: 21300000, guid: 0a7ba05d239787e4b90511e9fb590c83, type: 3}
+  Body: {fileID: 21300000, guid: c198c2d52c6d05c4eb3e486beffbc589, type: 3}
   SholderFront: {fileID: 21300000, guid: e603f206dc717c34d96e81de456a3ce1, type: 3}
   SholderBack: {fileID: 21300000, guid: 407f509910aefdf488e7e7241b4fc028, type: 3}
   ForearmFront: {fileID: 21300000, guid: 52c80eaed16372f4d89d57f2151dcc84, type: 3}
   ForearmBack: {fileID: 21300000, guid: 5286fe2c16eb35148bb89d58bb7bde32, type: 3}
-  KneeRight: {fileID: 21300000, guid: 8570a4667d7e2fe4bb890b89b4848e5a, type: 3}
-  KneeLeft: {fileID: 21300000, guid: eee6e3eff4ffb0a4f8beb4037a06c289, type: 3}
-  AnkleRight: {fileID: 21300000, guid: 44f5142bbdc057541972b4508814c647, type: 3}
-  AnkleLeft: {fileID: 21300000, guid: 756bdb642250bce41bafc0e4875f85ac, type: 3}
+  KneeRight: {fileID: 21300000, guid: 4986fddbaa6bb2d4da22e0219d91725a, type: 3}
+  KneeLeft: {fileID: 21300000, guid: 3172619a63169b54fa8d541c3ce95f03, type: 3}
+  AnkleRight: {fileID: 21300000, guid: f59f45ac9e38c0349b2bfc0e087dd919, type: 3}
+  AnkleLeft: {fileID: 21300000, guid: c254b090c209faf438be5c3685005653, type: 3}
   FootRight: {fileID: 21300000, guid: 370246e31b619df428ab494edef94ddd, type: 3}
   FootLeft: {fileID: 21300000, guid: 2cb66abcfc95f1c46b00c44c7059857d, type: 3}
   _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
-  _firstName: Karen
-  _lastName: Jackson
+  _firstName: Mary
+  _lastName: Smith
   _gender: 1
-  id: 245653256
-  _dateOfBirth: 18.05.91
-  _department: Transportation
-  _jobTitle: Executive Assistant
+  id: 234983245
+  _dateOfBirth: 3.07.82
+  _department: Education
+  _jobTitle: Secretary
   _keyFeatures: 
   _isExpectedWorker: 0
   _buffer: Ignore this, don't delete
-  <IsSpriteWrong>k__BackingField: 1
+  <IsSpriteWrong>k__BackingField: 0
   <IsFirstNameWrong>k__BackingField: 0
   <IsNotOnExpectedList>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
-  <IsPositionWrong>k__BackingField: 0
+  <IsPositionWrong>k__BackingField: 1
   <IsDateOfBirthWrong>k__BackingField: 0
-  <SpecificAnswer>k__BackingField: I was told the human body has plenty of holes.
-    and worships THE  DONUT
+  <SpecificAnswer>k__BackingField: I got demoted due to my work performence

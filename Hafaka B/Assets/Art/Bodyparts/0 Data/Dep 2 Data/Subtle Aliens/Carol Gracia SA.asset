@@ -52,8 +52,8 @@ MonoBehaviour:
   _buffer: Ignore this, don't delete
   <IsSpriteWrong>k__BackingField: 0
   <IsFirstNameWrong>k__BackingField: 0
-  <IsLastNameWrong>k__BackingField: 0
+  <IsNotOnExpectedList>k__BackingField: 0
   <IsDepartmentWrong>k__BackingField: 0
   <IsPositionWrong>k__BackingField: 0
   <IsDateOfBirthWrong>k__BackingField: 1
-  <SpecificAnswer>k__BackingField: Time isi a diffcult consept to grasph
+  <SpecificAnswer>k__BackingField: Time isi a diffcult concept to grasph
