@@ -7663,8 +7663,8 @@ MonoBehaviour:
   _AlienSuperSubtleChance: 0.541
   _AlienObvChance: 0.299
   _SpawnAccelerationRate: 0.936
-  _minSpawnTime: 1
-  _maxSpawnTime: 2
+  _minSpawnTime: 20
+  _maxSpawnTime: 25
   _expectedWorkers: []
   _ExpectedWorkersIndexes: 
   _SpawnedHumans: 
