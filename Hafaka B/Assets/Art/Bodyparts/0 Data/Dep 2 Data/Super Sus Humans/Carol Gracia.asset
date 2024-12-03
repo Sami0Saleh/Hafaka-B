@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dbef22d77f04c947b1883c7d25f9eb4, type: 3}
+  m_Name: Carol Gracia
+  m_EditorClassIdentifier: 
+  _moveSpeed: 0.5
+  _isAlien: 0
+  _characterSprites: []
+  _animator: {fileID: 0}
+  _bloodPool: {fileID: 0}
+  _material: {fileID: 2100000, guid: ce5bd62c80253a9458ef09c400281610, type: 2}
+  Head: {fileID: 21300000, guid: 71732476343b34444976d276ff9e7ec1, type: 3}
+  Eyes: {fileID: 21300000, guid: cbc01ca38924b7149a1e4119dc89cfd4, type: 3}
+  Nose: {fileID: 21300000, guid: d7f56d218b63bce44a292fe89cce1900, type: 3}
+  Hair: {fileID: 21300000, guid: 169cfd77c9c94234890314c76986796e, type: 3}
+  MouthClosed: {fileID: 21300000, guid: f03ec65def163314aa45d67183f9353c, type: 3}
+  MouthOpenSmall: {fileID: 21300000, guid: 4aa7840df59c69f4f806adbaa33f3055, type: 3}
+  MouthOpenBig: {fileID: 21300000, guid: ae0e0d78aac539147a9506a7c120fbeb, type: 3}
+  FrontEar: {fileID: 21300000, guid: c05f99f4dacdb8348b3fd4f8785bd7bc, type: 3}
+  BackEar: {fileID: 21300000, guid: 734e8dcc830204b41b8025cbfdc92245, type: 3}
+  Neck: {fileID: 21300000, guid: ac5e584a7073b4f48a5bfb657c6ec35c, type: 3}
+  Body: {fileID: 21300000, guid: c198c2d52c6d05c4eb3e486beffbc589, type: 3}
+  SholderFront: {fileID: 21300000, guid: e603f206dc717c34d96e81de456a3ce1, type: 3}
+  SholderBack: {fileID: 21300000, guid: 407f509910aefdf488e7e7241b4fc028, type: 3}
+  ForearmFront: {fileID: 21300000, guid: 1c8b4018159d22844bf13204117d7070, type: 3}
+  ForearmBack: {fileID: 21300000, guid: 801e4454e8dcb6c41a494446b072ba6f, type: 3}
+  KneeRight: {fileID: 21300000, guid: 8570a4667d7e2fe4bb890b89b4848e5a, type: 3}
+  KneeLeft: {fileID: 21300000, guid: eee6e3eff4ffb0a4f8beb4037a06c289, type: 3}
+  AnkleRight: {fileID: 21300000, guid: 44f5142bbdc057541972b4508814c647, type: 3}
+  AnkleLeft: {fileID: 21300000, guid: 756bdb642250bce41bafc0e4875f85ac, type: 3}
+  FootRight: {fileID: 21300000, guid: 370246e31b619df428ab494edef94ddd, type: 3}
+  FootLeft: {fileID: 21300000, guid: 2cb66abcfc95f1c46b00c44c7059857d, type: 3}
+  _idImage: {fileID: 21300000, guid: 15088532d7aa5864dad4cf48eebe22ad, type: 3}
+  _firstName: Carol
+  _lastName: Garcia
+  _gender: 1
+  id: 245054356
+  _dateOfBirth: 17.06.85
+  _department: National Security
+  _jobTitle: Department Head
+  _keyFeatures: 
+  _isExpectedWorker: 0
+  _buffer: Ignore this, don't delete
+  <IsSpriteWrong>k__BackingField: 0
+  <IsFirstNameWrong>k__BackingField: 0
+  <IsNotOnExpectedList>k__BackingField: 0
+  <IsDepartmentWrong>k__BackingField: 0
+  <IsPositionWrong>k__BackingField: 1
+  <IsDateOfBirthWrong>k__BackingField: 0
+  <SpecificAnswer>k__BackingField: I got promoted yesterday, finally someone saw
+    my potential
