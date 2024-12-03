@@ -7658,15 +7658,16 @@ MonoBehaviour:
   _MaxUnexpectedworkers: 5
   _MinAlienArrivals: 4
   _MaxAlienArrivals: 8
-  _HumanSuperSusChance: 0.179
-  _HumanSusChance: 0.3
-  _AlienSuperSubtleChance: 0.198
-  _AlienObvChance: 0.211
+  _HumanSuperSusChance: 0.529
+  _HumanSusChance: 0.268
+  _AlienSuperSubtleChance: 0.541
+  _AlienObvChance: 0.299
   _SpawnAccelerationRate: 0.936
-  _minSpawnTime: 20
-  _maxSpawnTime: 25
+  _minSpawnTime: 1
+  _maxSpawnTime: 2
   _expectedWorkers: []
   _ExpectedWorkersIndexes: 
+  _SpawnedHumans: 
   ExpectedWorkersLeft: 0
   UnexpectedLeft: 0
   AliensLeft: 0

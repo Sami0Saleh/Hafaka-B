@@ -33,6 +33,7 @@ public class BobGraphicController : MonoBehaviour
             _animator.SetFloat("Speed", 1);
         }
      
+
             _animator.SetBool("IsSpeaking", BobCharacterController.IsTalking);
         
        

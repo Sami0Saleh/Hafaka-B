@@ -188,7 +188,7 @@ public class CharacterController : MonoBehaviour
     public void DisplayText()
     {
         _animator.SetBool("IsSpeaking", true);
-        if (!_isAlien && !CharacterSO.IsSpriteWrong && !CharacterSO.IsNotOnExpectedList)
+        if (!_isAlien && !isSpecific() && IsExpected)
             _textBubble.TextToDisplay = ProvideGoodAnswer();
         else
             _textBubble.TextToDisplay = ProvideBadAnswer();
@@ -221,7 +221,8 @@ public class CharacterController : MonoBehaviour
                 break;
             case Questions.Expected:
                 Debug.Log("broke");
-                if (!CharacterSO.IsNotOnExpectedList) return _defaultText.text;
+                if (IsExpected || CharacterSO.IsAlien) return "Check again";
+                else return "Had an emergency at work";
                 break;
             case Questions.DateOfBirth:
                 Debug.Log("broke");
@@ -277,6 +278,27 @@ public class CharacterController : MonoBehaviour
                 return _dateOfBirthTexts.GetValueOrDefault(AnswerType.Good).text;
             default:
                 return "Good Answer";
+        }
+    }
+
+    private bool isSpecific()
+    {
+        switch (_question)
+        {
+            case Questions.Appearance:
+                return CharacterSO.IsSpriteWrong;
+            case Questions.Department:
+                return CharacterSO.IsDepartmentWrong;
+            case Questions.Position:
+                return CharacterSO.IsPositionWrong;
+            case Questions.Name:
+                return CharacterSO.IsFirstNameWrong;
+            case Questions.Expected:
+                return IsExpected;
+            case Questions.DateOfBirth:
+                return CharacterSO.IsDateOfBirthWrong;
+            default:
+                return false;
         }
     }
 

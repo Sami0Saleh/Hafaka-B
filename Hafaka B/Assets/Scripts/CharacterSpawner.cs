@@ -33,7 +33,7 @@ public class CharacterSpawner : MonoBehaviour
 
     public List<CharacterScriptableObject> _expectedWorkers = new List<CharacterScriptableObject>();
     public List<int> _ExpectedWorkersIndexes = new List<int>();
-    private List<int> _SpawnedHumans = new List<int>();
+    public List<int> _SpawnedHumans = new List<int>();
     private float _secondsToWait;
 
     public int ExpectedWorkersLeft;
@@ -160,17 +160,24 @@ public class CharacterSpawner : MonoBehaviour
                 randomIndex = Random.Range(0, _ExpectedWorkersIndexes.Count);
             }
         }
-        Chance = Random.Range(0, 1);
+        Chance = Random.Range(0, 1f);
         ExpectedWorkersLeft--;
         Debug.Log("Summoning Expected Human no." + _ExpectedWorkersIndexes[randomIndex]);
         if (Chance < _HumanSusChance)
         {
-            Chance = Random.Range(0, 1);
-            if (Chance < _HumanSuperSusChance && _workersSuperSus.Count > randomIndex) return new(_workersSuperSus[randomIndex], true);
+            Chance = Random.Range(0, 1f);
+            if (Chance < _HumanSuperSusChance && _workersSuperSus.Count > randomIndex)
+            {
+                Debug.Log("human is super suspicious");
+                return new(_workersSuperSus[randomIndex], true);
+            }
+            Debug.Log("human is suspicious");
             return new(_workersSus[randomIndex], true);
+
         }
         else
         {
+            Debug.Log("human is not suspicious");
             return new(_workers[randomIndex], true);
         }
         
@@ -195,18 +202,24 @@ public class CharacterSpawner : MonoBehaviour
                 randomIndex = Random.Range(0, _workers.Count);
             }
         }
-        Chance = Random.Range(0, 1);
+        Chance = Random.Range(0, 1f);
         UnexpectedLeft--;
 
         Debug.Log("Summoning Unexpected Human no." + randomIndex);
         if (Chance < _HumanSusChance)
         {
-            Chance = Random.Range(0, 1);
-            if (Chance < _HumanSuperSusChance && _workersSuperSus.Count > randomIndex) return new(_workersSuperSus[randomIndex], false);
+            Chance = Random.Range(0, 1f);
+            if (Chance < _HumanSuperSusChance && _workersSuperSus.Count > randomIndex)
+            {
+                Debug.Log("human is super suspicious");
+                return new(_workersSuperSus[randomIndex], false);
+            }
+            Debug.Log("human is suspicious");
             return new(_workersSus[randomIndex], false);
         }
         else
         {
+            Debug.Log("human is not suspicious (just unexpected)");
             return new(_workers[randomIndex], false);
         }
         
@@ -228,18 +241,25 @@ public class CharacterSpawner : MonoBehaviour
         {
             isExpected = false;
         }
-        Chance = Random.Range(0, 1);
+        Chance = Random.Range(0, 1f);
         AliensLeft--;
 
         Debug.Log("Summoning Alien no." + randomIndex);
         if (Chance < _AlienObvChance)
         {
+            Debug.Log("Alien is Obvious");
             return new(_workersAlien[randomIndex], isExpected);
         }
         else
         {
-            Chance = Random.Range(0, 1);
-            if (Chance < _AlienSuperSubtleChance && _workersSuperSubtleAlien.Count >randomIndex) return new(_workersSuperSubtleAlien[randomIndex], isExpected);
+            Chance = Random.Range(0, 1f);
+            if (Chance < _AlienSuperSubtleChance && _workersSuperSubtleAlien.Count > randomIndex)
+            {
+                Debug.Log("Alien is super Subtle");
+                return new(_workersSuperSubtleAlien[randomIndex], isExpected);
+            }
+
+            Debug.Log("Alien is Subtle");
             return new(_workersSubtleAlien[randomIndex], isExpected);
         }
         
