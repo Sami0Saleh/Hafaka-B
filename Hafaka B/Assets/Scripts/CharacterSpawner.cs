@@ -169,16 +169,16 @@ public class CharacterSpawner : MonoBehaviour
             if (Chance < _HumanSuperSusChance && _workersSuperSus.Count > randomIndex)
             {
                 Debug.Log("human is super suspicious");
-                return new(_workersSuperSus[randomIndex], true);
+                return new(_workersSuperSus[_ExpectedWorkersIndexes[randomIndex]], true);
             }
             Debug.Log("human is suspicious");
-            return new(_workersSus[randomIndex], true);
+            return new(_workersSus[_ExpectedWorkersIndexes[randomIndex]], true);
 
         }
         else
         {
             Debug.Log("human is not suspicious");
-            return new(_workers[randomIndex], true);
+            return new(_workers[_ExpectedWorkersIndexes[randomIndex]], true);
         }
         
     }
